@@ -10,7 +10,8 @@ import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 import 'bulma/css/bulma.css'
 import Header from "./header/header"
-import '../mystyles.scss'
+import Footer from "./footer/footer"
+import "./layout.scss"
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -25,7 +26,11 @@ const Layout = ({ children }) => {
 
   return (
     <>
+      <link href="https://fonts.googleapis.com/css?family=Raleway:300" rel="stylesheet"></link>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css"/>
+
       <Header siteTitle={data.site.siteMetadata.title} />
+
       <div
         style={{
           margin: `0 auto`,
@@ -35,12 +40,7 @@ const Layout = ({ children }) => {
         }}
       >
         <main>{children}</main>
-        <footer>
-          © {new Date().getFullYear()}, Built with
-          {` `}
-          <a href="https://www.gatsbyjs.org">Gatsby</a>
-
-        </footer>
+        <Footer></Footer>
       </div>
     </>
   )

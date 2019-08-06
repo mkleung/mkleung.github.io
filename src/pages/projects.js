@@ -12,12 +12,8 @@ const ProjectPage = () => (
       <div className="container">
         <div className="columns is-vcentered">
           <div className="column is-6 landing-caption">
-            <h1 className="title is-1 is-bold is-spaced">CSS Projects</h1>
-            <p>
-                <a className="button cta rounded primary-btn raised">
-                View
-                </a>
-            </p>
+            <h1 className="title is-1 is-bold is-spaced">Projects</h1>
+  
         </div>
 
         <div className="column is-6">     

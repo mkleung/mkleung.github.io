@@ -5,6 +5,10 @@ import "../header/header.scss"
 
 
 const Header = ({ siteTitle }) => (
+  <div>
+    <div className="wave1"></div>
+    <div className="wave2"></div>
+    <div className="wave3"></div>
     <nav   className="navbar" role="navigation" aria-label="main navigation">
         <div className="navbar-brand">
 
@@ -21,17 +25,14 @@ const Header = ({ siteTitle }) => (
         <div className="navbar-end">
         <div className="navbar-item">
             <div className="buttons">
-            <Link className="navbar-item is-secondary">About</Link>
+            <Link className="navbar-item is-secondary"  to="/about">About</Link>
             <Link className="navbar-item is-secondary" to="/projects">Projects</Link>
-            <Link className="navbar-item is-secondary">Contact</Link>
+            <Link className="navbar-item is-secondary"  to="/contact">Contact</Link>
             </div>
         </div>
         </div>
-
-        
-
     </nav>
-
+  </div>
 )
 
 Header.propTypes = {
