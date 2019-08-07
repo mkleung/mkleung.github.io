@@ -14,15 +14,7 @@ const ContactPage = () => (
 
           <div className="column is-6 landing-caption">
             <h1 className="title is-1 is-bold is-spaced">Contact Me</h1>
-          </div>
-
-          <div className="column is-6">
-            <ContactImage />
-          </div>
-
-
-          <div className="column is-6">
-          <form method="post" action="https://formspree.io/mpakleung@gmail.com">
+            <form method="post" action="https://formspree.io/mpakleung@gmail.com">
 
             <div className="field">
               <label className="label">Email</label>
@@ -43,6 +35,15 @@ const ContactPage = () => (
               <button className="button is-primary" type="submit">Send Email</button>
 
             </form>
+          </div>
+
+          <div className="column is-6">
+            <ContactImage />
+          </div>
+
+
+          <div className="column is-6">
+          
         </div>
 
           
