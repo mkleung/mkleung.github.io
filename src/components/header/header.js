@@ -6,6 +6,7 @@ import "../header/header.scss"
 
 const Header = ({ siteTitle }) => (
   <div>
+    
     <div className="wave1"></div>
     <div className="wave2"></div>
     <div className="wave3"></div>

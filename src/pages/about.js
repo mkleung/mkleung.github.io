@@ -15,7 +15,7 @@ const AboutPage = () => (
           <div className="column is-6 landing-caption">
             <h1 className="title is-1 is-bold is-spaced">About Me</h1>
             <h2 className="subtitle is-5 is-muted">I'm a web developer residing in Ottawa, Canada.</h2>
-            <h2 className="subtitle is-5 is-muted">I specialize in WordPress Theme and Plugin development and I'm currently working with React.</h2>
+            <h2 className="subtitle is-5 is-muted">I have five years of experience with WordPress Theme development and Laravel. I'm currently working with React.</h2>
             <p></p>
             <p></p>
             <p>
