@@ -6,6 +6,8 @@
 
     .title {
         font-size: 1.4rem;
+        padding-left: 35px;
+        animation: logo 0.5s ease-in-out;
     }
 }
 
@@ -15,7 +17,7 @@
     width: 500px;
     height: 500px;
     left: 29%;
-    top: -84%;
+    top: -430px;
     background-color: rgba(108,99,255, 0.4);
     border-radius: 40%;
      animation: rotate 10s linear infinite;
@@ -26,7 +28,7 @@
     width: 500px;
     height: 500px;
     left: 30%;
-    top: -84%;
+    top: -430px;
     background-color: rgba(135,128,253, 0.4);
     border-radius: 40%;
      animation: rotate 20s linear infinite;
@@ -37,14 +39,86 @@
     width: 500px;
     height: 500px;
     left: 31%;
-    top: -83%;
+    top: -430px;
     background-color: rgba(226,224,255, 0.4);
     border-radius: 40%;
-     animation: rotate 30s linear infinite;
+    animation: rotate 30s linear infinite;
 }
 
 @keyframes rotate {
 	100% {
 		transform: rotate(365deg);
+	}
+}
+
+
+.logo {
+    .triangle {
+        position: absolute;
+        top: 15px;
+        width: 0; 
+        height: 0; 
+        border-top: 10px solid transparent;
+        border-bottom: 10px solid transparent;
+        border-left: 10px solid black;
+    }
+    .t1 {
+        left: 10px;
+        
+    }
+    .t2 {
+        left: 20px;
+        animation: move 0.5s ease-in-out;
+    }
+    .rectangle {
+        position: absolute;
+        top: 15px;
+        left: 30px;
+        height: 18px;
+        width: 2px;
+        background: black;
+        animation: moveL 0.5s ease-in-out;
+    }
+    .rectangle:after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        background: black;
+        height: 2px;
+        width: 8px;
+    }
+}
+
+
+
+@keyframes move {
+	0% {
+		left: 10px;
+	}
+	100% {
+		left:20px;
+	}
+}
+
+@keyframes moveL {
+	0% {
+		left: 10px;
+		opacity: 0;
+	}
+	100% {
+		left:30px;
+		opacity: 1;
+	}
+}
+
+@keyframes logo {
+	0% {
+		font-size: 0;
+		opacity: 0;
+	}
+	100% {
+		font-size: 1.4rem;
+		opacity: 1;
 	}
 }
