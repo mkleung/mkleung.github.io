@@ -5,6 +5,7 @@ import "../header/header.scss"
 
 
 const Header = ({ siteTitle }) => (
+
   <div>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
     <div className="wave wave1"></div>
@@ -30,9 +31,9 @@ const Header = ({ siteTitle }) => (
               <span className="third"></span>
               <div className="mobileMenu">
                
-                <Link className="mobileMenu__item "  to="/about">About</Link>
-                <Link className="mobileMenu__item " to="/projects">Projects</Link>
-                <Link className="mobileMenu__item " to="/contact">Contact</Link>
+                <Link activeClassName="active" className="mobileMenu__item "  to="/about">About</Link>
+                <Link activeClassName="active" className="mobileMenu__item " to="/projects">Projects</Link>
+                <Link activeClassName="active" className="mobileMenu__item " to="/contact">Contact</Link>
               </div>
           </div>
         </div>
@@ -41,9 +42,9 @@ const Header = ({ siteTitle }) => (
         <div className="navbar-end">
         <div className="navbar-item">
             <div className="buttons">
-            <Link className="navbar-item is-secondary"  to="/about">About</Link>
-            <Link className="navbar-item is-secondary" to="/projects">Projects</Link>
-            <Link className="navbar-item is-secondary"  to="/contact">Contact</Link>
+            <Link activeClassName="active" className="navbar-item is-secondary"  to="/about">About</Link>
+            <Link activeClassName="active" className="navbar-item is-secondary" to="/projects">Projects</Link>
+            <Link activeClassName="active" className="navbar-item is-secondary"  to="/contact">Contact</Link>
             </div>
         </div>
         </div>
