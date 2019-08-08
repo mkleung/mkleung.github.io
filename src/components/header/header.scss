@@ -157,31 +157,35 @@
 	
 	//bottom
 	.ham:checked ~ .third {
-
         transform: rotate(30deg);
 		transform-origin: left;
         transition: transform 0.5s ease;
-
     }
     
     // Show mobile menu
     .ham:checked ~ .mobileMenu {
-        display: block;
+
+        visibility: visible;
+        opacity: 1;
+        transition: visibility 0s, opacity 0.5s ease;
     }
 
     .mobileMenu {
-        background: rgba(255,255,255,0.9);
+        background: rgba(255,255,255,0.95);
         height: 100%;
         width: 100%;
         position: fixed;
         top: 0;
         left: 0;
         z-index: -10;
-        padding-top: 40px;
+        padding-top: 100px;
+        visibility: hidden;
+        opacity: 0;
+        
         .mobileMenu__item {
                 display: block;
                 text-align: center;
-                font-size: 4rem;
+                font-size: 3rem;
                 padding-top: 30px;
         }
         
@@ -223,6 +227,9 @@
 
 
 @media only screen and (max-width: 1024px) {
+    .wave {
+        display: none;
+    }
     .navbar-end {
       display: none;
     }
@@ -231,6 +238,8 @@
     }
 
     .mobileMenu {
-        display: none;
+        visibility: visible;
+        opacity: 1;
+        transition: all 0.5s ease;
     }
   }

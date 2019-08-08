@@ -7,9 +7,9 @@ import "../header/header.scss"
 const Header = ({ siteTitle }) => (
   <div>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
-    <div className="wave1"></div>
-    <div className="wave2"></div>
-    <div className="wave3"></div>
+    <div className="wave wave1"></div>
+    <div className="wave wave2"></div>
+    <div className="wave wave3"></div>
     <nav className="navbar" role="navigation" aria-label="main navigation">
         <div className="navbar-brand">
 
