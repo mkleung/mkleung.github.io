@@ -15,6 +15,7 @@ const Header = ({ siteTitle }) => (
 
             <Link className="navbar-item" to="/">
               <div className="logo">
+           
                   <div className="triangle t1"></div>
                   <div className="triangle t2"></div>
                   <div className="rectangle"></div>

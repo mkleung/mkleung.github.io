@@ -16,13 +16,8 @@ const ProjectPage = () => (
         <div className="columns is-vcentered is-multiline">
           <div className="column is-6 landing-caption">
             <h1 className="title is-1 is-bold is-spaced">Projects</h1>
-            <Codepen
-                hash="PMpYbp"
-                user="mpakleung"
-                height="1000px"
-                defaultTab="result"
-                loader={() => <div>Loading...</div>}
-              />
+            <p><Link to="/projects">Javascript</Link></p>
+            <p><Link to="/frontend">CSS</Link></p>
         </div>
 
         <div className="column is-6">     
@@ -30,11 +25,11 @@ const ProjectPage = () => (
         </div>
 
         <div className="column is-12">
-         <h3>Javascript Projects</h3>
+         <h2 className="has-text-weight-bold">Javascript Projects</h2>
         </div>
 
         {/* Decision Maker */}
-        <div className="column is-4">
+        <div className="column is-6">
           <div className="card">
               <div className="card-image">
                 
@@ -50,14 +45,14 @@ const ProjectPage = () => (
                 <div className="content">
                   <p>What's for Dinner is a app that makes a food decision for you from a list of choices</p>
                   <p>Built in React</p>
-                  <p><a target="_blank" href="https://mkleung.github.io/decision-maker/">Demo</a></p>
+                  <p><a className="button is-primary is-rounded" target="_blank" href="https://mkleung.github.io/decision-maker/">Demo</a></p>
                 </div>
               </div>
             </div>
         </div>
 
         {/* Rideau Canal Ice */}
-        <div className="column is-4">
+        <div className="column is-6">
           <div className="card">
               <div className="card-image">
                 <RideauImage />
@@ -65,13 +60,13 @@ const ProjectPage = () => (
               <div className="card-content">
                 <div className="media">
                   <div className="media-content">
-                    <p className="title is-4">Rideau Canal Ice</p>
+                    <p className="title is-4">Rideau Canal Ice Skating</p>
                   </div>
                 </div>
                 <div className="content">
                   <p>This app tells you the condition of Rideau Canal's ice skating. Closed for the summmer.</p>
                   <p>Built in React</p>
-                  <p><a target="_blank" href="https://young-ridge-69555.herokuapp.com/">Demo</a></p>
+                  <p><a className="button is-primary is-rounded" target="_blank" href="https://young-ridge-69555.herokuapp.com/">Demo</a></p>
                 </div>
               </div>
             </div>
@@ -79,7 +74,7 @@ const ProjectPage = () => (
 
 
       {/* Angular Multi Step */}
-      <div className="column is-4">
+      <div className="column is-6">
           <div className="card">
               <div className="card-image">
                 <AngularImage />
@@ -93,7 +88,7 @@ const ProjectPage = () => (
                 <div className="content">
                   <p>This app can be used to build a multistep survey.</p>
                   <p>Built in AngularJs</p>
-                  <p><a target="_blank" href="https://codepen.io/mpakleung/full/vpmROQ">Demo</a></p>
+                  <p><a className="button is-primary is-rounded" target="_blank" href="https://codepen.io/mpakleung/full/vpmROQ">Demo</a></p>
                 </div>
               </div>
             </div>

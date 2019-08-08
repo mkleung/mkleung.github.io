@@ -15,7 +15,7 @@ const ContactPage = () => (
           <div className="column is-6 landing-caption">
             <h1 className="title is-1 is-bold is-spaced">Contact Me</h1>
             <form method="post" action="https://formspree.io/mpakleung@gmail.com">
-
+            <br />
             <div className="field">
               <label className="label">Email</label>
               <div className="control has-icons-left has-icons-right">
@@ -25,15 +25,14 @@ const ContactPage = () => (
                   </span>
               </div>
             </div>
-
             <div className="field">
               <label className="label">Message</label>
               <div className="control">
                 <textarea name="message" className="textarea" placeholder="Textarea"></textarea>
               </div>
             </div>
-              <button className="button is-primary" type="submit">Send Email</button>
-
+            <br />
+            <button className="button is-primary is-rounded" type="submit">Send Email</button>
             </form>
           </div>
 

@@ -18,7 +18,7 @@ const IndexPage = () => (
             <p>I'm currently working with React and learning cool new technologies.</p>
             <br />
             <p>
-                <Link className="button is-primary "  to="/contact">Contact Me</Link>
+                <Link className="button is-primary is-rounded"  to="/contact">Contact Me</Link>
             </p>
           </div>
 
