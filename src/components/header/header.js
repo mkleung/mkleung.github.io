@@ -6,7 +6,7 @@ import "../header/header.scss"
 
 const Header = ({ siteTitle }) => (
   <div>
-    
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
     <div className="wave1"></div>
     <div className="wave2"></div>
     <div className="wave3"></div>
@@ -22,11 +22,18 @@ const Header = ({ siteTitle }) => (
               <h1 className="title">{ siteTitle }</h1>
             </Link>
 
-            <a role="button" className="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
-            <span aria-hidden="true"></span>
-            <span aria-hidden="true"></span>
-            <span aria-hidden="true"></span>
-            </a>
+            <div className="hamburger">
+              <input type="checkbox" className="ham"/>
+              <span className="first"></span>
+              <span className="second"></span>
+              <span className="third"></span>
+              <div className="mobileMenu">
+               
+                <Link className="mobileMenu__item "  to="/about">About</Link>
+                <Link className="mobileMenu__item " to="/projects">Projects</Link>
+                <Link className="mobileMenu__item " to="/contact">Contact</Link>
+              </div>
+          </div>
         </div>
 
   

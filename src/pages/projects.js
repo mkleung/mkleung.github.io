@@ -92,7 +92,7 @@ const ProjectPage = () => (
                 </div>
                 <div className="content">
                   <p>This app can be used to build a multistep survey.</p>
-                  <p>Built in React</p>
+                  <p>Built in AngularJs</p>
                   <p><a target="_blank" href="https://codepen.io/mpakleung/full/vpmROQ">Demo</a></p>
                 </div>
               </div>
