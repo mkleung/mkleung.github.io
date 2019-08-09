@@ -42,25 +42,28 @@ const FrontEndPage = () => (
           />
     </div>
 
-    {/* Pacman */}
+    {/* Bokeh */}
     <div className="column is-6">
-      <Codepen
-            hash="vwGErv"
-            user="mpakleung"
-            defaultTab="result"
-            loader={() => <div>Loading...</div>}
-          />
-    </div>
+          <Codepen
+                hash="RXYvrE"
+                user="mpakleung"
+                defaultTab="result"
+                loader={() => <div>Loading...</div>}
+              />
+        </div>
 
-    {/* Hello */}
+    {/* Tree */}
     <div className="column is-6">
-      <Codepen
-            hash="arqjYP"
-            user="mpakleung"
-            defaultTab="result"
-            loader={() => <div>Loading...</div>}
-          />
-    </div>
+          <Codepen
+                hash="JgYzeG"
+                user="mpakleung"
+                defaultTab="result"
+                loader={() => <div>Loading...</div>}
+              />
+        </div>
+
+  
+
 
     {/* Moon/Sun */}
     <div className="column is-6">
@@ -97,6 +100,38 @@ const FrontEndPage = () => (
      <div className="column is-6">
           <Codepen
                 hash="rbOxXy"
+                user="mpakleung"
+                defaultTab="result"
+                loader={() => <div>Loading...</div>}
+              />
+        </div>
+
+             {/* Word Carousel 73 */}
+     <div className="column is-6">
+          <Codepen
+                hash="mZxOQe"
+                user="mpakleung"
+                defaultTab="result"
+                loader={() => <div>Loading...</div>}
+              />
+        </div>
+
+        
+             {/* Keyboard 71 */}
+     <div className="column is-6">
+          <Codepen
+                hash="WqMQJP"
+                user="mpakleung"
+                defaultTab="result"
+                loader={() => <div>Loading...</div>}
+              />
+        </div>
+
+                
+             {/* Gradient 61 */}
+     <div className="column is-6">
+          <Codepen
+                hash="WqopWx"
                 user="mpakleung"
                 defaultTab="result"
                 loader={() => <div>Loading...</div>}
@@ -153,19 +188,9 @@ const FrontEndPage = () => (
                 loader={() => <div>Loading...</div>}
               />
         </div>
-        
-        {/* Stars */}
-        <div className="column is-6">
-          <Codepen
-                hash="QRJpEP"
-                user="mpakleung"
-                defaultTab="result"
-                loader={() => <div>Loading...</div>}
-              />
-        </div>
 
-         {/* Candle */}
-         <div className="column is-6">
+               {/* Candle */}
+               <div className="column is-6">
           <Codepen
                 hash="RzXjgO"
                 user="mpakleung"
@@ -173,8 +198,7 @@ const FrontEndPage = () => (
                 loader={() => <div>Loading...</div>}
               />
         </div>
-
-
+        
         {/* React */}
            <div className="column is-6">
           <Codepen
@@ -185,17 +209,38 @@ const FrontEndPage = () => (
               />
         </div>
 
-         {/* Tree */}
-         <div className="column is-6">
+       {/* Stars */}
+       <div className="column is-6">
           <Codepen
-                hash="JgYzeG"
+                hash="QRJpEP"
                 user="mpakleung"
                 defaultTab="result"
                 loader={() => <div>Loading...</div>}
               />
         </div>
 
-         {/* Button */}
+        
+    {/* Hello */}
+    <div className="column is-6">
+      <Codepen
+            hash="arqjYP"
+            user="mpakleung"
+            defaultTab="result"
+            loader={() => <div>Loading...</div>}
+          />
+    </div>
+
+        {/* Checklist #27 */}
+        <div className="column is-6">
+      <Codepen
+            hash="pmPzEq"
+            user="mpakleung"
+            defaultTab="result"
+            loader={() => <div>Loading...</div>}
+          />
+    </div>
+
+         {/* Button 24 */}
          <div className="column is-6">
           <Codepen
                 hash="QRKwmR"
@@ -205,7 +250,29 @@ const FrontEndPage = () => (
               />
         </div>
 
-        {/* Bike */}
+          {/* Pacman 21 */}
+    <div className="column is-6">
+      <Codepen
+            hash="vwGErv"
+            user="mpakleung"
+            defaultTab="result"
+            loader={() => <div>Loading...</div>}
+          />
+    </div>
+
+            {/* Upload 15 */}
+            <div className="column is-6">
+          <Codepen
+                hash="oRvdLj"
+                user="mpakleung"
+                defaultTab="result"
+                loader={() => <div>Loading...</div>}
+              />
+        </div>
+
+
+
+        {/* Bike 14 */}
         <div className="column is-6">
           <Codepen
                 hash="YbKymq"
@@ -219,6 +286,16 @@ const FrontEndPage = () => (
         <div className="column is-6">
           <Codepen
                 hash="ZZRmdz"
+                user="mpakleung"
+                defaultTab="result"
+                loader={() => <div>Loading...</div>}
+              />
+        </div>
+
+        {/* 100 Days 6 */}
+        <div className="column is-6">
+          <Codepen
+                hash="ZgXjOr"
                 user="mpakleung"
                 defaultTab="result"
                 loader={() => <div>Loading...</div>}
