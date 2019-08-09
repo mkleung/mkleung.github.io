@@ -2,10 +2,10 @@ import React from "react"
 import { Link } from "gatsby"
 
 import Layout from "../components/layout"
-import ProjectsImage from "../components/images/projects"
-import DinnerImage from "../components/images/dinnerImg"
-import RideauImage from "../components/images/rideauImg"
-import AngularImage from "../components/images/angularImg"
+import ProjectsImage from "../components/images/projectsImage"
+import DinnerImage from "../components/images/dinnerImage"
+import RideauImage from "../components/images/rideauImage"
+import AngularImage from "../components/images/angularImage"
 import SEO from "../components/seo"
 import Codepen from "react-codepen-embed";
 
@@ -107,6 +107,8 @@ const ProjectPage = () => (
           </div>
           
         </div>
+
+        <SEO title="Projects" />
   </Layout>
 )
 

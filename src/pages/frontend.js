@@ -1,7 +1,7 @@
 import React from "react"
 import { Link } from "gatsby"
 import Layout from "../components/layout"
-import ProjectsImage from "../components/images/frontend"
+import ProjectsImage from "../components/images/frontendImage"
 import SEO from "../components/seo"
 import Codepen from "react-codepen-embed";
 
@@ -316,6 +316,8 @@ const FrontEndPage = () => (
       </div>
   </div>
   </div>
+
+  <SEO title="Projects" />
   </Layout>
 )
 export default FrontEndPage

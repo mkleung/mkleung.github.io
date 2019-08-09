@@ -1,22 +1,18 @@
 import React from "react"
-import { Link } from "gatsby"
-
 import Layout from "../components/layout"
-import AboutImage from "../components/images/about"
+import AboutImage from "../components/images/aboutImage"
 import SEO from "../components/seo"
-
 
 const AboutPage = () => (
   <Layout>
     <div className="hero-body">
       <div className="container">
         <div className="columns is-vcentered is-multiline">
-
           <div className="column is-6 landing-caption">
             <h1 className="title is-1 is-bold is-spaced">About Me</h1>
-            <p>I have a degree in computer science from Carleton University, Ottawa.</p>
+            <p>I have a degree in Computer Science from Carleton University, Ottawa.</p>
             <br />
-            <p>Outside of programming, I like hiking in nature, playing video games and eating shawarma.</p>
+            <p>Outside of programming, I like photography, rewatching Game of Thrones and enjoy outdoor activities like hiking. (At least I try but always trail off)</p>
             <br />
             <br />
             <p>
@@ -25,25 +21,13 @@ const AboutPage = () => (
               <span><a  target="_blank"  href="https://github.com/mkleung"><i className="fab fa-github"></i></a></span>
             </p>
           </div>
-
           <div className="column is-6">
             <AboutImage />
           </div>
-
-
-          <div className="column is-6">
-          
-        </div>
-
-          
         </div>
       </div>
     </div>
-    <SEO title="Home" />
-
-
-
-
+    <SEO title="About" />
   </Layout>
 )
 
