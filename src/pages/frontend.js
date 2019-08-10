@@ -293,6 +293,17 @@ const FrontEndPage = () => (
               />
         </div>
 
+        
+      {/* Toggle Night and Day  */}
+    <div className="column is-6">
+          <Codepen
+                hash="ymRowy"
+                user="mpakleung"
+                defaultTab="result"
+                loader={() => <div>Loading...</div>}
+              />
+        </div>
+
         {/* Panda */}
         <div className="column is-6">
           <Codepen
