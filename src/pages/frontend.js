@@ -52,6 +52,7 @@ const FrontEndPage = () => (
               />
         </div>
 
+
     {/* Tree */}
     <div className="column is-6">
           <Codepen
@@ -276,6 +277,16 @@ const FrontEndPage = () => (
         <div className="column is-6">
           <Codepen
                 hash="YbKymq"
+                user="mpakleung"
+                defaultTab="result"
+                loader={() => <div>Loading...</div>}
+              />
+        </div>
+
+      {/* Dogs #13  */}
+    <div className="column is-6">
+          <Codepen
+                hash="eqPRdK"
                 user="mpakleung"
                 defaultTab="result"
                 loader={() => <div>Loading...</div>}
