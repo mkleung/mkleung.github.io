@@ -1,4 +1,5 @@
 import React from "react"
+import { Link } from 'gatsby'
 import Layout from "../components/layout"
 
 import SEO from "../components/seo"
@@ -10,7 +11,7 @@ const AboutPage = () => (
         <div className="columns is-vcentered is-multiline">
           <div className="column is-6 landing-caption">
             <h1 className="title is-1 is-bold is-spaced">About Me</h1>
-            <p>I have a degree in Computer Science from Carleton University, Ottawa.</p>
+            <p>I have a Bachelors degree in Computer Science from Carleton University, Ottawa, Canada. During my spare time, I write on my <Link to="/blog">blog</Link>.</p>
             <br />
             <p>Outside of programming, I like photography, rewatching Game of Thrones and enjoy outdoor activities like hiking. (At least I try but always trail off)</p>
             <br />

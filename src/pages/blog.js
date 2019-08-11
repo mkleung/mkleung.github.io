@@ -13,8 +13,11 @@ const BlogPage = () => {
                 node {
                     frontmatter {
                         title
-                        date
+                        date(formatString: "MMMM Do, YYYY")
                     }
+                    fields {
+                        slug
+                      }
             }
         }
         }
@@ -25,19 +28,24 @@ const BlogPage = () => {
             <div className="hero-body">
             <div className="container">
                 <div className="columns is-vcentered is-multiline">
-                <div className="column is-6 landing-caption">
+                <div className="column is-12 landing-caption">
                     <h1 className="title is-1 is-bold is-spaced">Blog</h1>
-                    {data.allMarkdownRemark.edges.map((edge) => {
-                    return (
-                 
-                        <Link to="">
-                            <h2>{edge.node.frontmatter.title}</h2>
-                            <p>{edge.node.frontmatter.date}</p>
-                            <br></br>
-                        </Link>
-                        
-                    )
-                })}
+
+
+                                {data.allMarkdownRemark.edges.map((edge) => {
+                                    return (
+                                        <Link to={`/blog/${edge.node.fields.slug}`}>
+                                            <article className="has-text-black">
+                                                <p className="is-size-5 has-text-weight-bold"><i className="fas fa-mug-hot"></i> • {edge.node.frontmatter.title}</p>
+                                                <br />
+                                                <p className="">{edge.node.frontmatter.date} </p>
+                                            </article>
+                                            <br />
+                                        </Link>
+                                        )
+                                    })}
+
+
                 </div>
                 <div className="column is-6">
 
