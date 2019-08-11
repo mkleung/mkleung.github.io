@@ -1,7 +1,6 @@
 import React from "react"
 import { Link } from "gatsby"
 import Layout from "../components/layout"
-import ProjectsImage from "../components/images/frontendImage"
 import SEO from "../components/seo"
 import Codepen from "react-codepen-embed";
 
@@ -16,7 +15,7 @@ const FrontEndPage = () => (
             <p><Link to="/frontend">CSS</Link></p>
         </div>
         <div className="column is-6">     
-          <ProjectsImage />
+
         </div>
         <div className="column is-12">
           <h2 className="has-text-weight-bold">CSS Projects</h2>

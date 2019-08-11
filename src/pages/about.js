@@ -1,6 +1,6 @@
 import React from "react"
 import Layout from "../components/layout"
-import AboutImage from "../components/images/aboutImage"
+
 import SEO from "../components/seo"
 
 const AboutPage = () => (
@@ -16,13 +16,12 @@ const AboutPage = () => (
             <br />
             <br />
             <p>
-              <span className="has-margin-right-20"><a target="_blank"  href="https://codepen.io/mpakleung/"><i className="fab fa-codepen"></i></a></span>
-              <span className="has-margin-right-20"><a  target="_blank"  href="https://www.instagram.com/morningmike/"><i className="fab fa-instagram"></i></a></span>
-              <span><a  target="_blank"  href="https://github.com/mkleung"><i className="fab fa-github"></i></a></span>
+              <span className="has-margin-right-20"><a target="_blank" rel="noopener noreferrer"  href="https://codepen.io/mpakleung/"><i className="fab fa-codepen"></i></a></span>
+              <span className="has-margin-right-20"><a  target="_blank" rel="noopener noreferrer"  href="https://www.instagram.com/morningmike/"><i className="fab fa-instagram"></i></a></span>
+              <span><a  target="_blank" rel="noopener noreferrer" href="https://github.com/mkleung"><i className="fab fa-github"></i></a></span>
             </p>
           </div>
           <div className="column is-6">
-            <AboutImage />
           </div>
         </div>
       </div>

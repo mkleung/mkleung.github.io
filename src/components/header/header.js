@@ -1,12 +1,21 @@
-import { Link } from "gatsby"
-import PropTypes from "prop-types"
 import React from "react"
+import { Link, graphql, useStaticQuery } from "gatsby"
+import PropTypes from "prop-types"
 import "../header/header.scss"
 
 
-const Header = ({ siteTitle }) => (
-
-  <div>
+const Header = ({ siteTitle }) => {
+  const data = useStaticQuery( graphql`
+  query {
+      site {
+          siteMetadata {
+              title
+          }
+      }
+  }
+`)
+  return (
+ <div>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
     <div className="wave wave1"></div>
     <div className="wave wave2"></div>
@@ -21,7 +30,7 @@ const Header = ({ siteTitle }) => (
                   <div className="triangle t2"></div>
                   <div className="rectangle"></div>
               </div>
-              <h1 className="title">{ siteTitle }</h1>
+              <h1 className="title">{data.site.siteMetadata.title}</h1>
             </Link>
 
             <div className="hamburger">
@@ -50,14 +59,8 @@ const Header = ({ siteTitle }) => (
         </div>
     </nav>
   </div>
-)
 
-Header.propTypes = {
-  siteTitle: PropTypes.string,
-}
-
-Header.defaultProps = {
-  siteTitle: ``,
-}
+  )
+  }
 
 export default Header

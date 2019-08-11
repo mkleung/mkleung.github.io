@@ -1,7 +1,6 @@
 import React from "react"
 import { Link } from "gatsby"
 import Layout from "../components/layout"
-import FourImage from "../components/images/fourImage"
 import SEO from "../components/seo"
 
 const NotFoundPage = () => (
@@ -14,7 +13,7 @@ const NotFoundPage = () => (
             <p>Return back to the <Link to="/">homepage</Link></p>
           </div>
           <div className="column is-6">
-            <FourImage />
+
           </div>
         </div>
       </div>

@@ -15,22 +15,12 @@ import "./layout.scss"
 
 
 const Layout = ({ children }) => {
-  const data = useStaticQuery(graphql`
-    query SiteTitleQuery {
-      site {
-        siteMetadata {
-          title
-        }
-      }
-    }
-  `)
-
   return (
     <>
       <link href="https://fonts.googleapis.com/css?family=Raleway:300" rel="stylesheet"></link>
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css"/>
 
-      <Header siteTitle={data.site.siteMetadata.title} />
+      <Header />
 
       <div
         style={{
@@ -40,7 +30,10 @@ const Layout = ({ children }) => {
           paddingTop: 0,
         }}
       >
-        <main>{children}</main>
+        <main>
+          {children}
+          
+        </main>
         <Footer></Footer>
       </div>
     </>

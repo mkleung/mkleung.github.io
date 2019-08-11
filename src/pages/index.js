@@ -2,7 +2,6 @@ import React from "react"
 import { Link } from "gatsby"
 
 import Layout from "../components/layout"
-import HomeImage from "../components/images/homeImage"
 import SEO from "../components/seo"
 
 const IndexPage = () => (
@@ -18,7 +17,6 @@ const IndexPage = () => (
             <p><Link className="button is-primary is-rounded"  to="/contact">Contact Me</Link></p>
           </div>
           <div className="column is-6">
-              <HomeImage />
           </div>
         </div>
       </div>
