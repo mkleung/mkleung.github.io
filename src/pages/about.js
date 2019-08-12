@@ -11,7 +11,7 @@ const AboutPage = () => (
         <div className="columns is-vcentered is-multiline">
           <div className="column is-6 landing-caption">
             <h1 className="title is-1 is-bold is-spaced">About Me</h1>
-            <p>I have a Bachelors degree in Computer Science from Carleton University, Ottawa, Canada. During my spare time, I write tutorials on my <Link to="/blog">blog</Link>.</p>
+            <p>I have a Bachelors degree in Computer Science from Carleton University, Ottawa, Canada.</p>
             <br />
             <p>Outside of programming, I like photography, watching Game of Thrones and enjoying outdoor activities such as hiking. (At least I try but always trail off)</p>
             <br />

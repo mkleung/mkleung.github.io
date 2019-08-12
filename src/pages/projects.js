@@ -3,7 +3,6 @@ import { Link } from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import Codepen from "react-codepen-embed";
 import ProjectsImage from "../components/img/projectsImage"
 import RideauImage from "../components/img/RideauImage"
 import AngularImage from "../components/img/angularImage"
