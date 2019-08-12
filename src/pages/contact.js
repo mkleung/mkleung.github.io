@@ -1,6 +1,7 @@
 import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import ContactImage from "../components/img/contactImage"
 
 const ContactPage = () => (
   <Layout>
@@ -31,7 +32,7 @@ const ContactPage = () => (
             </form>
           </div>
           <div className="column is-6">
-
+            <ContactImage />
           </div>
           <div className="column is-6"></div>
         </div>

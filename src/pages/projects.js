@@ -4,6 +4,10 @@ import { Link } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Codepen from "react-codepen-embed";
+import ProjectsImage from "../components/img/projectsImage"
+import RideauImage from "../components/img/RideauImage"
+import AngularImage from "../components/img/angularImage"
+import DinnerImage from "../components/img/dinnerImage"
 
 const ProjectPage = () => (
   <Layout>
@@ -17,7 +21,7 @@ const ProjectPage = () => (
         </div>
 
         <div className="column is-6">     
-
+          <ProjectsImage />
         </div>
 
         <div className="column is-12">
@@ -28,7 +32,7 @@ const ProjectPage = () => (
         <div className="column is-6">
           <div className="card">
               <div className="card-image">
-
+                <DinnerImage />
               </div>
               <div className="card-content">
                 <div className="media">
@@ -49,7 +53,7 @@ const ProjectPage = () => (
         <div className="column is-6">
           <div className="card">
               <div className="card-image">
-
+                <RideauImage />
               </div>
               <div className="card-content">
                 <div className="media">
@@ -71,6 +75,7 @@ const ProjectPage = () => (
       <div className="column is-6">
           <div className="card">
               <div className="card-image">
+                <AngularImage />
               </div>
               <div className="card-content">
                 <div className="media">

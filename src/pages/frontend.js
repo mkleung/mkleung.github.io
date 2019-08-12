@@ -3,6 +3,7 @@ import { Link } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Codepen from "react-codepen-embed";
+import ProjectsImage from "../components/img/projectsImage"
 
 const FrontEndPage = () => (
   <Layout>
@@ -15,7 +16,7 @@ const FrontEndPage = () => (
             <p><Link to="/frontend">CSS</Link></p>
         </div>
         <div className="column is-6">     
-
+            <ProjectsImage />
         </div>
         <div className="column is-12">
           <h2 className="has-text-weight-bold">CSS Projects</h2>
@@ -152,6 +153,16 @@ const FrontEndPage = () => (
       <div className="column is-6">
           <Codepen
                 hash="eqYoYW"
+                user="mpakleung"
+                defaultTab="result"
+                loader={() => <div>Loading...</div>}
+              />
+        </div>
+
+             {/* Login Form */}
+      <div className="column is-6">
+          <Codepen
+                hash="LwwpKb"
                 user="mpakleung"
                 defaultTab="result"
                 loader={() => <div>Loading...</div>}

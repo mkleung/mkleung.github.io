@@ -6,9 +6,10 @@ date: "2019-08-10"
 
 ---
 
+
 ### What is Gatsby?
 
-Gatsby is a static site framework for react that makes websites extremely fast.
+Gatsby is a static site framework for react that makes websites extremely fast. Gatsby is part of JAMstack (Javascript, APIs, Markup)
 
 
 ### Step 1. Install Gatsby

@@ -3,6 +3,7 @@ import { Link } from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import HomeImage from "../components/img/homeImage"
 
 const IndexPage = () => (
   <Layout>
@@ -17,6 +18,7 @@ const IndexPage = () => (
             <p><Link className="button is-primary is-rounded"  to="/contact">Contact Me</Link></p>
           </div>
           <div className="column is-6">
+            <HomeImage />
           </div>
         </div>
       </div>
