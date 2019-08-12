@@ -23,3 +23,11 @@ article:hover {
     background-color: rgba(226,224,255, 0.4);
     transition: 0.3s ease;
 }
+
+.content {
+    ul {
+        p {
+            margin-bottom: 0!important;
+        }
+    }
+}
