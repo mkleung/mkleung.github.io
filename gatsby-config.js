@@ -8,18 +8,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
-        trackingId: "UA-47877166-4",
-        head: false,
-        anonymize: true,
-        respectDNT: true,
-        exclude: ["/preview/**", "/do-not-track/me/too/"],
-        pageTransitionDelay: 0,
-        optimizeId: "YOUR_GOOGLE_OPTIMIZE_TRACKING_ID",
-        experimentId: "YOUR_GOOGLE_EXPERIMENT_ID",
-        variationId: "28p74Ri8I3j6vKMJQdqPKwcZBAHesdBtQsa7EszKqNk",
-        sampleRate: 5,
-        siteSpeedSampleRate: 10,
-        cookieDomain: "mikeleung.ca",
+        trackingId: process.env.GOOGLE_ANALYTICS_TRACKING_ID || "none",
       },
     },
     `gatsby-plugin-react-helmet`,
@@ -32,7 +21,21 @@ module.exports = {
       },
     },
     `gatsby-transformer-sharp`,
-    `gatsby-transformer-remark`,
+    {
+      resolve: 'gatsby-transformer-remark',
+      options: {
+        plugins: [
+          'gatsby-remark-relative-images',
+          {
+            resolve: 'gatsby-remark-images',
+            options: {
+              maxWidth: 750,
+              linkImagesToOriginal: false
+            }
+          }
+        ]
+      }
+    },
     `gatsby-plugin-sharp`,
     {
       resolve: `gatsby-plugin-manifest`,

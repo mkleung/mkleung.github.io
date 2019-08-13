@@ -41,6 +41,7 @@ const Header = ({ siteTitle }) => {
                
                 <Link activeClassName="active" className="mobileMenu__item "  to="/about">About</Link>
                 <Link activeClassName="active" className="mobileMenu__item " to="/projects">Projects</Link>
+                <Link activeClassName="active" className="mobileMenu__item " to="/blog">Blog</Link>
                 <Link activeClassName="active" className="mobileMenu__item " to="/contact">Contact</Link>
               </div>
           </div>
@@ -52,6 +53,7 @@ const Header = ({ siteTitle }) => {
             <div className="buttons">
             <Link activeClassName="active" className="navbar-item is-secondary"  to="/about">About</Link>
             <Link activeClassName="active" className="navbar-item is-secondary" to="/projects">Projects</Link>
+            <Link activeClassName="active" className="navbar-item is-secondary" to="/blog">Blog</Link>
             <Link activeClassName="active" className="navbar-item is-secondary"  to="/contact">Contact</Link>
             </div>
         </div>

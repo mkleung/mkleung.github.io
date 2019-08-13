@@ -6,6 +6,7 @@ date: "2019-08-10"
 
 ---
 
+![Gatsby](./gatsby.png)
 
 ### What is Gatsby?
 
@@ -257,4 +258,38 @@ Then add the link inside **blog.js** page to link the single page
 
 When you load the blog page, you should be able to link to a single post page.
 
-Thanks for following my tutorial. The code can be found [here](https://github.com/mkleung/gatsby-bootcamp).
+
+### Step 7. Adding Images
+
+Install the following packages
+
+```
+npm install gatsby-plugin-sharp@2.0.32 gatsby-remark-images@3.0.10 gatsby-remark-relative-images@0.2.2
+```
+
+Then add this into the plugins of gatsby-config.js
+
+```
+    `gatsby-plugin-sharp`,
+    {
+      resolve: 'gatsby-transformer-remark',
+      options: {
+        plugins: [
+          'gatsby-remark-relative-images',
+          {
+            resolve: 'gatsby-remark-images',
+            options: {
+              maxWidth: 750,
+              linkImagesToOriginal: false
+            }
+          }
+        ]
+      }
+    },
+
+```
+
+
+### Conclusion
+
+Thanks for following my tutorial. I hope you had fun. The code can be found [here](https://github.com/mkleung/gatsby-bootcamp).
