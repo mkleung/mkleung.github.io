@@ -1,21 +1,39 @@
 import React from "react"
-import { Link } from 'gatsby'
+import { graphql, Link } from 'gatsby'
 import Layout from "../components/layout"
 
-const PostPage = (props) => (
-  <Layout>
-    <div className="hero-body">
-      <div className="container">
-        <div className="columns is-vcentered is-multiline">
-        <div className="column is-12">
-          Test
+export default ({ data }) => {
+  const post = data.markdownRemark
+    return (
+      <Layout>
+        <div className="hero-body">
+          <div className="container">
+            <div className="columns is-vcentered is-multiline">
+            <div className="column is-12">
+                <Link className="button is-primary is-rounded" to="/blog"><i className="fas fa-chevron-left"></i>&nbsp;<span> Back</span></Link>
+              </div>
+              <div className="column is-12 landing-caption content">
+              <h1 className="title is-1 is-bold is-spaced">{post.frontmatter.title}</h1>
+              <p>{post.frontmatter.date}</p>
+              <div dangerouslySetInnerHTML={{ __html: post.html }} />
+              </div>
+              
+            </div>
           </div>
-          
         </div>
-      </div>
-    </div>
+      </Layout>
+    )
 
-  </Layout>
-)
+}
 
-export default PostPage
+export const query = graphql`
+  query($slug: String!) {
+    markdownRemark(fields: { slug: { eq: $slug } }) {
+      html
+      frontmatter {
+        title
+        date(formatString: "MMMM Do, YYYY")
+      }
+    }
+  }
+`
