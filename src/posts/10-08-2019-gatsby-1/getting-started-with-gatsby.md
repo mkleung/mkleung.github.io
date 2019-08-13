@@ -288,7 +288,11 @@ Then add this into the plugins of gatsby-config.js
     },
 
 ```
+To add an image inside your markdown file, enter the following
 
+```
+![Gatsby](./gatsby.png)
+```
 
 ### Conclusion
 

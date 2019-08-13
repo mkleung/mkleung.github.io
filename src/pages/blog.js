@@ -28,7 +28,7 @@ const BlogPage = () => {
             <div className="hero-body">
             <div className="container">
                 <div className="columns is-vcentered is-multiline">
-                <div className="column is-8 landing-caption">
+                <div className="column is-10 landing-caption">
                     <h1 className="title is-1 is-bold is-spaced">Blog</h1>
 
 
