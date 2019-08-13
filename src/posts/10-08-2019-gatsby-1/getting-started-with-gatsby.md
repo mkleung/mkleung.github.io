@@ -77,7 +77,7 @@ https://www.netlify.com/blog/2016/02/24/a-step-by-step-guide-gatsby-on-netlify/
 
 Inside **gatsby.config.js**, add this
 
-```
+```javascript
 module.exports = {
 siteMetadata: {
   title: `Title of the website`,
@@ -88,7 +88,7 @@ siteMetadata: {
 
 Then inside the **header.js** page (which should be provided)
 
-```
+```javascript
 import { graphyql, useStaticQuery } from 'gatsby'
 const Header = () => {
     const data - useStaticQuery(graphql`
@@ -101,7 +101,7 @@ const Header = () => {
 
 To inject the site title, use this line of code inside your header
 
-```
+```javascript
 { data.site.siteMetadata.title }
 ```
 
@@ -120,13 +120,13 @@ The first one pulls content from an external source. The second one transforms t
 
 **Install Gatsby-Source-Filesystem plugin**
 
-```
+```javascript
 npm install gatsby-source-filesystem@2.0.28
 ```
 
 Add this to **gatsby.config.js**
 
-```
+```javascript
 {
   resolve: `gatsby-source-filesystem`,
    options: {
@@ -147,7 +147,7 @@ Then update the gatsby.config.js file with 'gatsby-transformer-remark'
 
 Create a **blog.js** and add the following
 
-```
+```javascript
 import {graphql, useStaticQuery, Link } from 'gatsby'
 
 const data=useStaticQuery( graphql`
@@ -182,7 +182,7 @@ We then need to generate unique urls for each post.
 
 Then inside **gatsby-node.js**
 
-```
+```javascript
 const path = require(`path`)
 
 module.exports.onCreateNode = ({ node, actions}) => {
@@ -229,7 +229,7 @@ res.data.allMarkdownRemark.edges.forEach((edge) => {
 
 Then create a file inside  **src/templates/post.js** to display the content of a single post
 
-```
+```javascript
 export const query = graphql`
     query($slug: String!) {
         markdownRemark(fields: { slug: { eq: $slug } }) {
@@ -269,7 +269,7 @@ npm install gatsby-plugin-sharp@2.0.32 gatsby-remark-images@3.0.10 gatsby-remark
 
 Then add this into the plugins of gatsby-config.js
 
-```
+```javascript
     `gatsby-plugin-sharp`,
     {
       resolve: 'gatsby-transformer-remark',
