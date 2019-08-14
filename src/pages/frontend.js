@@ -13,7 +13,8 @@ const FrontEndPage = () => (
           <div className="column is-6 landing-caption">
             <h1 className="title is-1 is-bold is-spaced">Projects</h1>
             <p><Link to="/projects">Javascript</Link></p>
-            <p><Link to="/frontend">CSS</Link></p>
+            <p><Link to="/frontend" className="green">CSS</Link></p>
+            <p><Link to="/ui">User Interface</Link></p>
         </div>
         <div className="column is-6">     
             <ProjectsImage />
@@ -153,16 +154,6 @@ const FrontEndPage = () => (
       <div className="column is-6">
           <Codepen
                 hash="eqYoYW"
-                user="mpakleung"
-                defaultTab="result"
-                loader={() => <div>Loading...</div>}
-              />
-        </div>
-
-             {/* Login Form */}
-      <div className="column is-6">
-          <Codepen
-                hash="LwwpKb"
                 user="mpakleung"
                 defaultTab="result"
                 loader={() => <div>Loading...</div>}

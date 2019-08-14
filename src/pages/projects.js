@@ -12,8 +12,9 @@ const ProjectPage = () => (
         <div className="columns is-vcentered is-multiline">
           <div className="column is-6 landing-caption">
             <h1 className="title is-1 is-bold is-spaced">Projects</h1>
-            <p><Link to="/projects">Javascript</Link></p>
+            <p><Link  className="green" to="/projects">Javascript</Link></p>
             <p><Link to="/frontend">CSS</Link></p>
+            <p><Link to="/ui">User Interface</Link></p>
         </div>
 
         <div className="column is-6">     
@@ -87,11 +88,30 @@ const ProjectPage = () => (
               </div>
             </div>
         </div>
+
+
+      {/* Mike Theme */}
+      <div className="column is-6">
+          <div className="card">
+              <div className="card-image">
+              
+              </div>
+              <div className="card-content">
+                <div className="media">
+                  <div className="media-content">
+                    <p className="title is-4">Mike Gatsby Theme</p>
+                  </div>
+                </div>
+                <div className="content">
+                  <p>This is a personal theme used to host projects.</p>
+                  <p>Built with Gatsby, React, Bulma and Netlify</p>
+                  <p><a className="button is-primary is-rounded" target="_blank" rel="noopener noreferrer" href="https://github.com/mkleung/mkleung.github.io">Source</a></p>
+                </div>
+              </div>
+            </div>
+        </div>
   
         </div>
-
-      
-
       </div>
     </div>
     <div className="columns is-multiline">

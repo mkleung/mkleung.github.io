@@ -1,9 +1,15 @@
+$primary-color: #00d1b2;
+
 body {
     font-family: 'Raleway', sans-serif;
 }
 
+.green {
+    color: $primary-color;
+}
+
 a:hover {
-    color: #00d1b2;
+    color: $primary-color;
 }
 
 iframe {

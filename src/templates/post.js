@@ -1,7 +1,7 @@
 import React from "react"
 import { graphql, Link } from 'gatsby'
 import Layout from "../components/layout"
-require("../components/prism-coy.css")
+require("../components/prism-islaNueva.css")
 
 export default ({ data }) => {
   const post = data.markdownRemark
