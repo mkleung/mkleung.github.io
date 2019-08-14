@@ -108,37 +108,6 @@ const FrontEndPage = () => (
               />
         </div>
 
-             {/* Word Carousel 73 */}
-     <div className="column is-6">
-          <Codepen
-                hash="mZxOQe"
-                user="mpakleung"
-                defaultTab="result"
-                loader={() => <div>Loading...</div>}
-              />
-        </div>
-
-        
-             {/* Keyboard 71 */}
-     <div className="column is-6">
-          <Codepen
-                hash="WqMQJP"
-                user="mpakleung"
-                defaultTab="result"
-                loader={() => <div>Loading...</div>}
-              />
-        </div>
-
-                
-             {/* Gradient 61 */}
-     <div className="column is-6">
-          <Codepen
-                hash="WqopWx"
-                user="mpakleung"
-                defaultTab="result"
-                loader={() => <div>Loading...</div>}
-              />
-        </div>
         
      {/* Pig */}
      <div className="column is-6">
@@ -181,6 +150,27 @@ const FrontEndPage = () => (
         </div>
 
            
+      {/* Toggle Night and Day  */}
+    <div className="column is-6">
+          <Codepen
+                hash="ymRowy"
+                user="mpakleung"
+                defaultTab="result"
+                loader={() => <div>Loading...</div>}
+              />
+        </div>
+
+        {/* Panda */}
+        <div className="column is-6">
+          <Codepen
+                hash="ZZRmdz"
+                user="mpakleung"
+                defaultTab="result"
+                loader={() => <div>Loading...</div>}
+              />
+        </div>
+
+           
         {/* TRex */}
         <div className="column is-6">
           <Codepen
@@ -200,9 +190,33 @@ const FrontEndPage = () => (
                 loader={() => <div>Loading...</div>}
               />
         </div>
+
         
-        {/* React */}
-           <div className="column is-6">
+
+             {/* Word Carousel 73 */}
+     <div className="column is-6">
+          <Codepen
+                hash="mZxOQe"
+                user="mpakleung"
+                defaultTab="result"
+                loader={() => <div>Loading...</div>}
+              />
+        </div>
+
+        
+             {/* Keyboard 71 */}
+     <div className="column is-6">
+          <Codepen
+                hash="WqMQJP"
+                user="mpakleung"
+                defaultTab="result"
+                loader={() => <div>Loading...</div>}
+              />
+        </div>
+
+        
+        {/* React Atom #65 */}
+        <div className="column is-6">
           <Codepen
                 hash="vqmeYR"
                 user="mpakleung"
@@ -211,7 +225,19 @@ const FrontEndPage = () => (
               />
         </div>
 
-       {/* Stars */}
+
+                
+             {/* Gradient 61 */}
+     <div className="column is-6">
+          <Codepen
+                hash="WqopWx"
+                user="mpakleung"
+                defaultTab="result"
+                loader={() => <div>Loading...</div>}
+              />
+        </div>
+
+               {/* Stars #42 */}
        <div className="column is-6">
           <Codepen
                 hash="QRJpEP"
@@ -221,8 +247,7 @@ const FrontEndPage = () => (
               />
         </div>
 
-        
-    {/* Hello */}
+    {/* Hello #34 */}
     <div className="column is-6">
       <Codepen
             hash="arqjYP"
@@ -232,6 +257,8 @@ const FrontEndPage = () => (
           />
     </div>
 
+
+        
         {/* Checklist #27 */}
         <div className="column is-6">
       <Codepen
@@ -256,6 +283,16 @@ const FrontEndPage = () => (
     <div className="column is-6">
       <Codepen
             hash="vwGErv"
+            user="mpakleung"
+            defaultTab="result"
+            loader={() => <div>Loading...</div>}
+          />
+    </div>
+
+            {/* Penrose Triange 17 */}
+            <div className="column is-6">
+      <Codepen
+            hash="NWKNxaG"
             user="mpakleung"
             defaultTab="result"
             loader={() => <div>Loading...</div>}
@@ -294,26 +331,7 @@ const FrontEndPage = () => (
               />
         </div>
 
-        
-      {/* Toggle Night and Day  */}
-    <div className="column is-6">
-          <Codepen
-                hash="ymRowy"
-                user="mpakleung"
-                defaultTab="result"
-                loader={() => <div>Loading...</div>}
-              />
-        </div>
-
-        {/* Panda */}
-        <div className="column is-6">
-          <Codepen
-                hash="ZZRmdz"
-                user="mpakleung"
-                defaultTab="result"
-                loader={() => <div>Loading...</div>}
-              />
-        </div>
+     
 
         {/* 100 Days 6 */}
         <div className="column is-6">
