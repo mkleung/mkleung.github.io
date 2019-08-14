@@ -4,14 +4,6 @@ import "../header/header.scss"
 
 const Header = ({  siteTitle }) => {
 
-  var currentLocation = window.location.pathname;
-  console.log(currentLocation);
-
-  let activeLink = 'navbar-item is-secondary ';
-  if ((currentLocation.includes('projects')) || (currentLocation.includes('frontend')) || (currentLocation.includes('ui'))) {
-    activeLink += 'active';
-  }
-
   const data = useStaticQuery( graphql`
   query {
       site {
@@ -48,7 +40,6 @@ const Header = ({  siteTitle }) => {
               <span className="second"></span>
               <span className="third"></span>
               <div className="mobileMenu">
-               
                 <Link activeClassName="active" className="mobileMenu__item "  to="/about">About</Link>
                 <Link activeClassName="active" className="mobileMenu__item " to="/projects">Projects</Link>
                 <Link activeClassName="active" className="mobileMenu__item " to="/blog">Blog</Link>
@@ -62,8 +53,7 @@ const Header = ({  siteTitle }) => {
         <div className="navbar-item">
             <div className="buttons">
             <Link activeClassName="active" className="navbar-item is-secondary"  to="/about">About</Link>
-
-            <Link className={activeLink} to="/projects">Projects</Link>
+            <Link  className="navbar-item is-secondary"  to="/projects">Projects</Link>
             <Link activeClassName="active" className="navbar-item is-secondary" to="/blog">Blog</Link>
             <Link activeClassName="active" className="navbar-item is-secondary"  to="/contact">Contact</Link>
             </div>

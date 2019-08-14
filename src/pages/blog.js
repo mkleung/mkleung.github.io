@@ -8,7 +8,7 @@ import SEO from "../components/seo"
 const BlogPage = () => {
     const data = useStaticQuery( graphql`
     query {
-        allMarkdownRemark {
+        allMarkdownRemark(sort: { fields: [frontmatter___date], order: ASC }, limit: 1) {
             edges {
                 node {
                     frontmatter {
