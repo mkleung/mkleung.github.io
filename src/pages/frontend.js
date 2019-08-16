@@ -108,6 +108,16 @@ const FrontEndPage = () => (
               />
         </div>
 
+             {/* CSS Hover */}
+     <div className="column is-6">
+          <Codepen
+                hash="wvwGQGm"
+                user="mpakleung"
+                defaultTab="result"
+                loader={() => <div>Loading...</div>}
+              />
+        </div>
+
         
      {/* Pig */}
      <div className="column is-6">
