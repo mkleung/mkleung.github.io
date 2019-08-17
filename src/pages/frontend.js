@@ -298,6 +298,15 @@ const FrontEndPage = () => (
             loader={() => <div>Loading...</div>}
           />
     </div>
+              {/* Email 20 */}
+              <div className="column is-6">
+      <Codepen
+            hash="xxKOXxz"
+            user="mpakleung"
+            defaultTab="result"
+            loader={() => <div>Loading...</div>}
+          />
+    </div>
 
             {/* Penrose Triange 17 */}
             <div className="column is-6">
