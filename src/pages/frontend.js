@@ -289,6 +289,16 @@ const FrontEndPage = () => (
               />
         </div>
 
+      {/* Circular SVG 22 */}
+                      <div className="column is-6">
+      <Codepen
+            hash="JjPRKaY"
+            user="mpakleung"
+            defaultTab="result"
+            loader={() => <div>Loading...</div>}
+          />
+    </div>
+
           {/* Pacman 21 */}
     <div className="column is-6">
       <Codepen
