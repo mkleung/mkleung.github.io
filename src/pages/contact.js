@@ -16,8 +16,8 @@ const ContactPage = () => (
               <label className="label">Email</label>
               <div className="control has-icons-left has-icons-right">
                   <input name="_replyto" className="input" type="email" placeholder="email@email.com"  />
-                  <span class="icon is-small is-left">
-                    <i class="fas fa-user"></i>
+                  <span className="icon is-small is-left">
+                    <i className="fas fa-user"></i>
                   </span>
               </div>
             </div>

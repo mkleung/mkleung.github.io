@@ -16,7 +16,6 @@ const Header = ({  siteTitle }) => {
   return (
  <div>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
-  
     <div className="wave wave1"></div>
     <div className="wave wave2"></div>
     <div className="wave wave3"></div>
