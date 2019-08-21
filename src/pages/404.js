@@ -5,7 +5,7 @@ import SEO from "../components/seo"
 import Four from '../components/404/404.js'
 
 const NotFoundPage = () => (
- <Layout>
+  <Layout>
     <div className="hero-body">
       <div className="container">
         <div className="columns is-vcentered is-multiline">
@@ -14,7 +14,6 @@ const NotFoundPage = () => (
           </div>
           <div className="column is-6 is-offset-3 has-text-centered">
             <h2 className="title is-1 is-bold is-spaced">404! Not Found!</h2>
-           
           </div>
         </div>
       </div>

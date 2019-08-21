@@ -1,35 +1,29 @@
 import React from "react"
-import { Link } from "gatsby"
-
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import ProjectsImage from "../components/img/projectsImage"
+import Projectsnav from "../components/projectsnav"
+
+const data = "projects"
 
 const ProjectPage = () => (
   <Layout>
     <div className="hero-body">
       <div className="container">
         <div className="columns is-vcentered is-multiline">
-          <div className="column is-6 landing-caption">
-            <h1 className="title is-1 is-bold is-spaced">Projects</h1>
-            <p><Link  className="green" to="/projects">Javascript</Link></p>
-            <p><Link to="/frontend">CSS</Link></p>
-            <p><Link to="/ui">User Interface</Link></p>
-        </div>
+          <Projectsnav data={data} />
+          <div className="column is-6">
+            <ProjectsImage />
+          </div>
 
-        <div className="column is-6">     
-          <ProjectsImage />
-        </div>
+          <div className="column is-12">
+            <h2 className="has-text-weight-bold">Javascript Projects</h2>
+          </div>
 
-        <div className="column is-12">
-         <h2 className="has-text-weight-bold">Javascript Projects</h2>
-        </div>
-
-        {/* Decision Maker */}
-        <div className="column is-6">
-          <div className="card">
+          {/* Decision Maker */}
+          <div className="column is-6">
+            <div className="card">
               <div className="card-image">
-            
               </div>
               <div className="card-content">
                 <div className="media">
@@ -44,13 +38,12 @@ const ProjectPage = () => (
                 </div>
               </div>
             </div>
-        </div>
+          </div>
 
-        {/* Rideau Canal Ice */}
-        <div className="column is-6">
-          <div className="card">
+          {/* Rideau Canal Ice */}
+          <div className="column is-6">
+            <div className="card">
               <div className="card-image">
-              
               </div>
               <div className="card-content">
                 <div className="media">
@@ -65,14 +58,12 @@ const ProjectPage = () => (
                 </div>
               </div>
             </div>
-        </div>
+          </div>
 
-
-      {/* Angular Multi Step */}
-      <div className="column is-6">
-          <div className="card">
+          {/* Angular Multi Step */}
+          <div className="column is-6">
+            <div className="card">
               <div className="card-image">
-              
               </div>
               <div className="card-content">
                 <div className="media">
@@ -87,14 +78,12 @@ const ProjectPage = () => (
                 </div>
               </div>
             </div>
-        </div>
+          </div>
 
-
-      {/* Mike Theme */}
-      <div className="column is-6">
-          <div className="card">
+          {/* Mike Theme */}
+          <div className="column is-6">
+            <div className="card">
               <div className="card-image">
-              
               </div>
               <div className="card-content">
                 <div className="media">
@@ -109,20 +98,16 @@ const ProjectPage = () => (
                 </div>
               </div>
             </div>
-        </div>
-  
+          </div>
+
         </div>
       </div>
     </div>
     <div className="columns is-multiline">
-          
-          <div className="column">
-            
-          </div>
-          
-        </div>
-
-        <SEO title="Projects" />
+      <div className="column">
+      </div>
+    </div>
+    <SEO title="Projects" />
   </Layout>
 )
 

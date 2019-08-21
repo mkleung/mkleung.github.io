@@ -16,13 +16,13 @@ const AboutPage = () => (
             <br />
             <br />
             <p>
-              <span className="has-margin-right-20"><a target="_blank" rel="noopener noreferrer"  href="https://codepen.io/mpakleung/"><i className="fab fa-codepen"></i></a></span>
-              <span className="has-margin-right-20"><a  target="_blank" rel="noopener noreferrer"  href="https://www.instagram.com/morningmike/"><i className="fab fa-instagram"></i></a></span>
-              <span><a  target="_blank" rel="noopener noreferrer" href="https://github.com/mkleung"><i className="fab fa-github"></i></a></span>
+              <span className="has-margin-right-20"><a target="_blank" rel="noopener noreferrer" href="https://codepen.io/mpakleung/"><i className="fab fa-codepen"></i></a></span>
+              <span className="has-margin-right-20"><a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/morningmike/"><i className="fab fa-instagram"></i></a></span>
+              <span><a target="_blank" rel="noopener noreferrer" href="https://github.com/mkleung"><i className="fab fa-github"></i></a></span>
             </p>
           </div>
           <div className="column is-6">
-              <AboutImage />
+            <AboutImage />
           </div>
         </div>
       </div>
