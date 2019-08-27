@@ -5,16 +5,16 @@ import Codepen from "react-codepen-embed";
 import ProjectsImage from "../components/img/projectsImage"
 import Projectsnav from "../components/projectsnav"
 
-const data = "frontend"
 
 const FrontEndPage = () => (
-      <Layout>
+      <Layout navLocation="project">
             <div className="hero-body">
                   <div className="container">
                         <div className="columns is-vcentered is-multiline">
-                              <Projectsnav data={data} />
+                              <Projectsnav project="frontend" />
                               <div className="column is-6">
                                     <ProjectsImage />
+
                               </div>
                               <div className="column is-12">
                                     <h2 className="has-text-weight-bold">100 Days of CSS</h2>
@@ -250,7 +250,7 @@ const FrontEndPage = () => (
                                     />
                               </div>
 
-                                {/* Line  #30 */}
+                              {/* Line  #30 */}
                               <div className="column is-6">
                                     <Codepen
                                           hash="RwbVgyO"
@@ -260,7 +260,7 @@ const FrontEndPage = () => (
                                     />
                               </div>
 
-                                 {/* Searchbox  #29 */}
+                              {/* Searchbox  #29 */}
                               <div className="column is-6">
                                     <Codepen
                                           hash="wvwJOpK"
@@ -280,7 +280,7 @@ const FrontEndPage = () => (
                                     />
                               </div>
 
-                               {/* Modal #26 */}
+                              {/* Modal #26 */}
                               <div className="column is-6">
                                     <Codepen
                                           hash="JjPErEy"
@@ -390,7 +390,7 @@ const FrontEndPage = () => (
                                     />
                               </div>
 
-                        {/* Loading #26 */}
+                              {/* Loading #26 */}
                               <div className="column is-6">
                                     <Codepen
                                           hash="BaBWyjZ"

@@ -4,14 +4,12 @@ import SEO from "../components/seo"
 import ProjectsImage from "../components/img/projectsImage"
 import Projectsnav from "../components/projectsnav"
 
-const data = "projects"
-
 const ProjectPage = () => (
-  <Layout>
+  <Layout navLocation="project">
     <div className="hero-body">
       <div className="container">
         <div className="columns is-vcentered is-multiline">
-          <Projectsnav data={data} />
+          <Projectsnav project="project" />
           <div className="column is-6">
             <ProjectsImage />
           </div>
