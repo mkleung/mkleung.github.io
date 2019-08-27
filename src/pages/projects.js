@@ -5,7 +5,7 @@ import ProjectsImage from "../components/img/projectsImage"
 import Projectsnav from "../components/projectsnav"
 
 const ProjectPage = () => (
-  <Layout navLocation="project">
+  <Layout>
     <div className="hero-body">
       <div className="container">
         <div className="columns is-vcentered is-multiline">
