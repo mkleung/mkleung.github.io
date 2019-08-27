@@ -24,7 +24,7 @@ const BlogPage = () => {
     }
 `)
     return (
-        <Layout>
+        <Layout navLocation="blog">
             <div className="hero-body">
                 <div className="container">
                     <div className="columns is-vcentered is-multiline">

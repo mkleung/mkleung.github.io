@@ -6,7 +6,7 @@ import ProjectsImage from "../components/img/projectsImage"
 import Projectsnav from "../components/projectsnav"
 
 const UIPage = () => (
-    <Layout>
+    <Layout navLocation="project">
         <div className="hero-body">
             <div className="container">
                 <div className="columns is-vcentered is-multiline">

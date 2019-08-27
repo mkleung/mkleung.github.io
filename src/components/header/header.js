@@ -2,7 +2,7 @@ import React from "react"
 import { Link, graphql, useStaticQuery } from "gatsby"
 import "../header/header.scss"
 
-const Header = ({ siteTitle }) => {
+const Header = ({ siteTitle, navLocation }) => {
 
   const data = useStaticQuery(graphql`
   query {
@@ -14,10 +14,11 @@ const Header = ({ siteTitle }) => {
   }
 `)
 
+  const projectNav = navLocation === "project" ? "navbar-item is-secondary active" : "navbar-item is-secondary";
+  const blogNav = navLocation === "blog" ? "navbar-item is-secondary active" : "navbar-item is-secondary";
 
   return (
     <div>
-
       <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
       <div className="wave wave1"></div>
       <div className="wave wave2"></div>
@@ -49,8 +50,8 @@ const Header = ({ siteTitle }) => {
           <div className="navbar-item">
             <div className="buttons">
               <Link activeClassName="active" className="navbar-item is-secondary" to="/about">About</Link>
-              <Link className="navbar-item is-secondar" to="/projects">Projects</Link>
-              <Link activeClassName="active" className="navbar-item is-secondar" to="/blog">Blog</Link>
+              <Link className={projectNav} to="/projects">Projects</Link>
+              <Link className={blogNav} to="/blog">Blog</Link>
               <Link activeClassName="active" className="navbar-item is-secondary" to="/contact">Contact</Link>
             </div>
           </div>

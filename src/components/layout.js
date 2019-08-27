@@ -13,7 +13,7 @@ import Footer from "./footer/footer"
 import "./layout.scss"
 
 
-const Layout = ({ children }) => {
+const Layout = ({ navLocation, children }) => {
   return (
     <div>
       <link href="https://fonts.googleapis.com/css?family=Raleway:300" rel="stylesheet"></link>
@@ -21,7 +21,7 @@ const Layout = ({ children }) => {
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.5.0/themes/prism.min.css" />
       <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.5.0/prism.min.js"></script>
 
-      <Header />
+      <Header navLocation={navLocation} />
 
       <div
         style={{
