@@ -250,10 +250,50 @@ const FrontEndPage = () => (
                                     />
                               </div>
 
+                                {/* Line  #30 */}
+                              <div className="column is-6">
+                                    <Codepen
+                                          hash="RwbVgyO"
+                                          user="mpakleung"
+                                          defaultTab="result"
+                                          loader={() => <div>Loading...</div>}
+                                    />
+                              </div>
+
+                                 {/* Searchbox  #29 */}
+                              <div className="column is-6">
+                                    <Codepen
+                                          hash="wvwJOpK"
+                                          user="mpakleung"
+                                          defaultTab="result"
+                                          loader={() => <div>Loading...</div>}
+                                    />
+                              </div>
+
                               {/* Checklist #27 */}
                               <div className="column is-6">
                                     <Codepen
                                           hash="pmPzEq"
+                                          user="mpakleung"
+                                          defaultTab="result"
+                                          loader={() => <div>Loading...</div>}
+                                    />
+                              </div>
+
+                               {/* Modal #26 */}
+                              <div className="column is-6">
+                                    <Codepen
+                                          hash="JjPErEy"
+                                          user="mpakleung"
+                                          defaultTab="result"
+                                          loader={() => <div>Loading...</div>}
+                                    />
+                              </div>
+
+                              {/* Button 25 */}
+                              <div className="column is-6">
+                                    <Codepen
+                                          hash="dybNYQP"
                                           user="mpakleung"
                                           defaultTab="result"
                                           loader={() => <div>Loading...</div>}
@@ -344,6 +384,16 @@ const FrontEndPage = () => (
                               <div className="column is-6">
                                     <Codepen
                                           hash="ZgXjOr"
+                                          user="mpakleung"
+                                          defaultTab="result"
+                                          loader={() => <div>Loading...</div>}
+                                    />
+                              </div>
+
+                        {/* Loading #26 */}
+                              <div className="column is-6">
+                                    <Codepen
+                                          hash="BaBWyjZ"
                                           user="mpakleung"
                                           defaultTab="result"
                                           loader={() => <div>Loading...</div>}
