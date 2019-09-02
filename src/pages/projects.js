@@ -5,15 +5,15 @@ import ProjectsImage from "../components/img/projectsImage"
 import Projectsnav from "../components/projectsnav"
 
 import Rideauimage from "../components/img/rideauImage"
-import Dinnerimage from "../components/img/dinnerimage"
+import Dinnerimage from "../components/img/dinnerImage"
 import Angularimage from "../components/img/angularImage"
 
 import Project1 from "../components/img/projects/project1"
 import Project2 from "../components/img/projects/project2"
-import Project3 from "../components/img/projects/Project3";
+import Project3 from "../components/img/projects/project3";
 import Project4 from "../components/img/projects/project4"
 import Project5 from "../components/img/projects/project5"
-import Project6 from "../components/img/projects/Project6";
+import Project6 from "../components/img/projects/project6";
 import Project7 from "../components/img/projects/project7"
 import Project8 from "../components/img/projects/project8"
 
