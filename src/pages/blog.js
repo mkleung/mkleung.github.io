@@ -2,8 +2,8 @@ import React from "react"
 import { graphql, useStaticQuery, Link } from 'gatsby'
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-
-
+import ProjectsImage from "../components/img/projectsImage"
+import Projectsnav from "../components/projectsnav"
 
 const BlogPage = () => {
     const data = useStaticQuery(graphql`
@@ -28,8 +28,12 @@ const BlogPage = () => {
             <div className="hero-body">
                 <div className="container">
                     <div className="columns is-vcentered is-multiline">
+                        <Projectsnav project="blog" />
+                        <div className="column is-6">
+                            <ProjectsImage />
+                        </div>
                         <div className="column is-10 landing-caption">
-                            <h1 className="title is-1 is-bold is-spaced">Blog</h1>
+
                             {data.allMarkdownRemark.edges.map((edge) => {
                                 return (
                                     <Link to={`/blog/${edge.node.fields.slug}`} key={edge.node.frontmatter.title}>

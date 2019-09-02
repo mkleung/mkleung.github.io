@@ -5,7 +5,6 @@ import Codepen from "react-codepen-embed";
 import ProjectsImage from "../components/img/projectsImage"
 import Projectsnav from "../components/projectsnav"
 
-
 const FrontEndPage = () => (
       <Layout navLocation="project">
             <div className="hero-body">
@@ -44,6 +43,26 @@ const FrontEndPage = () => (
                               <div className="column is-6">
                                     <Codepen
                                           hash="RXYvrE"
+                                          user="mpakleung"
+                                          defaultTab="result"
+                                          loader={() => <div>Loading...</div>}
+                                    />
+                              </div>
+
+                              {/* Gradient Website */}
+                              <div className="column is-6">
+                                    <Codepen
+                                          hash="MWgKrgb"
+                                          user="mpakleung"
+                                          defaultTab="result"
+                                          loader={() => <div>Loading...</div>}
+                                    />
+                              </div>
+
+                              {/* Login Form */}
+                              <div className="column is-6">
+                                    <Codepen
+                                          hash="LwwpKb"
                                           user="mpakleung"
                                           defaultTab="result"
                                           loader={() => <div>Loading...</div>}

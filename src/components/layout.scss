@@ -6,11 +6,13 @@ body {
 
 .green {
 	color: $primary-color;
+	font-weight: bold;
 	border-bottom: 2px solid $primary-color;
 }
 
 a:hover {
 	color: $primary-color;
+	font-weight: bold;
 }
 
 iframe {
@@ -48,6 +50,14 @@ article:hover {
 		}
 	}
 
+	.button {
+		margin-right: 20px;
+	}
+
+	.button.is-primary {
+		background: #3273dc;
+	}
+
 	pre {
 		padding: 0 !important;
 		border-radius: 5px;
@@ -58,4 +68,15 @@ article:hover {
 	.task-list-item {
 		list-style-type: none;
 	}
+
+}
+
+.card-content {
+	.title {
+		font-size: 1em;
+	}
+}
+
+.projectLink {
+	margin-bottom: 5px;
 }

@@ -14,9 +14,8 @@ const Header = ({ siteTitle, navLocation }) => {
   }
 `)
 
-  const projectNav = navLocation === "project" ? "navbar-item is-secondary active" : "navbar-item is-secondary";
-  const blogNav = navLocation === "blog" ? "navbar-item is-secondary active" : "navbar-item is-secondary";
-
+  const projectNav = navLocation === "project" || navLocation === "blog" ? "navbar-item is-secondary active" : "navbar-item is-secondary";
+  console.log(navLocation)
   return (
     <div>
       <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
@@ -41,7 +40,6 @@ const Header = ({ siteTitle, navLocation }) => {
             <div className="mobileMenu">
               <Link activeClassName="active" className="mobileMenu__item " to="/about">About</Link>
               <Link activeClassName="active" className="mobileMenu__item " to="/projects">Projects</Link>
-              <Link activeClassName="active" className="mobileMenu__item " to="/blog">Blog</Link>
               <Link activeClassName="active" className="mobileMenu__item " to="/contact">Contact</Link>
             </div>
           </div>
@@ -51,7 +49,6 @@ const Header = ({ siteTitle, navLocation }) => {
             <div className="buttons">
               <Link activeClassName="active" className="navbar-item is-secondary" to="/about">About</Link>
               <Link className={projectNav} to="/projects">Projects</Link>
-              <Link className={blogNav} to="/blog">Blog</Link>
               <Link activeClassName="active" className="navbar-item is-secondary" to="/contact">Contact</Link>
             </div>
           </div>
