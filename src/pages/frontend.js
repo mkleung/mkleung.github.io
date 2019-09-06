@@ -60,7 +60,7 @@ class FrontEndPage extends React.Component {
                                                 <h2 className="has-text-weight-bold">100 Days of CSS</h2>
                                           </div>
 
-                                          {frontendData.slice(0, this.state.pageNumber).map(item => {
+                                          {frontendData.map(item => {
                                                 return (
                                                       <div key={item.id} className="column is-6 css-1">
                                                             <Codepen
