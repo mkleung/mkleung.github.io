@@ -1,6 +1,8 @@
 $primary-color: linear-gradient(270deg, #96c93d, #00b09b);
-
-// $primary-color: -webkit-linear-gradient(bottom left, #1c92d2 0%, #ccff33 100%);
+$first: rgba(108, 99, 255, 0.4);
+$second: #00d1b2;
+// $first: #00b09b;
+// $second: #96c93d;
 
 body {
 	font-family: 'Raleway',
@@ -8,12 +10,23 @@ body {
 }
 
 .greenButton {
-	background: $primary-color;
-	color: #FFF;
+	// padding: .75rem 1.25rem;
 
-	&:hover,
-	&:active,
+	font-weight: 700;
+	border: none;
+	color: #FFF;
+	background-color: #00d1b2;
+	background-image: linear-gradient(to right, $first 0%, $second 51%, $first 100%);
+
+	transition: background 0.5s ease;
+	background-size: 300% auto;
+
 	&:focus {
+		color: #FFF;
+	}
+
+	&:hover {
+		background-position: right center;
 		color: #FFF;
 	}
 }
