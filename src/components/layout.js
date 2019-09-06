@@ -11,18 +11,13 @@ import 'bulma/css/bulma.css'
 import Header from "./header/header"
 import Footer from "./footer/footer"
 import "./layout.scss"
-
-
 const Layout = ({ navLocation, children }) => {
-
-
   return (
     <div>
 
       <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet" />
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css" />
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.5.0/themes/prism.min.css" />
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.5.0/prism.min.js"></script>
+      {/* <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.5.0/themes/prism.min.css" /> */}
 
       <Header navLocation={navLocation} />
 

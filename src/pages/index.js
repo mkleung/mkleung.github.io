@@ -9,7 +9,7 @@ const IndexPage = () => (
   <Layout>
     <div className="hero-body">
       <div className="container">
-        <div className="columns is-vcentered is-multiline">
+        <div className="columns is-vcentered is-multiline main-feature">
           <div className="column is-6 landing-caption content">
             <h1 className="title is-bold is-spaced">Hello!</h1>
             <p>My name is Michael Leung and I have five years of experience in <strong>WordPress</strong> theme development and <strong>Laravel</strong>.</p>

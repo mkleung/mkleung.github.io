@@ -45,15 +45,15 @@ class FrontEndPage extends React.Component {
                   >Close All</button>;
             }
 
-
-
             return (
                   <Layout navLocation="project">
                         <div className="hero-body">
                               <div className="container">
-                                    <div className="columns is-vcentered is-multiline">
+                                    <div className="columns is-vcentered is-multiline main-feature">
                                           <Projectsnav project="frontend" />
                                           <div className="column is-6"><ProjectsImage /></div>
+                                    </div>
+                                    <div className="columns is-vcentered is-multiline">
                                           <div className="column is-6">
                                                 <h2 className="has-text-weight-bold">100 Days of CSS</h2>
                                           </div>

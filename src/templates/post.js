@@ -2,6 +2,7 @@ import React from "react"
 import { graphql, Link } from 'gatsby'
 import Layout from "../components/layout"
 require("./prism.scss")
+require("./post.scss")
 
 export default ({ data }) => {
   const post = data.markdownRemark
@@ -17,11 +18,12 @@ export default ({ data }) => {
               <h1 className="title is-1 is-bold is-spaced">{post.frontmatter.title}</h1>
             </div>
             <div className="column is-10 landing-caption content">
-
               <p>{post.frontmatter.date}</p>
               <div dangerouslySetInnerHTML={{ __html: post.html }} />
             </div>
-
+            <div className="column is-12">
+              <Link className="button is-primary is-rounded greenButton" to="/blog"><i className="fas fa-chevron-left"></i>&nbsp;<span> Back</span></Link>
+            </div>
           </div>
         </div>
       </div>

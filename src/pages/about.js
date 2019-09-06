@@ -7,12 +7,12 @@ const AboutPage = () => (
   <Layout>
     <div className="hero-body">
       <div className="container">
-        <div className="columns is-vcentered is-multiline">
+        <div className="columns is-vcentered is-multiline main-feature">
           <div className="column is-6 landing-caption">
             <h1 className="title is-bold is-spaced">About Me</h1>
-            <p>I have a Bachelors degree in Computer Science from Carleton University, Ottawa, Canada.</p>
+            <p>I have a Bachelors degree in <strong>Computer Science</strong> from Carleton University, Ottawa, Canada.</p>
             <br />
-            <p>Outside of programming, I like photography, watching Game of Thrones and enjoying outdoor activities such as hiking. (At least I try but always trail off)</p>
+            <p>Outside of programming, I like taking landscape pictures with my camera, dreaming about the lands of Westeros <strong>Game of Thrones</strong> and enjoying outdoor activities such as hiking. (In the Gatineau Hills)</p>
             <br />
             <br />
             <p>

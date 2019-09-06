@@ -274,3 +274,8 @@ pre .line-highlight {
 .token.function {
     color: #E7E247 !important;
 }
+
+pre[class*="language-"]>code {
+    box-shadow: none;
+    border-radius: 5px;
+}

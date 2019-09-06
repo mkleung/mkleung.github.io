@@ -27,9 +27,11 @@ const BlogPage = () => {
         <Layout navLocation="blog">
             <div className="hero-body">
                 <div className="container">
-                    <div className="columns is-vcentered is-multiline">
+                    <div className="columns is-vcentered is-multiline main-feature">
                         <Projectsnav project="blog" />
                         <div className="column is-6"><ProjectsImage /></div>
+                    </div>
+                    <div className="columns is-vcentered is-multiline">
                         <div className="column is-10 landing-caption">
                             {data.allMarkdownRemark.edges.map((edge) => {
                                 return (

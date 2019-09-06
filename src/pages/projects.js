@@ -22,10 +22,11 @@ const ProjectPage = () => (
   <Layout navLocation="project">
     <div className="hero-body">
       <div className="container">
-        <div className="columns is-vcentered is-multiline">
+        <div className="columns is-vcentered is-multiline main-feature">
           <Projectsnav project="project" />
           <div className="column is-6"><ProjectsImage /></div>
-
+        </div>
+        <div className="columns is-vcentered is-multiline">
           <div className="column is-12">
             <h2 className="has-text-weight-bold">100 Days of React</h2>
           </div>

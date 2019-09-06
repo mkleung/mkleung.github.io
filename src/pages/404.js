@@ -8,7 +8,7 @@ const NotFoundPage = () => (
   <Layout>
     <div className="hero-body">
       <div className="container">
-        <div className="columns is-vcentered is-multiline">
+        <div className="columns is-vcentered is-multiline main-feature">
           <div className="column is-4 is-offset-4 has-text-centered">
             <Link to="/"><Four /></Link>
           </div>

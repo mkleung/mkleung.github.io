@@ -10,14 +10,11 @@ body {
 }
 
 .greenButton {
-	// padding: .75rem 1.25rem;
-
 	font-weight: 700;
 	border: none;
 	color: #FFF;
 	background-color: #00d1b2;
 	background-image: linear-gradient(to right, $first 0%, $second 51%, $first 100%);
-
 	transition: background 0.5s ease;
 	background-size: 300% auto;
 
@@ -31,17 +28,24 @@ body {
 	}
 }
 
-a:hover {
-	color: $primary-color;
-	font-weight: bold;
-}
-
 iframe {
 	height: 475px;
 }
 
 .has-margin-right-20 {
 	margin-right: 20px;
+}
+
+
+
+.card-content {
+	.title {
+		font-size: 1em;
+	}
+
+	.button.is-primary {
+		background: #3273dc;
+	}
 }
 
 article {
@@ -64,37 +68,6 @@ article:hover {
 	border-radius: 5px;
 }
 
-.content {
-	ul {
-		p {
-			margin-bottom: 0 !important;
-		}
-	}
-
-	.button {
-		margin-right: 20px;
-	}
-
-
-	pre {
-		padding: 0 !important;
-		border-radius: 5px;
-		margin: 30px 0 !important;
-		box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.5);
-	}
-
-	.task-list-item {
-		list-style-type: none;
-	}
-
-}
-
-.card-content {
-	.title {
-		font-size: 1em;
-	}
-
-	.button.is-primary {
-		background: #3273dc;
-	}
+.main-feature {
+	height: 500px;
 }

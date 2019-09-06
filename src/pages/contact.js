@@ -23,12 +23,10 @@ class ContactPage extends React.Component {
       <Layout>
         <div className="hero-body">
           <div className="container">
-            <div className="columns is-vcentered is-multiline">
+            <div className="columns is-vcentered is-multiline main-feature">
               <div className="column is-6 landing-caption">
                 <form method="post" action="https://formspree.io/mpakleung@gmail.com">
-
                   <h1 className="title is-bold is-spaced">Contact Me</h1>
-
                   <div className="field">
                     <label className="label">Email</label>
                     <div className="control has-icons-left has-icons-right">
