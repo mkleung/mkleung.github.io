@@ -9,3 +9,10 @@ $primary-color: #00d1b2;
     font-weight: bold;
     border-bottom: 2px solid $primary-color;
 }
+
+a {
+    &:hover {
+        color: #00d1b2;
+        font-weight: bold;
+    }
+}
