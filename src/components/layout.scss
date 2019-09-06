@@ -5,11 +5,6 @@ body {
 		sans-serif;
 }
 
-.green {
-	color: $primary-color;
-	font-weight: bold;
-	border-bottom: 2px solid $primary-color;
-}
 
 a:hover {
 	color: $primary-color;
@@ -77,8 +72,4 @@ article:hover {
 	.button.is-primary {
 		background: #3273dc;
 	}
-}
-
-.projectLink {
-	margin-bottom: 5px;
 }

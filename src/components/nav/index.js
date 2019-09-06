@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from "gatsby"
+import "./nav.scss"
 
 export default class Projectsnav extends React.Component {
   render() {

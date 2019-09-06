@@ -1,0 +1,11 @@
+$primary-color: #00d1b2;
+
+.projectLink {
+    margin-bottom: 5px;
+}
+
+.green {
+    color: $primary-color;
+    font-weight: bold;
+    border-bottom: 2px solid $primary-color;
+}

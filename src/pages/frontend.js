@@ -3,8 +3,8 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Codepen from "react-codepen-embed";
 import ProjectsImage from "../components/img/projectsImage"
-import Projectsnav from "../components/projectsnav"
-import * as frontendData from "../data/frontend.json";
+import Projectsnav from "../components/nav"
+import * as frontendData from "../assets/data/frontend.json";
 
 class FrontEndPage extends React.Component {
       constructor(props) {
@@ -60,7 +60,7 @@ class FrontEndPage extends React.Component {
                                                 <h2 className="has-text-weight-bold">100 Days of CSS</h2>
                                           </div>
 
-                                          {frontendData.map(item => {
+                                          {frontendData.projects.map(item => {
                                                 return (
                                                       <div key={item.id} className="column is-6 css-1">
                                                             <Codepen

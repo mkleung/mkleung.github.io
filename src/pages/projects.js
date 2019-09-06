@@ -2,7 +2,7 @@ import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import ProjectsImage from "../components/img/projectsImage"
-import Projectsnav from "../components/projectsnav"
+import Projectsnav from "../components/nav"
 
 import Rideauimage from "../components/img/rideauImage"
 import Dinnerimage from "../components/img/dinnerImage"
