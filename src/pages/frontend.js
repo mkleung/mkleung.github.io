@@ -11,13 +11,12 @@ class FrontEndPage extends React.Component {
             super(props);
 
             this.state = {
-                  pageNumber: 2
+                  pageNumber: 4
             }
-
       }
 
       increment = () => {
-            this.setState({ pageNumber: this.state.pageNumber + 2 });
+            this.setState({ pageNumber: this.state.pageNumber + 4 });
       }
 
       showAll = (size) => {
@@ -25,26 +24,25 @@ class FrontEndPage extends React.Component {
       }
 
       closeAll = () => {
-            this.setState({ pageNumber: 2 })
+            this.setState({ pageNumber: 4 })
       }
 
       render() {
 
             let incrementButton, showAllButton, closeAllButton;
-            if (this.state.pageNumber < frontendData.length) {
-                  incrementButton = <button className="button is-primary"
+            if (this.state.pageNumber < frontendData.projects.length) {
+                  incrementButton = <button className="button is-primary is-rounded greenButton"
                         onClick={() => this.increment()}
-                  >See more</button>;
+                  >Load more</button>;
 
-                  showAllButton = <button className="button is-primary"
+                  showAllButton = <button className="button is-primary is-rounded greenButton"
                         onClick={() => this.showAll(frontendData.length)}
-                  >Show Everything</button>;
+                  >Show All</button>;
             }
-
-            if (this.state.pageNumber >= frontendData.length) {
-                  closeAllButton = <button className="button is-primary"
+            else {
+                  closeAllButton = <button className="button is-primary is-rounded greenButton"
                         onClick={() => this.closeAll()}
-                  >Close Everything</button>;
+                  >Close All</button>;
             }
 
 
@@ -56,11 +54,14 @@ class FrontEndPage extends React.Component {
                                     <div className="columns is-vcentered is-multiline">
                                           <Projectsnav project="frontend" />
                                           <div className="column is-6"><ProjectsImage /></div>
-                                          <div className="column is-12">
+                                          <div className="column is-6">
                                                 <h2 className="has-text-weight-bold">100 Days of CSS</h2>
                                           </div>
-
-                                          {frontendData.projects.map(item => {
+                                          <div className="column is-6 has-text-right">
+                                                {showAllButton}
+                                                {closeAllButton}
+                                          </div>
+                                          {frontendData.projects.slice(0, this.state.pageNumber).map(item => {
                                                 return (
                                                       <div key={item.id} className="column is-6 css-1">
                                                             <Codepen
@@ -78,8 +79,7 @@ class FrontEndPage extends React.Component {
                                           </div>
 
                                           <div className="column is-12 has-text-centered">
-                                                {showAllButton}
-                                                {closeAllButton}
+
                                           </div>
                                     </div>
                               </div>

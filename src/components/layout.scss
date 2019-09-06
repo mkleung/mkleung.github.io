@@ -1,10 +1,22 @@
-$primary-color: #00d1b2;
+$primary-color: linear-gradient(270deg, #96c93d, #00b09b);
+
+// $primary-color: -webkit-linear-gradient(bottom left, #1c92d2 0%, #ccff33 100%);
 
 body {
 	font-family: 'Raleway',
 		sans-serif;
 }
 
+.greenButton {
+	background: $primary-color;
+	color: #FFF;
+
+	&:hover,
+	&:active,
+	&:focus {
+		color: #FFF;
+	}
+}
 
 a:hover {
 	color: $primary-color;

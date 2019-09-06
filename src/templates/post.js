@@ -11,7 +11,7 @@ export default ({ data }) => {
         <div className="container">
           <div className="columns is-vcentered is-multiline">
             <div className="column is-12">
-              <Link className="button is-primary is-rounded" to="/blog"><i className="fas fa-chevron-left"></i>&nbsp;<span> Back</span></Link>
+              <Link className="button is-primary is-rounded greenButton" to="/blog"><i className="fas fa-chevron-left"></i>&nbsp;<span> Back</span></Link>
             </div>
             <div className="column is-12">
               <h1 className="title is-1 is-bold is-spaced">{post.frontmatter.title}</h1>

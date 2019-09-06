@@ -46,7 +46,7 @@ const ProjectPage = () => (
                 <div className="content">
                   <p>
                     <a className="button is-secondary is-rounded" rel="noopener noreferrer" target="_blank" href="https://github.com/mkleung/100daysofReact">Code</a>
-                    <a className="button is-primary is-rounded" rel="noopener noreferrer" target="_blank" href="https://qch74.csb.app/">Demo</a>
+                    <a className="button greenButton is-rounded" rel="noopener noreferrer" target="_blank" href="https://qch74.csb.app/">Demo</a>
                   </p>
 
                 </div>
@@ -70,7 +70,7 @@ const ProjectPage = () => (
                 <div className="content">
                   <p>
                     <a className="button is-secondary is-rounded" rel="noopener noreferrer" target="_blank" href="https://github.com/mkleung/100daysofReact">Code</a>
-                    <a className="button is-primary is-rounded" rel="noopener noreferrer" target="_blank" href="https://7s9cd.csb.app//">Demo</a>
+                    <a className="button greenButton is-rounded" rel="noopener noreferrer" target="_blank" href="https://7s9cd.csb.app//">Demo</a>
                   </p>
 
                 </div>
@@ -94,7 +94,7 @@ const ProjectPage = () => (
                 <div className="content">
                   <p>
                     <a className="button is-secondary is-rounded" rel="noopener noreferrer" target="_blank" href="https://github.com/mkleung/100daysofReact">Code</a>
-                    <a className="button is-primary is-rounded" rel="noopener noreferrer" target="_blank" href="https://jyy84.csb.app/">Demo</a>
+                    <a className="button greenButton is-rounded" rel="noopener noreferrer" target="_blank" href="https://jyy84.csb.app/">Demo</a>
                   </p>
                 </div>
               </div>
@@ -116,7 +116,7 @@ const ProjectPage = () => (
                 <div className="content">
                   <p>
                     <a className="button is-secondary is-rounded" rel="noopener noreferrer" target="_blank" href="https://github.com/mkleung/100daysofReact">Code</a>
-                    <a className="button is-primary is-rounded" rel="noopener noreferrer" target="_blank" href="https://bhm6v.csb.app/">Demo</a>
+                    <a className="button is-rounded greenButton" rel="noopener noreferrer" target="_blank" href="https://bhm6v.csb.app/">Demo</a>
                   </p>
                 </div>
               </div>
@@ -138,7 +138,7 @@ const ProjectPage = () => (
                 <div className="content">
                   <p>
                     <a className="button is-secondary is-rounded" rel="noopener noreferrer" target="_blank" href="https://github.com/mkleung/100daysofReact">Code</a>
-                    <a className="button is-primary is-rounded" rel="noopener noreferrer" target="_blank" href="https://ri74q.csb.app/">Demo</a>
+                    <a className="button greenButton is-rounded" rel="noopener noreferrer" target="_blank" href="https://ri74q.csb.app/">Demo</a>
                   </p>
                 </div>
               </div>
@@ -160,7 +160,7 @@ const ProjectPage = () => (
                 <div className="content">
                   <p>
                     <a className="button is-secondary is-rounded" rel="noopener noreferrer" target="_blank" href="https://github.com/mkleung/100daysofReact">Code</a>
-                    <a className="button is-primary is-rounded" rel="noopener noreferrer" target="_blank" href="https://mzztr.csb.app/">Demo</a>
+                    <a className="button greenButton is-rounded" rel="noopener noreferrer" target="_blank" href="https://mzztr.csb.app/">Demo</a>
                   </p>
                 </div>
               </div>
@@ -183,7 +183,7 @@ const ProjectPage = () => (
                 <div className="content">
                   <p>
                     <a className="button is-secondary is-rounded" rel="noopener noreferrer" target="_blank" href="https://github.com/mkleung/100daysofReact">Code</a>
-                    <a className="button is-primary is-rounded" rel="noopener noreferrer" target="_blank" href="https://193rm.codesandbox.io/">Demo</a>
+                    <a className="button greenButton is-rounded" rel="noopener noreferrer" target="_blank" href="https://193rm.codesandbox.io/">Demo</a>
                   </p>
                 </div>
               </div>
@@ -206,7 +206,7 @@ const ProjectPage = () => (
                 <div className="content">
                   <p>
                     <a className="button is-secondary is-rounded" rel="noopener noreferrer" target="_blank" href="https://github.com/mkleung/100daysofReact">Code</a>
-                    <a className="button is-primary is-rounded" rel="noopener noreferrer" target="_blank" href="https://6fr6p.codesandbox.io/">Demo</a>
+                    <a className="button greenButton is-rounded" rel="noopener noreferrer" target="_blank" href="https://6fr6p.codesandbox.io/">Demo</a>
                   </p>
                 </div>
               </div>
@@ -228,7 +228,7 @@ const ProjectPage = () => (
                 <div className="content">
                   <p>
                     <a className="button is-secondary is-rounded" rel="noopener noreferrer" target="_blank" href="https://github.com/mkleung/100daysofReact">Code</a>
-                    <a className="button is-primary is-rounded" rel="noopener noreferrer" target="_blank" href="https://t2f9h.codesandbox.io/">Demo</a>
+                    <a className="button greenButton is-rounded" rel="noopener noreferrer" target="_blank" href="https://t2f9h.codesandbox.io/">Demo</a>
                   </p>
                 </div>
               </div>
@@ -256,7 +256,7 @@ const ProjectPage = () => (
                 <div className="content">
                   <p>
                     <a className="button is-secondary is-rounded" rel="noopener noreferrer" target="_blank" href="https://github.com/mkleung/decision-maker">Code</a>
-                    <a className="button is-primary is-rounded" rel="noopener noreferrer" target="_blank" href="https://mkleung.github.io/decision-maker/">Demo</a></p>
+                    <a className="button is-rounded greenButton" rel="noopener noreferrer" target="_blank" href="https://mkleung.github.io/decision-maker/">Demo</a></p>
                 </div>
               </div>
             </div>
@@ -277,7 +277,7 @@ const ProjectPage = () => (
                 <div className="content">
                   <p>
                     <a className="button is-secondary is-rounded" rel="noopener noreferrer" target="_blank" href="https://github.com/mkleung/Rideauapp-nodejs">Code</a>
-                    <a className="button is-primary is-rounded" rel="noopener noreferrer" target="_blank" href="https://young-ridge-69555.herokuapp.com/">Demo</a></p>
+                    <a className="button is-rounded greenButton" rel="noopener noreferrer" target="_blank" href="https://young-ridge-69555.herokuapp.com/">Demo</a></p>
                 </div>
               </div>
             </div>
@@ -296,7 +296,7 @@ const ProjectPage = () => (
                   </div>
                 </div>
                 <div className="content">
-                  <p><a className="button is-primary is-rounded" target="_blank" rel="noopener noreferrer" href="https://codepen.io/mpakleung/full/vpmROQ">Demo</a></p>
+                  <p><a className="button is-rounded greenButton" target="_blank" rel="noopener noreferrer" href="https://codepen.io/mpakleung/full/vpmROQ">Demo</a></p>
                 </div>
               </div>
             </div>
@@ -318,7 +318,7 @@ const ProjectPage = () => (
                   <p>Built with Gatsby, React, Bulma and Netlify</p>
                   <p>
                     <a className="button is-secondary is-rounded" target="_blank" rel="noopener noreferrer" href="https://github.com/mkleung/mkleung.github.io">Code</a>
-                    <a className="button is-primary is-rounded" target="_blank" rel="noopener noreferrer" href="https://www.mikeleung.ca/">Demo</a>
+                    <a className="button is-rounded greenButton" target="_blank" rel="noopener noreferrer" href="https://www.mikeleung.ca/">Demo</a>
                   </p>
                 </div>
               </div>

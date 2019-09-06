@@ -15,7 +15,7 @@ const IndexPage = () => (
             <p>My name is Michael Leung and I have five years of experience in <strong>WordPress</strong> theme development and <strong>Laravel</strong>.</p>
             <p>I'm currently working with <strong>React</strong>.</p>
             <br />
-            <p><Link className="button is-primary is-rounded" to="/contact">Contact Me</Link></p>
+            <p><Link className="button is-primary is-rounded greenButton" to="/contact">Contact Me</Link></p>
           </div>
           <div className="column is-6">
             <HomeImage />
