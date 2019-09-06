@@ -16,7 +16,7 @@ import Project5 from "../components/img/projects/project5"
 import Project6 from "../components/img/projects/project6";
 import Project7 from "../components/img/projects/project7"
 import Project8 from "../components/img/projects/project8"
-
+import Project9 from "../components/img/projects/project9"
 
 const ProjectPage = () => (
   <Layout navLocation="project">
@@ -24,13 +24,36 @@ const ProjectPage = () => (
       <div className="container">
         <div className="columns is-vcentered is-multiline">
           <Projectsnav project="project" />
-          <div className="column is-6">
-            <ProjectsImage />
-          </div>
+          <div className="column is-6"><ProjectsImage /></div>
 
           <div className="column is-12">
             <h2 className="has-text-weight-bold">100 Days of React</h2>
           </div>
+
+
+          {/* Project 9 */}
+          <div className="column is-4">
+            <div className="card">
+              <div className="card-image">
+                <Project9 />
+              </div>
+              <div className="card-content">
+                <div className="media">
+                  <div className="media-content">
+                    <p className="title is-4">Project 9 - Snake Game</p>
+                  </div>
+                </div>
+                <div className="content">
+                  <p>
+                    <a className="button is-secondary is-rounded" rel="noopener noreferrer" target="_blank" href="https://github.com/mkleung/100daysofReact">Code</a>
+                    <a className="button is-primary is-rounded" rel="noopener noreferrer" target="_blank" href="https://qch74.csb.app/">Demo</a>
+                  </p>
+
+                </div>
+              </div>
+            </div>
+          </div>
+
 
           {/* Project 8 */}
           <div className="column is-4">

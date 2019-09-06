@@ -1,7 +1,8 @@
 $primary-color: #00d1b2;
 
 body {
-	font-family: 'Raleway', sans-serif;
+	font-family: 'Raleway',
+		sans-serif;
 }
 
 .green {
@@ -54,9 +55,6 @@ article:hover {
 		margin-right: 20px;
 	}
 
-	.button.is-primary {
-		background: #3273dc;
-	}
 
 	pre {
 		padding: 0 !important;
@@ -74,6 +72,10 @@ article:hover {
 .card-content {
 	.title {
 		font-size: 1em;
+	}
+
+	.button.is-primary {
+		background: #3273dc;
 	}
 }
 

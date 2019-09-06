@@ -29,11 +29,8 @@ const BlogPage = () => {
                 <div className="container">
                     <div className="columns is-vcentered is-multiline">
                         <Projectsnav project="blog" />
-                        <div className="column is-6">
-                            <ProjectsImage />
-                        </div>
+                        <div className="column is-6"><ProjectsImage /></div>
                         <div className="column is-10 landing-caption">
-
                             {data.allMarkdownRemark.edges.map((edge) => {
                                 return (
                                     <Link to={`/blog/${edge.node.fields.slug}`} key={edge.node.frontmatter.title}>
@@ -47,9 +44,6 @@ const BlogPage = () => {
                                 )
                             })}
                         </div>
-                        <div className="column is-6">
-                        </div>
-                        <div className="column is-6"></div>
                     </div>
                 </div>
             </div>
@@ -57,7 +51,5 @@ const BlogPage = () => {
         </Layout>
     )
 }
-
-
 
 export default BlogPage

@@ -1,4 +1,5 @@
 import React from "react"
+
 import { Link, graphql, useStaticQuery } from "gatsby"
 import "../header/header.scss"
 
@@ -15,9 +16,12 @@ const Header = ({ siteTitle, navLocation }) => {
 `)
 
   const projectNav = navLocation === "project" || navLocation === "blog" ? "navbar-item is-secondary active" : "navbar-item is-secondary";
-  console.log(navLocation)
+
+
+
   return (
     <div>
+
       <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
       <div className="wave wave1"></div>
       <div className="wave wave2"></div>
@@ -31,6 +35,7 @@ const Header = ({ siteTitle, navLocation }) => {
               <div className="rectangle"></div>
             </div>
             <h1 className="title">{data.site.siteMetadata.title}</h1>
+            <div id="demo"></div>
           </Link>
           <div className="hamburger">
             <input type="checkbox" className="ham" />

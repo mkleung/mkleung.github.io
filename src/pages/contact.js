@@ -9,9 +9,9 @@ const ContactPage = () => (
       <div className="container">
         <div className="columns is-vcentered is-multiline">
           <div className="column is-6 landing-caption">
-            <h1 className="title is-1 is-bold is-spaced">Contact Me</h1>
             <form method="post" action="https://formspree.io/mpakleung@gmail.com">
               <br />
+              <h1 className="title is-bold is-spaced">Contact Me</h1>
               <div className="field">
                 <label className="label">Email</label>
                 <div className="control has-icons-left has-icons-right">

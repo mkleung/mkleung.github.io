@@ -16,7 +16,13 @@ There are several features that gatsby incorporates into its framework such as p
 
 Finally, I can host the whole application in Netlify on the free tier which saves on hosting. Thus, the domain name is the only cost I incur while creating my own webpage. Additionally, every time I push to github, netlify automatically deploys the changes live.
 
+Pros:
+- You can create a website for FREE using gatsby by hosting it on github and netlify but you'll only have to pay for the domain name.
+- Prerendered images
+- No page reloads (built on React Js)
 
+Cons:
+- Blogging is not really efficient
 
 ### Step 1. Install Gatsby
 
