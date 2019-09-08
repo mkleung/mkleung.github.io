@@ -42,13 +42,12 @@ class ContactPage extends React.Component {
                       <textarea name="message" className="textarea" placeholder="Textarea" required></textarea>
                     </div>
                   </div>
+                  <br />
                   <div className="field is-grouped">
-                    <p class="control">
+                    <p className="control">
                       <button className="button greenButton is-rounded" type="submit">Send Email</button>
                     </p>
-                    <p class="control">
-                      {/* <Contact check={this.state.check} /> */}
-                    </p>
+
                   </div>
                 </form>
               </div>

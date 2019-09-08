@@ -1,0 +1,44 @@
+/*
+|--------------------------------------------------------------------------
+| WAVES
+|--------------------------------------------------------------------------
+|*/
+
+.wave1 {
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    left: 33%;
+    top: -430px;
+    background-color: #00d1b2;
+    border-radius: 40%;
+    opacity: 0.5;
+    -webkit-animation: rotate 10s linear infinite;
+    animation: rotate 10s linear infinite;
+}
+
+.wave2 {
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    left: 30%;
+    top: -430px;
+    opacity: 0.2;
+    background-color: #00d1b2;
+    border-radius: 40%;
+    -webkit-animation: rotate 20s linear infinite;
+    animation: rotate 20s linear infinite;
+}
+
+.wave3 {
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    left: 32%;
+    top: -430px;
+    opacity: 0.3;
+    background-color: #00d1b2;
+    border-radius: 40%;
+    -webkit-animation: rotate 30s linear infinite;
+    animation: rotate 30s linear infinite;
+}

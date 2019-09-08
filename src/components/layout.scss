@@ -1,8 +1,11 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
+
 $primary-color: linear-gradient(270deg, #96c93d, #00b09b);
 $first: rgba(108, 99, 255, 0.4);
 $second: #00d1b2;
-// $first: #00b09b;
-// $second: #96c93d;
+
+
 
 body {
 	font-family: 'Raleway',
@@ -71,4 +74,10 @@ article:hover {
 
 .main-feature {
 	height: 500px;
+}
+
+.icon {
+	height: 15px;
+	width: 15px;
+	color: #3273dc;
 }
