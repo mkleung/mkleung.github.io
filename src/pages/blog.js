@@ -3,7 +3,7 @@ import { graphql, useStaticQuery, Link } from 'gatsby'
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import ProjectsImage from "../components/img/projectsImage"
-import Projectsnav from "../components/nav"
+import HomeImage from "../components/img/homeImage"
 
 const BlogPage = () => {
     const data = useStaticQuery(graphql`
@@ -28,11 +28,9 @@ const BlogPage = () => {
             <div className="hero-body">
                 <div className="container">
                     <div className="columns is-vcentered is-multiline main-feature">
-                        <Projectsnav project="blog" />
-                        <div className="column is-6"><ProjectsImage /></div>
-                    </div>
-                    <div className="columns is-vcentered is-multiline">
-                        <div className="column is-10 landing-caption">
+
+                        <div className="column is-6 landing-caption">
+                            <h1 className="title is-bold is-spaced">Blog</h1>
                             {data.allMarkdownRemark.edges.map((edge) => {
                                 return (
                                     <Link to={`/blog/${edge.node.fields.slug}`} key={edge.node.frontmatter.title}>
@@ -46,6 +44,12 @@ const BlogPage = () => {
                                     </Link>
                                 )
                             })}
+                        </div>
+                        <div className="column is-6"><HomeImage /></div>
+                    </div>
+                    <div className="columns is-vcentered is-multiline">
+                        <div className="column is-10 landing-caption">
+
                         </div>
                     </div>
                 </div>

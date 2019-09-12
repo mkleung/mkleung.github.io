@@ -41,16 +41,29 @@ iframe {
 }
 
 
-
-.card-content {
-	.title {
-		font-size: 1em;
-	}
-
-	.button.is-primary {
-		background: #3273dc;
-	}
+.has-text-weight-bold {
+	margin-bottom: 10px;
 }
+
+.card {
+	box-shadow: 0 3px 10px 0 rgba(0, 0, 0, .3);
+
+	.card-image {
+		clip-path: polygon(0 0, 100% 0, 100% 90%, 0% 100%);
+	}
+
+	.card-content {
+		.title {
+			font-size: 1em;
+		}
+
+		.button.is-primary {
+			background: #3273dc;
+		}
+	}
+
+}
+
 
 article {
 	padding: 20px;

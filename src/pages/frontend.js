@@ -11,12 +11,12 @@ class FrontEndPage extends React.Component {
             super(props);
 
             this.state = {
-                  pageNumber: 4
+                  pageNumber: 6
             }
       }
 
       increment = () => {
-            this.setState({ pageNumber: this.state.pageNumber + 4 });
+            this.setState({ pageNumber: this.state.pageNumber + 6 });
       }
 
       showAll = (size) => {
@@ -24,7 +24,7 @@ class FrontEndPage extends React.Component {
       }
 
       closeAll = () => {
-            this.setState({ pageNumber: 4 })
+            this.setState({ pageNumber: 6 })
       }
 
       render() {
@@ -56,6 +56,7 @@ class FrontEndPage extends React.Component {
                                     <div className="columns is-vcentered is-multiline">
                                           <div className="column is-6">
                                                 <h2 className="has-text-weight-bold">100 Days of CSS</h2>
+                                                <p>Here I try to challenge myself on <a target="_blank" href="https://100dayscss.com/">https://100dayscss.com/</a></p>
                                           </div>
                                           <div className="column is-6 has-text-right">
                                                 {showAllButton}
