@@ -14,7 +14,7 @@ const ProjectPage = () => (
     <div className="hero-body">
       <div className="container">
         <div className="columns is-vcentered is-multiline main-feature">
-          <Projectsnav project="project" />
+          <Projectsnav project="Portfolio" />
           <div className="column is-6"><ProjectsImage /></div>
         </div>
         <div className="columns is-vcentered is-multiline">
@@ -68,7 +68,7 @@ const ProjectPage = () => (
           </div>
 
           {/* Rideau Canal Ice */}
-          <div className="column is-4">
+          {/* <div className="column is-4">
             <div className="card">
               <div className="card-image">
                 <Rideauimage />
@@ -86,26 +86,7 @@ const ProjectPage = () => (
                 </div>
               </div>
             </div>
-          </div>
-
-          {/* Angular Multi Step */}
-          <div className="column is-4">
-            <div className="card">
-              <div className="card-image">
-                <Angularimage />
-              </div>
-              <div className="card-content">
-                <div className="media">
-                  <div className="media-content">
-                    <p className="title is-4">AngularJs Multistep Form</p>
-                  </div>
-                </div>
-                <div className="content">
-                  <p><a className="button is-rounded greenButton" target="_blank" rel="noopener noreferrer" href="https://codepen.io/mpakleung/full/vpmROQ">Demo</a></p>
-                </div>
-              </div>
-            </div>
-          </div>
+          </div> */}
 
           {/* Mike Theme */}
           <div className="column is-4">

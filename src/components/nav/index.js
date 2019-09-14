@@ -4,14 +4,15 @@ import "./nav.scss"
 
 export default class Projectsnav extends React.Component {
   render() {
-    let project = this.props.project === "project" ? "green" : "";
-    let frontend = this.props.project === "frontend" ? "green" : "";
-    let react = this.props.project === "react" ? "green" : "";
+    let projectTitle = this.props.project;
+    let project = projectTitle === "Portfolio" ? "green" : "";
+    let frontend = projectTitle === "CSS" ? "green" : "";
+    let react = projectTitle === "React" ? "green" : "";
 
     return (
       <div className="column is-6 landing-caption">
-        <h1 className="title is-bold is-spaced">Projects</h1>
-        <div className="projectLink"><Link className={project} to="/projects">Full Stack</Link></div>
+        <h1 className="title is-bold is-spaced">{projectTitle}</h1>
+        <div className="projectLink"><Link className={project} to="/projects">Portfolio</Link></div>
         <div className="projectLink"><Link className={react} to="/react">React</Link></div>
         <div className="projectLink"><Link className={frontend} to="/frontend">CSS</Link></div>
       </div>

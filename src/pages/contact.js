@@ -30,7 +30,7 @@ class ContactPage extends React.Component {
                   <div className="field">
                     <label className="label">Email</label>
                     <div className="control has-icons-left has-icons-right">
-                      <input name="_replyto" className="input" type="email" placeholder="email@email.com" required />
+                      <input name="_replyto" className="input emailInput" type="email" placeholder="email@email.com" required />
                       <span className="icon is-small is-left">
                         <i className="fas fa-user"></i>
                       </span>
@@ -39,7 +39,7 @@ class ContactPage extends React.Component {
                   <div className="field">
                     <label className="label">Message</label>
                     <div className="control">
-                      <textarea name="message" className="textarea" placeholder="Textarea" required></textarea>
+                      <textarea name="message" className="textarea" required></textarea>
                     </div>
                   </div>
                   <br />

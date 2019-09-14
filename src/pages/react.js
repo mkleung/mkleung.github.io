@@ -19,14 +19,14 @@ const ReactPage = () => (
         <div className="hero-body">
             <div className="container">
                 <div className="columns is-vcentered is-multiline main-feature">
-                    <Projectsnav project="react" />
+                    <Projectsnav project="React" />
                     <div className="column is-6"><ProjectsImage /></div>
                 </div>
                 <div className="columns is-vcentered is-multiline">
                     <div className="column is-12">
                         <h2 className="has-text-weight-bold">100 Days of React</h2>
                         <p>I began to learn reactJs by building something new everyday for 100 days.</p>
-                        <p>I document my journey below and I am aiming to do 50 apps.</p>
+                        <p>Inspiration: <a target="_blank" href="https://www.100daysofcode.com/">#100DaysofCode</a> </p>
                     </div>
 
 

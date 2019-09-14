@@ -26,7 +26,6 @@ class FrontEndPage extends React.Component {
       closeAll = () => {
             this.setState({ pageNumber: 6 })
       }
-
       render() {
 
             let incrementButton, showAllButton, closeAllButton;
@@ -50,7 +49,7 @@ class FrontEndPage extends React.Component {
                         <div className="hero-body">
                               <div className="container">
                                     <div className="columns is-vcentered is-multiline main-feature">
-                                          <Projectsnav project="frontend" />
+                                          <Projectsnav project="CSS" />
                                           <div className="column is-6"><ProjectsImage /></div>
                                     </div>
                                     <div className="columns is-vcentered is-multiline">
