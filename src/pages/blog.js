@@ -2,7 +2,6 @@ import React from "react"
 import { graphql, useStaticQuery, Link } from 'gatsby'
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import ProjectsImage from "../components/img/projectsImage"
 import BlogImage from "../components/img/blogImage"
 
 const BlogPage = () => {

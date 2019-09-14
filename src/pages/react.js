@@ -26,7 +26,7 @@ const ReactPage = () => (
                     <div className="column is-12">
                         <h2 className="has-text-weight-bold">100 Days of React</h2>
                         <p>I began to learn reactJs by building something new everyday for 100 days.</p>
-                        <p>Inspiration: <a target="_blank" href="https://www.100daysofcode.com/">#100DaysofCode</a> </p>
+                        <p>Inspiration: <a target="_blank" rel="noopener noreferrer" href="https://www.100daysofcode.com/">#100DaysofCode</a> </p>
                     </div>
 
 

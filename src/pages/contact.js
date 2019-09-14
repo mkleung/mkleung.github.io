@@ -2,7 +2,6 @@ import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import ContactImage from "../components/img/contactImage"
-import Contact from "../components/contact"
 
 class ContactPage extends React.Component {
   constructor(props) {

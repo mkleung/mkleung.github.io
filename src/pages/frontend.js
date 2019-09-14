@@ -55,7 +55,7 @@ class FrontEndPage extends React.Component {
                                     <div className="columns is-vcentered is-multiline">
                                           <div className="column is-6">
                                                 <h2 className="has-text-weight-bold">100 Days of CSS</h2>
-                                                <p>Here I try to challenge myself on <a target="_blank" href="https://100dayscss.com/">https://100dayscss.com/</a></p>
+                                                <p>Here I try to challenge myself on <a target="_blank" rel="noopener noreferrer" href="https://100dayscss.com/">https://100dayscss.com/</a></p>
                                           </div>
                                           <div className="column is-6 has-text-right">
                                                 {showAllButton}

@@ -3,10 +3,7 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import ProjectsImage from "../components/img/projectsImage"
 import Projectsnav from "../components/nav"
-
-import Rideauimage from "../components/img/rideauImage"
 import Dinnerimage from "../components/img/dinnerImage"
-import Angularimage from "../components/img/angularImage"
 import Atomicimage from "../components/img/atomicImage"
 
 const ProjectPage = () => (
