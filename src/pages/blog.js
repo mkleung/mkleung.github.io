@@ -2,7 +2,7 @@ import React from "react"
 import { graphql, useStaticQuery, Link } from 'gatsby'
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import BlogImage from "../components/img/blogImage"
+
 
 const BlogPage = () => {
     const data = useStaticQuery(graphql`
@@ -43,7 +43,7 @@ const BlogPage = () => {
                                 )
                             })}
                         </div>
-                        <div className="column is-6"><BlogImage /></div>
+                        <div className="column is-6"></div>
                     </div>
                     <div className="columns is-vcentered is-multiline">
                         <div className="column is-10 landing-caption">
