@@ -1,5 +1,10 @@
-@import url('https://fonts.googleapis.com/css?family=Raleway');
+// @import url('https://fonts.googleapis.com/css?family=Raleway');
 
+@import url('https://fonts.googleapis.com/css?family=Rubik&display=swap');
+
+// @import url('https://fonts.googleapis.com/css?family=Fira+Sans&display=swap');
+
+// @import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
 
 $primary-color: linear-gradient(270deg, #96c93d, #00b09b);
 $first: rgba(108, 99, 255, 0.4);
@@ -8,8 +13,17 @@ $second: #00d1b2;
 
 
 body {
-	font-family: 'Raleway',
+	// font-family: 'Raleway',
+	// 	sans-serif;
+
+	font-family: 'Rubik',
 		sans-serif;
+
+	// font-family: 'Fira Sans',
+	// 	sans-serif;
+
+	// font-family: 'Poppins',
+	// 	sans-serif;
 }
 
 
@@ -36,8 +50,8 @@ iframe {
 	height: 475px;
 }
 
-.has-margin-right-20 {
-	margin-right: 20px;
+.has-margin-right-25 {
+	margin-right: 25px;
 }
 
 
@@ -98,5 +112,44 @@ article:hover {
 .content {
 	.title {
 		font-size: 2.7em;
+	}
+}
+
+.emailInput {
+	padding: 10px !important;
+}
+
+
+.pens {
+	position: relative;
+	height: 100%;
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+
+	@for $i from 0 through 44 {
+		.input-#{$i}:checked~.pen-#{$i} {
+			display: block;
+		}
+
+		.input-#{$i}:checked~.label-#{$i} {
+			background: #00d1b2;
+		}
+	}
+
+
+	.codepens {
+		width: 600px;
+
+		input {
+			display: none;
+		}
+
+		.pen {
+			display: none;
+		}
+
+
+
 	}
 }
