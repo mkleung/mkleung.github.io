@@ -100,7 +100,7 @@ article:hover {
 }
 
 .main-feature {
-	height: 500px;
+	height: 100%;
 }
 
 .icon {
@@ -120,36 +120,90 @@ article:hover {
 }
 
 
-.pens {
-	position: relative;
-	height: 100%;
-	width: 100%;
-	display: flex;
-	flex-direction: row;
+.pen-container {
 
-	@for $i from 0 through 44 {
-		.input-#{$i}:checked~.pen-#{$i} {
-			display: block;
-		}
-
-		.input-#{$i}:checked~.label-#{$i} {
-			background: #00d1b2;
-		}
+	/* width */
+	::-webkit-scrollbar {
+		width: 10px;
 	}
 
+	/* Track */
+	::-webkit-scrollbar-track {
+		// box-shadow: inset 0 0 5px grey;
+		// border-radius: 10px;
+	}
 
-	.codepens {
-		width: 600px;
+	/* Handle */
+	::-webkit-scrollbar-thumb {
+		background: #00d1b2;
+		border-radius: 10px;
+	}
 
-		input {
-			display: none;
+	/* Handle on hover */
+	::-webkit-scrollbar-thumb:hover {
+		background: darken(#00d1b2, 5%);
+	}
+
+	.pen-titles {
+		display: inline-block;
+		height: 500px;
+		width: 400px;
+		overflow-y: scroll;
+		text-align: left;
+		overflow-x: hidden;
+
+		.pen-title {
+			background: transparent;
+			width: 100%;
+			border-radius: 0;
+			border: none;
+			padding: 10px 20px;
+
+			&:hover {
+				cursor: pointer;
+				// background: #00d1b2;
+				background-color: #00d1b2;
+
+				color: #FFF;
+			}
 		}
+
+		.active {
+			font-weight: 700;
+			border: none;
+			color: #FFF;
+			background-color: #00d1b2;
+			// background-image: linear-gradient(to right, $first 0%, $second 51%, $first 100%);
+			// transition: background 0.5s ease;
+			// background-size: 300% auto;
+			border-radius: 0;
+
+			&:focus {
+				color: #FFF;
+			}
+
+			&:hover {
+				background-position: right center;
+				color: #FFF;
+			}
+		}
+
+	}
+
+	.pens {
+		display: flex;
+		justify-content: flex-start;
+		flex-direction: column;
+		height: 100%;
 
 		.pen {
 			display: none;
 		}
 
-
-
+		.active {
+			display: block;
+		}
 	}
+
+
 }
