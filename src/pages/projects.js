@@ -16,7 +16,6 @@ const ProjectPage = () => (
         </div>
         <div className="columns is-vcentered is-multiline">
 
-
           <div className="column is-12">
             <h2 className="has-text-weight-bold">Full Stack Projects</h2>
             <p>This is a combination of vuejs, angularjs and react projects with a backend of firebase or Laravel.</p>
@@ -118,5 +117,4 @@ const ProjectPage = () => (
     <SEO title="Projects" />
   </Layout>
 )
-
 export default ProjectPage

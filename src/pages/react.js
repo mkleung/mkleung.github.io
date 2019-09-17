@@ -29,7 +29,6 @@ const ReactPage = () => (
                         <p>Inspiration: <a target="_blank" rel="noopener noreferrer" href="https://www.100daysofcode.com/">#100DaysofCode</a> </p>
                     </div>
 
-
                     {/* Project 9 */}
                     <div className="column is-4">
                         <div className="card">
@@ -53,7 +52,6 @@ const ReactPage = () => (
                         </div>
                     </div>
 
-
                     {/* Project 8 */}
                     <div className="column is-4">
                         <div className="card">
@@ -71,7 +69,6 @@ const ReactPage = () => (
                                         <a className="button is-secondary is-rounded" rel="noopener noreferrer" target="_blank" href="https://github.com/mkleung/100daysofReact">Code</a>
                                         <a className="button greenButton is-rounded" rel="noopener noreferrer" target="_blank" href="https://7s9cd.csb.app//">Demo</a>
                                     </p>
-
                                 </div>
                             </div>
                         </div>
@@ -166,7 +163,6 @@ const ReactPage = () => (
                         </div>
                     </div>
 
-
                     {/* Project 3 */}
                     <div className="column is-4">
                         <div className="card">
@@ -188,7 +184,6 @@ const ReactPage = () => (
                             </div>
                         </div>
                     </div>
-
 
                     {/* Project 2 */}
                     <div className="column is-4">
@@ -244,5 +239,4 @@ const ReactPage = () => (
         <SEO title="Projects" />
     </Layout>
 )
-
 export default ReactPage

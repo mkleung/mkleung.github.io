@@ -13,14 +13,12 @@ class FrontEndPage extends React.Component {
                   penNumber: 1
             }
       }
-
       selectPen = (index) => {
             this.setState({
                   penNumber: index
             })
       }
       render() {
-
             return (
                   <Layout navLocation="project">
                         <div className="hero-body">
@@ -44,8 +42,6 @@ class FrontEndPage extends React.Component {
                                                             )
                                                       })}
                                                 </div>
-
-
                                           </div>
                                           <div className="column is-6 has-text-centered pen-container">
                                                 <div className="pens">
@@ -60,22 +56,16 @@ class FrontEndPage extends React.Component {
                                                                               loader={() => <div>Loading...</div>}
                                                                         />
                                                                   </div>
-
                                                             )
                                                       })}
                                                 </div>
                                           </div>
-
-
                                     </div>
                               </div>
                         </div>
-
-
                         <SEO title="Projects" />
                   </Layout>
             )
       }
 }
-
 export default FrontEndPage;
