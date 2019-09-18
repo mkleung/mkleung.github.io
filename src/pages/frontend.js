@@ -25,7 +25,7 @@ class FrontEndPage extends React.Component {
                               <div className="container">
                                     <div className="columns is-vcentered is-multiline main-feature">
                                           <Projectsnav project="CSS" />
-                                          <div className="column is-6"><ProjectsImage /></div>
+
                                     </div>
                                     <div className="columns is-vcentered is-multiline">
                                           <div className="column is-12">

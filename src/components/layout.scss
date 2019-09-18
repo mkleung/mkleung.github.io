@@ -1,9 +1,6 @@
-// @import url('https://fonts.googleapis.com/css?family=Raleway');
-
 @import url('https://fonts.googleapis.com/css?family=Rubik&display=swap');
-
+// @import url('https://fonts.googleapis.com/css?family=Raleway');
 // @import url('https://fonts.googleapis.com/css?family=Fira+Sans&display=swap');
-
 // @import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
 
 $primary-color: linear-gradient(270deg, #96c93d, #00b09b);
@@ -16,14 +13,14 @@ body {
 	// font-family: 'Raleway',
 	// 	sans-serif;
 
-	font-family: 'Rubik',
-		sans-serif;
-
 	// font-family: 'Fira Sans',
 	// 	sans-serif;
 
 	// font-family: 'Poppins',
-	// 	sans-serif;
+	// 	sans-serif
+
+	font-family: 'Rubik',
+		sans-serif;
 }
 
 
@@ -71,13 +68,15 @@ iframe {
 			font-size: 1em;
 		}
 
+		li {
+			font-size: .8em;
+		}
+
 		.button.is-primary {
 			background: #3273dc;
 		}
 	}
-
 }
-
 
 article {
 	padding: 20px;
@@ -90,7 +89,7 @@ article {
 }
 
 article:hover {
-	background-color: rgba(226, 224, 255, 0.4);
+	background-color: rgba(0, 209, 178, .3);
 	-webkit-transition: 0.3s ease;
 	-moz-transition: 0.3s ease;
 	-ms-transition: 0.3s ease;
@@ -146,7 +145,7 @@ article:hover {
 
 	.pen-titles {
 		display: inline-block;
-		height: 500px;
+		height: 484px;
 		width: 400px;
 		overflow-y: scroll;
 		text-align: left;

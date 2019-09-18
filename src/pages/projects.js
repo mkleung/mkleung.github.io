@@ -5,6 +5,7 @@ import ProjectsImage from "../components/img/projectsImage"
 import Projectsnav from "../components/nav"
 import Dinnerimage from "../components/img/dinnerImage"
 import Atomicimage from "../components/img/atomicImage"
+import Snapliftsimage from "../components/img/snapliftsImage"
 
 const ProjectPage = () => (
   <Layout navLocation="project">
@@ -12,7 +13,7 @@ const ProjectPage = () => (
       <div className="container">
         <div className="columns is-vcentered is-multiline main-feature">
           <Projectsnav project="Portfolio" />
-          <div className="column is-6"><ProjectsImage /></div>
+
         </div>
         <div className="columns is-vcentered is-multiline">
 
@@ -21,19 +22,44 @@ const ProjectPage = () => (
             <p>This is a combination of vuejs, angularjs and react projects with a backend of firebase or Laravel.</p>
           </div>
 
+
+          {/* Snapliftst */}
+          <div className="column is-4">
+            <div className="card">
+              <div className="card-image">
+                <Snapliftsimage />
+              </div>
+              <div className="card-content">
+                <div className="content">
+                  <p className="title is-4">Snaplifts - Gym Tracker</p>
+                  <ul>
+                    <li>React</li>
+                    <li>Redux</li>
+                    <li>Firebase</li>
+                  </ul>
+                  <p>
+                    <a className="button is-secondary is-rounded" rel="noopener noreferrer" target="_blank" href="https://github.com/mkleung/snaplifts">Code</a>
+                    <a className="button is-rounded greenButton" rel="noopener noreferrer" target="_blank" href="https://mkleung.github.io/snaplifts/">Demo</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+
           {/* Atomic To Do List */}
           <div className="column is-4">
             <div className="card">
               <div className="card-image">
                 <Atomicimage />
+
               </div>
               <div className="card-content">
-                <div className="media">
-                  <div className="media-content">
-                    <p className="title is-4">Atomic To Do</p>
-                  </div>
-                </div>
                 <div className="content">
+                  <p className="title is-4">Atomic To Do</p>
+                  <ul>
+                    <li>Vue</li>
+                    <li>Laravel</li>
+                    <li>Heroku</li>
+                  </ul>
                   <p>
                     <a className="button is-secondary is-rounded" rel="noopener noreferrer" target="_blank" href="https://github.com/mkleung/todolist-vue">Code</a>
                     <a className="button is-rounded greenButton" rel="noopener noreferrer" target="_blank" href="https://todolistvuejs.herokuapp.com/">Demo</a></p>
@@ -49,12 +75,13 @@ const ProjectPage = () => (
                 <Dinnerimage />
               </div>
               <div className="card-content">
-                <div className="media">
-                  <div className="media-content">
-                    <p className="title is-4">What's For Dinner</p>
-                  </div>
-                </div>
                 <div className="content">
+                  <p className="title is-4">What's For Dinner</p>
+                  <ul>
+                    <li>React</li>
+                    {/* <li> </li>
+                    <li> </li> */}
+                  </ul>
                   <p>
                     <a className="button is-secondary is-rounded" rel="noopener noreferrer" target="_blank" href="https://github.com/mkleung/decision-maker">Code</a>
                     <a className="button is-rounded greenButton" rel="noopener noreferrer" target="_blank" href="https://mkleung.github.io/decision-maker/">Demo</a></p>
@@ -96,8 +123,11 @@ const ProjectPage = () => (
                   </div>
                 </div>
                 <div className="content">
-                  <p>This is a personal theme used to host projects.</p>
-                  <p>Built with Gatsby, React, Bulma and Netlify</p>
+                  <ul>
+                    <li>Gatsby</li>
+                    <li>GraphQL</li>
+                    <li>Netlify</li>
+                  </ul>
                   <p>
                     <a className="button is-secondary is-rounded" target="_blank" rel="noopener noreferrer" href="https://github.com/mkleung/mkleung.github.io">Code</a>
                     <a className="button is-rounded greenButton" target="_blank" rel="noopener noreferrer" href="https://www.mikeleung.ca/">Demo</a>

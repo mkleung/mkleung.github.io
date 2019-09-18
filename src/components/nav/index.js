@@ -10,11 +10,14 @@ export default class Projectsnav extends React.Component {
     let react = projectTitle === "React" ? "green" : "";
 
     return (
-      <div className="column is-6 landing-caption">
+      <div className="column is-12 landing-caption">
         <h1 className="title is-bold is-spaced">{projectTitle}</h1>
-        <div className="projectLink"><Link className={project} to="/projects">Portfolio</Link></div>
-        <div className="projectLink"><Link className={react} to="/react">React</Link></div>
-        <div className="projectLink"><Link className={frontend} to="/frontend">CSS</Link></div>
+        <div className="projectLinks">
+          <div className="projectLink"><Link className={project} to="/projects">Portfolio</Link></div>
+          <div className="projectLink"><Link className={react} to="/react">React</Link></div>
+          <div className="projectLink"><Link className={frontend} to="/frontend">CSS</Link></div>
+        </div>
+
       </div>
     )
   }

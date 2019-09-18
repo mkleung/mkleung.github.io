@@ -5,8 +5,8 @@ const Footer = () => (
     <div>
         <footer className="footer">
             <div className="content has-text-centered">
-                <p> Copyright © {new Date().getFullYear()} Michael Leung
-                </p>
+                {/* <p> Copyright © {new Date().getFullYear()} Michael Leung
+                </p> */}
             </div>
         </footer>
     </div>
