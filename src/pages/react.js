@@ -13,6 +13,7 @@ import Project6 from "../components/img/projects/project6";
 import Project7 from "../components/img/projects/project7"
 import Project8 from "../components/img/projects/project8"
 import Project9 from "../components/img/projects/project9"
+import Project10 from "../components/img/projects/project10"
 
 const ReactPage = () => (
     <Layout navLocation="project">
@@ -27,6 +28,29 @@ const ReactPage = () => (
                         <h2 className="has-text-weight-bold">100 Days of React</h2>
                         <p>I began to learn reactJs by building something new everyday for 100 days.</p>
                         <p>Inspiration: <a target="_blank" rel="noopener noreferrer" href="https://www.100daysofcode.com/">#100DaysofCode</a> </p>
+                    </div>
+
+                    {/* Project 10 */}
+                    <div className="column is-4">
+                        <div className="card">
+                            <div className="card-image">
+                                <Project10 />
+                            </div>
+                            <div className="card-content">
+                                <div className="media">
+                                    <div className="media-content">
+                                        <p className="title is-4">Project 10 - Signup Router</p>
+                                    </div>
+                                </div>
+                                <div className="content">
+                                    <p>
+                                        <a className="button is-secondary is-rounded" rel="noopener noreferrer" target="_blank" href="https://github.com/mkleung/100daysofReact">Code</a>
+                                        <a className="button greenButton is-rounded" rel="noopener noreferrer" target="_blank" href="https://45g3m.csb.app/">Demo</a>
+                                    </p>
+
+                                </div>
+                            </div>
+                        </div>
                     </div>
 
                     {/* Project 9 */}
