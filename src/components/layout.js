@@ -24,8 +24,11 @@ const Layout = ({ navLocation, children }) => {
         }}
       >
         <main>
-          {children}
-
+          <section className="hero is-medium intro">
+            <div className="hero-body">
+              {children}
+            </div>
+          </section>
         </main>
         <Footer></Footer>
       </div>

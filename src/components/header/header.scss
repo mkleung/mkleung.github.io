@@ -1,3 +1,5 @@
+$second: #00d1b2;
+
 .navbar {
 
 	box-shadow: 0 0 5px 0 linear-gradient(to right, rgba(108, 99, 255, 0.4) 0%, #00d1b2 51%, rgba(108, 99, 255, 0.4) 100%);
@@ -30,6 +32,10 @@
 			background: transparent;
 		}
 
+	}
+
+	.navbar-end {
+		margin-right: 100px;
 	}
 }
 
@@ -229,6 +235,7 @@
 		cursor: poiner;
 	}
 }
+
 
 /*
 |--------------------------------------------------------------------------

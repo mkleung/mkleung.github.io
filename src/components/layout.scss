@@ -1,28 +1,62 @@
 @import url('https://fonts.googleapis.com/css?family=Rubik&display=swap');
-// @import url('https://fonts.googleapis.com/css?family=Raleway');
-// @import url('https://fonts.googleapis.com/css?family=Fira+Sans&display=swap');
-// @import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
 
 $primary-color: linear-gradient(270deg, #96c93d, #00b09b);
 $first: rgba(108, 99, 255, 0.4);
 $second: #00d1b2;
 
-
-
 body {
-	// font-family: 'Raleway',
-	// 	sans-serif;
-
-	// font-family: 'Fira Sans',
-	// 	sans-serif;
-
-	// font-family: 'Poppins',
-	// 	sans-serif
-
 	font-family: 'Rubik',
 		sans-serif;
+
+	a {
+		color: $second;
+	}
+
 }
 
+body.dark {
+	background: #202020;
+	transition: background .3s ease-in-out;
+	color: #FFF;
+
+	.title,
+	.label,
+	h1,
+	h2,
+	h3 {
+		color: #FFF;
+	}
+
+	.icon {
+		fill: #FFF;
+	}
+
+	article {
+		color: #FFF;
+
+		.title {
+			color: $second;
+			margin-bottom: 5px;
+		}
+
+		.icon {
+			fill: $second;
+		}
+	}
+}
+
+body.light {
+	transition: background .3s ease-in-out;
+
+	article {
+		color: black;
+
+		.title {
+			color: black;
+			margin-bottom: 5px;
+		}
+	}
+}
 
 .greenButton {
 	font-weight: 700;
@@ -105,7 +139,7 @@ article:hover {
 .icon {
 	height: 15px;
 	width: 15px;
-	color: #3273dc;
+	fill: $second;
 }
 
 .content {
@@ -117,7 +151,6 @@ article:hover {
 .emailInput {
 	padding: 10px !important;
 }
-
 
 .pen-container {
 
@@ -186,7 +219,6 @@ article:hover {
 				color: #FFF;
 			}
 		}
-
 	}
 
 	.pens {
@@ -203,6 +235,4 @@ article:hover {
 			display: block;
 		}
 	}
-
-
 }

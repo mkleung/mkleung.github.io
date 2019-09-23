@@ -6,15 +6,13 @@ import Four from '../components/404/404.js'
 
 const NotFoundPage = () => (
   <Layout>
-    <div className="hero-body">
-      <div className="container">
-        <div className="columns is-vcentered is-multiline main-feature">
-          <div className="column is-4 is-offset-4 has-text-centered">
-            <Link to="/"><Four /></Link>
-          </div>
-          <div className="column is-6 is-offset-3 has-text-centered">
-            <h2 className="title is-1 is-bold is-spaced">404! Not Found!</h2>
-          </div>
+    <div className="container">
+      <div className="columns is-vcentered is-multiline main-feature">
+        <div className="column is-4 is-offset-4 has-text-centered">
+          <Link to="/"><Four /></Link>
+        </div>
+        <div className="column is-6 is-offset-3 has-text-centered">
+          <h2 className="title is-1 is-bold is-spaced">404! Not Found!</h2>
         </div>
       </div>
     </div>
