@@ -1,7 +1,7 @@
 import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import ContactImage from "../components/img/contactImage"
+import Image from '../components/img'
 
 class ContactPage extends React.Component {
   constructor(props) {
@@ -50,7 +50,7 @@ class ContactPage extends React.Component {
               </form>
             </div>
             <div className="column is-6">
-              <ContactImage />
+              <Image filename="contact.png" />
             </div>
 
           </div>

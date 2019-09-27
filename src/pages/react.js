@@ -2,7 +2,7 @@ import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Projectsnav from "../components/nav"
-
+import Image from '../components/img'
 import Project1 from "../components/img/projects/project1"
 import Project2 from "../components/img/projects/project2"
 import Project3 from "../components/img/projects/project3";
@@ -19,20 +19,17 @@ const ReactPage = () => (
         <div className="container">
             <div className="columns is-vcentered is-multiline main-feature">
                 <Projectsnav project="React" />
-
             </div>
             <div className="columns is-vcentered is-multiline">
                 <div className="column is-12">
-                    <h2 className="has-text-weight-bold">100 Days of React</h2>
-                    <p>I began to learn reactJs by building something new everyday for 100 days.</p>
-                    <p>Inspiration: <a target="_blank" rel="noopener noreferrer" href="https://www.100daysofcode.com/">#100DaysofCode</a> </p>
+                    <h2 className="is-size-3 has-text-weight-bold">Minor React Projects</h2>
                 </div>
 
                 {/* Project 10 */}
                 <div className="column is-4">
                     <div className="card">
                         <div className="card-image">
-                            <Project10 />
+                            <Image filename="projects/project10.PNG" />
                         </div>
                         <div className="card-content">
                             <div className="media">
@@ -54,7 +51,7 @@ const ReactPage = () => (
                 <div className="column is-4">
                     <div className="card">
                         <div className="card-image">
-                            <Project9 />
+                          <Image filename="projects/project9.PNG" />
                         </div>
                         <div className="card-content">
                             <div className="media">
@@ -76,7 +73,7 @@ const ReactPage = () => (
                 <div className="column is-4">
                     <div className="card">
                         <div className="card-image">
-                            <Project8 />
+                            <Image filename="projects/project8.PNG" />
                         </div>
                         <div className="card-content">
                             <div className="media">
@@ -99,7 +96,7 @@ const ReactPage = () => (
                 <div className="column is-4">
                     <div className="card">
                         <div className="card-image">
-                            <Project7 />
+                            <Image filename="projects/project7.PNG" />
                         </div>
                         <div className="card-content">
                             <div className="media">
@@ -121,7 +118,7 @@ const ReactPage = () => (
                 <div className="column is-4">
                     <div className="card">
                         <div className="card-image">
-                            <Project6 />
+                            <Image filename="projects/project6.PNG" />
                         </div>
                         <div className="card-content">
                             <div className="media">
@@ -143,7 +140,7 @@ const ReactPage = () => (
                 <div className="column is-4">
                     <div className="card">
                         <div className="card-image">
-                            <Project5 />
+                            <Image filename="projects/project5.PNG" />
                         </div>
                         <div className="card-content">
                             <div className="media">
@@ -165,7 +162,7 @@ const ReactPage = () => (
                 <div className="column is-4">
                     <div className="card">
                         <div className="card-image">
-                            <Project4 />
+                            <Image filename="projects/project4.PNG" />
                         </div>
                         <div className="card-content">
                             <div className="media">
@@ -187,7 +184,7 @@ const ReactPage = () => (
                 <div className="column is-4">
                     <div className="card">
                         <div className="card-image">
-                            <Project3 />
+                            <Image filename="projects/project3.PNG" />
                         </div>
                         <div className="card-content">
                             <div className="media">
@@ -209,7 +206,7 @@ const ReactPage = () => (
                 <div className="column is-4">
                     <div className="card">
                         <div className="card-image">
-                            <Project2 />
+                            <Image filename="projects/project2.PNG" />
                         </div>
                         <div className="card-content">
                             <div className="media">
@@ -231,7 +228,7 @@ const ReactPage = () => (
                 <div className="column is-4">
                     <div className="card">
                         <div className="card-image">
-                            <Project1 />
+                            <Image filename="projects/project1.PNG" />
                         </div>
                         <div className="card-content">
                             <div className="media">

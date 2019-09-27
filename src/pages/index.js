@@ -3,7 +3,8 @@ import { Link } from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import HomeImage from "../components/img/homeImage"
+import Image from '../components/img'
+
 
 const IndexPage = () => (
   <Layout>
@@ -46,7 +47,7 @@ const IndexPage = () => (
           <p><Link className="button is-primary is-rounded greenButton" to="/projects">View Projects</Link></p>
         </div>
         <div className="column is-6">
-          <HomeImage />
+          <Image filename="home.png" />
         </div>
       </div>
     </div>

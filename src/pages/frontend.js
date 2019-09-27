@@ -27,9 +27,7 @@ class FrontEndPage extends React.Component {
                               </div>
                               <div className="columns is-vcentered is-multiline">
                                     <div className="column is-12">
-                                          <h2 className="has-text-weight-bold">100 Days of CSS</h2>
-                                          <p>Here I try to challenge myself on <a target="_blank" rel="noopener noreferrer" href="https://100dayscss.com/">https://100dayscss.com/</a></p>
-                                          <br />
+                                          <h2 className="is-size-3 has-text-weight-bold">Minor Projects in CSS</h2>
                                     </div>
                                     <div className="column is-6 pen-container">
                                           <div className="pen-titles">

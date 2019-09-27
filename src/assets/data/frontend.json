@@ -20,13 +20,18 @@
             "hash": "BaBWyjZ"
         },
         {
+            "id": 5,
+            "title": "100 Days of CSS - #5 Graph",
+            "hash": "RwbOMPv"
+        },
+        {
             "id": 6,
             "title": "100 days of CSS - #6 Profile",
             "hash": "ZgXjOr"
         },
         {
             "id": 8,
-            "title": "100 Days of CSS #8 Metaballs",
+            "title": "100 Days of CSS - #8 Metaballs",
             "hash": "LYPjRPr"
         },
         {
@@ -169,6 +174,11 @@
             "hash": "qBWovMw"
         },
         {
+            "id": 45,
+            "title": "100 Days of CSS - #45 Hover Me",
+            "hash": "QWLmeqB"
+        },
+        {
             "id": 47,
             "title": "100 Days of CSS - #47 Pixel Art",
             "hash": "OJLEBOE"
@@ -182,6 +192,36 @@
             "id": 50,
             "title": "100 Days of CSS - #50 Egg",
             "hash": "QWLVLmV"
+        },
+        {
+            "id": 51,
+            "title": "100 Days of CSS - #51 Slider",
+            "hash": "bGbxmQM"
+        },
+        {
+            "id": 52,
+            "title": "100 Days of CSS - #52 Dot Wave",
+            "hash": "NWKOPmd"
+        },
+        {
+            "id": 53,
+            "title": "100 Days of CSS - #53 Waves",
+            "hash": "KKPrYbz"
+        },
+        {
+            "id": 55,
+            "title": "100 Days of CSS - #55 Dashboard",
+            "hash": "BaBvyqg"
+        },
+        {
+            "id": 58,
+            "title": "100 Days of CSS - #58 3D Sphere",
+            "hash": "LYPqOEv"
+        },
+        {
+            "id": 60,
+            "title": "100 Days of CSS - #60 Hover",
+            "hash": "PoYLvBg"
         },
         {
             "id": 61,
@@ -232,7 +272,7 @@
         },
         {
             "id": 95,
-            "title": "100 Days of CSS - #95 PIG",
+            "title": "100 Days of CSS - #95 Pig",
             "hash": "QeyJvO"
         },
         {
@@ -297,6 +337,11 @@
             "id": 113,
             "title": "100 Days of CSS - #113 Canada 150 logo",
             "hash": "eqYoYW"
+        },
+        {
+            "id": 114,
+            "title": "100 Days of CSS - #114 Charging",
+            "hash": "KKPbpga"
         }
     ]
 

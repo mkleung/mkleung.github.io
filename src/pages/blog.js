@@ -2,7 +2,7 @@ import React from "react"
 import { graphql, useStaticQuery, Link } from 'gatsby'
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import BlogImage from "../components/img/blogImage"
+import Image from '../components/img'
 
 const BlogPage = () => {
     const data = useStaticQuery(graphql`
@@ -44,7 +44,7 @@ const BlogPage = () => {
                         })}
                     </div>
                     <div className="column is-6">
-                        <BlogImage />
+                        <Image filename="blog.png" />
                     </div>
                 </div>
 
