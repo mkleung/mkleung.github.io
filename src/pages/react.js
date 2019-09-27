@@ -3,16 +3,6 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Projectsnav from "../components/nav"
 import Image from '../components/img'
-import Project1 from "../components/img/projects/project1"
-import Project2 from "../components/img/projects/project2"
-import Project3 from "../components/img/projects/project3";
-import Project4 from "../components/img/projects/project4"
-import Project5 from "../components/img/projects/project5"
-import Project6 from "../components/img/projects/project6";
-import Project7 from "../components/img/projects/project7"
-import Project8 from "../components/img/projects/project8"
-import Project9 from "../components/img/projects/project9"
-import Project10 from "../components/img/projects/project10"
 
 const ReactPage = () => (
     <Layout navLocation="project">
@@ -25,11 +15,34 @@ const ReactPage = () => (
                     <h2 className="is-size-3 has-text-weight-bold">Minor React Projects</h2>
                 </div>
 
+                {/* Project 11 */}
+                <div className="column is-4">
+                    <div className="card">
+                        <div className="card-image">
+                            <Image filename="project11.png" />
+                        </div>
+                        <div className="card-content">
+                            <div className="media">
+                                <div className="media-content">
+                                    <p className="title is-4">Project 11 - StarWars API </p>
+                                </div>
+                            </div>
+                            <div className="content">
+                                <p>
+                                    <a className="button is-secondary is-rounded" rel="noopener noreferrer" target="_blank" href="https://github.com/mkleung/100daysofReact">Code</a>
+                                    <a className="button greenButton is-rounded" rel="noopener noreferrer" target="_blank" href="https://u4xqw.csb.app/">Demo</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
                 {/* Project 10 */}
                 <div className="column is-4">
                     <div className="card">
                         <div className="card-image">
-                            <Image filename="projects/project10.PNG" />
+                            <Image filename="project10.PNG" />
                         </div>
                         <div className="card-content">
                             <div className="media">
@@ -51,7 +64,7 @@ const ReactPage = () => (
                 <div className="column is-4">
                     <div className="card">
                         <div className="card-image">
-                          <Image filename="projects/project9.PNG" />
+                          <Image filename="project9.PNG" />
                         </div>
                         <div className="card-content">
                             <div className="media">
@@ -73,7 +86,7 @@ const ReactPage = () => (
                 <div className="column is-4">
                     <div className="card">
                         <div className="card-image">
-                            <Image filename="projects/project8.PNG" />
+                            <Image filename="project8.PNG" />
                         </div>
                         <div className="card-content">
                             <div className="media">
@@ -96,7 +109,7 @@ const ReactPage = () => (
                 <div className="column is-4">
                     <div className="card">
                         <div className="card-image">
-                            <Image filename="projects/project7.PNG" />
+                            <Image filename="project7.PNG" />
                         </div>
                         <div className="card-content">
                             <div className="media">
@@ -118,7 +131,7 @@ const ReactPage = () => (
                 <div className="column is-4">
                     <div className="card">
                         <div className="card-image">
-                            <Image filename="projects/project6.PNG" />
+                            <Image filename="project6.PNG" />
                         </div>
                         <div className="card-content">
                             <div className="media">
@@ -140,7 +153,7 @@ const ReactPage = () => (
                 <div className="column is-4">
                     <div className="card">
                         <div className="card-image">
-                            <Image filename="projects/project5.PNG" />
+                            <Image filename="project5.PNG" />
                         </div>
                         <div className="card-content">
                             <div className="media">
@@ -162,7 +175,7 @@ const ReactPage = () => (
                 <div className="column is-4">
                     <div className="card">
                         <div className="card-image">
-                            <Image filename="projects/project4.PNG" />
+                            <Image filename="project4.PNG" />
                         </div>
                         <div className="card-content">
                             <div className="media">
@@ -184,7 +197,7 @@ const ReactPage = () => (
                 <div className="column is-4">
                     <div className="card">
                         <div className="card-image">
-                            <Image filename="projects/project3.PNG" />
+                            <Image filename="project3.PNG" />
                         </div>
                         <div className="card-content">
                             <div className="media">
@@ -206,7 +219,7 @@ const ReactPage = () => (
                 <div className="column is-4">
                     <div className="card">
                         <div className="card-image">
-                            <Image filename="projects/project2.PNG" />
+                            <Image filename="project2.PNG" />
                         </div>
                         <div className="card-content">
                             <div className="media">
@@ -228,7 +241,7 @@ const ReactPage = () => (
                 <div className="column is-4">
                     <div className="card">
                         <div className="card-image">
-                            <Image filename="projects/project1.PNG" />
+                            <Image filename="project1.PNG" />
                         </div>
                         <div className="card-content">
                             <div className="media">
