@@ -15,6 +15,35 @@ const ReactPage = () => (
                     <h2 className="is-size-3 has-text-weight-bold">Minor React Projects</h2>
                 </div>
 
+
+                {/* Project 12 */}
+                <div className="column is-4">
+                    <div className="card">
+                        <div className="card-image">
+                            <Image filename="project12.png" />
+                        </div>
+                        <div className="card-content">
+                            <div className="media">
+                                <div className="media-content">
+                                    <p className="title is-4">Project 12 - Rotten Potatoes</p>
+                                    <ul>
+                                        <li>Context API</li>
+                                        <li>React Router</li>
+                                        <li>React Hooks</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div className="content">
+                                <p>
+                                    <a className="button is-secondary is-rounded" rel="noopener noreferrer" target="_blank" href="https://github.com/mkleung/100daysofReact">Code</a>
+                                    <a className="button greenButton is-rounded" rel="noopener noreferrer" target="_blank" href="https://7y5w2.csb.app/">Demo</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
                 {/* Project 11 */}
                 <div className="column is-4">
                     <div className="card">
@@ -25,6 +54,11 @@ const ReactPage = () => (
                             <div className="media">
                                 <div className="media-content">
                                     <p className="title is-4">Project 11 - StarWars API </p>
+                                    <ul>
+                                        <li>React Router</li>
+                                        <li>React Hooks</li>
+                                        <li>React Animations</li>
+                                    </ul>
                                 </div>
                             </div>
                             <div className="content">
@@ -48,6 +82,11 @@ const ReactPage = () => (
                             <div className="media">
                                 <div className="media-content">
                                     <p className="title is-4">Project 10 - Signup Router</p>
+                                    <ul>
+                                        <li>React Router</li>
+                                        <li>Local Storage</li>
+                                        <li>Authentication</li>
+                                    </ul>
                                 </div>
                             </div>
                             <div className="content">
