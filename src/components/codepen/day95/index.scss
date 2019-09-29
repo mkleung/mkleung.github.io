@@ -1,0 +1,136 @@
+// delete the following line if no text is used
+// edit the line if you wanna use other fonts
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+
+$light-pink: lighten(#ff6b81,20%);
+$pink: lighten(#ff4757,20%);
+$dark-pink: lighten(#c44569,10%);
+$background: lighten(#f7d794, 10%);
+
+// use only the available space inside the 400x400 frame
+.frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+    width: 350px;
+  height: 350px;
+  margin-top: -192px;
+  margin-left: -175px;
+  border-radius: 2px;
+	box-shadow: 4px 8px 16px 0 rgba(0,0,0,0.1);
+	overflow: hidden;
+  background: $background;
+  color: #333;
+	font-family: 'Open Sans', Helvetica, sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.face {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+	background: $pink;
+	border-radius: 180px;
+	height: 180px;
+	width: 180px;
+  transform: translate(-50%,-50%);
+	
+	.ear {
+		position: absolute;
+		top: 10px;
+		width: 40px;
+		height: 40px;
+		clip-path: polygon(100% 0%, 100% 100%, 0% 0%);
+		-webkit-clip-path: polygon(100% 0%, 100% 100%, 0% 0%);
+		background-color:  $pink;
+		border-radius: 0 10px 0 0;
+	}
+	.ear:after{
+		content: "";
+		position: absolute;
+		top: 10px;
+		width: 30px;
+		height: 30px;
+		clip-path: polygon(100% 0%, 100% 100%, 0% 0%);
+		-webkit-clip-path: polygon(100% 0%, 100% 100%, 0% 0%);
+		background-color:  $light-pink;
+		border-radius: 0 10px 0 0;
+	}
+	.earLeft {
+		left: 10px;
+		transform: rotate(-90deg);
+	}
+	.earRight {
+		right: 10px;
+	}
+	
+	.nose {
+		background: $light-pink;
+		height: 52px;
+		width: 60px;
+		border-radius: 50%;
+		position: absolute;
+		left: 50%;
+		top: 75%;
+		transform: translate(-50%, -50%);
+	}
+	.nose:before {
+		content: "";
+		position: absolute;
+		top: 15px;
+		left: 15px;
+		width: 12px;
+		height: 12px;
+		border-radius: 20px;
+		background: $dark-pink;
+	}
+	.nose:after {
+			content: "";
+			position: absolute;
+			top: 15px;
+			right: 15px;
+			width: 12px;
+			height: 12px;
+			border-radius: 20px;
+			background: $dark-pink;
+	}
+	
+	.eye {
+		position: absolute;
+		top: -30px;
+		height: 20px;
+		width: 20px;
+		background: #FFF;
+		border-radius:20px;
+		
+		animation: eyes 15s ease-in-out infinite;
+	}
+	.eye::after {
+		content: "";
+		position:absolute;
+		left:7.5px;
+		top: 7.5px;
+		background: black;
+		height: 5px;
+		width: 5px;
+		border-radius: 50%;
+		
+	}
+	.eyeLeft {
+			left: -10px;
+	}
+	.eyeRight {
+			right: -10px;
+	}
+}
+
+
+@keyframes eyes {
+	0%, 23%, 25%, 65%, 67%, 89%, 91%, 100%  {
+		transform: scaleY(1);
+	}
+	24%, 66%, 90% {
+		transform: scaleY(0);
+	}
+}
