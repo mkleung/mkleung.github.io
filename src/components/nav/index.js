@@ -7,6 +7,7 @@ export default class Projectsnav extends React.Component {
     let projectTitle = this.props.project;
     let project = projectTitle === "Projects" ? "green" : "";
     let frontend = projectTitle === "CSS" ? "green" : "";
+    let mobile = projectTitle === "Mobile" ? "green" : "";
     let react = projectTitle === "React" ? "green" : "";
 
     return (
@@ -14,10 +15,10 @@ export default class Projectsnav extends React.Component {
         {/* <h1 className="title is-bold is-spaced">{projectTitle}</h1> */}
         <div className="projectLinks">
           <div className="projectLink"><Link className={project} to="/projects">Full-Stack</Link></div>
+          <div className="projectLink"><Link className={mobile} to="/mobile">Mobile</Link></div>
           <div className="projectLink"><Link className={react} to="/react">React</Link></div>
           <div className="projectLink"><Link className={frontend} to="/frontend">CSS</Link></div>
         </div>
-
       </div>
     )
   }

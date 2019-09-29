@@ -19,7 +19,7 @@ const ProjectPage = () => (
         <div className="column is-4">
           <div className="card">
             <div className="card-image">
-              <Image filename="snaplifts.PNG" />
+              <Image filename="snaplifts.png" />
             </div>
             <div className="card-content">
               <div className="content">

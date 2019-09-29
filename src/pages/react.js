@@ -29,7 +29,7 @@ const ReactPage = () => (
                                     <ul>
                                         <li>Context API</li>
                                         <li>React Router</li>
-                                        <li>React Hooks</li>
+                                        <li>Pure CSS</li>
                                     </ul>
                                 </div>
                             </div>
@@ -55,9 +55,9 @@ const ReactPage = () => (
                                 <div className="media-content">
                                     <p className="title is-4">Project 11 - StarWars API </p>
                                     <ul>
-                                        <li>React Router</li>
                                         <li>React Hooks</li>
-                                        <li>React Animations</li>
+                                        <li>React Router Animations</li>
+                                        <li>Tailwind CSS</li>
                                     </ul>
                                 </div>
                             </div>

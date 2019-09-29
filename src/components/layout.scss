@@ -106,6 +106,7 @@ iframe {
 
 	.gatsby-image-wrapper {
 		min-height: 150px;
+		max-height: 400px;
 	}
 
 	.card-content {
@@ -113,9 +114,15 @@ iframe {
 			font-size: 1em;
 		}
 
-		li {
-			font-size: .8em;
+		ul {
+			margin-left: 0;
+			margin-top: 0;
+			li {
+				font-size: .8em;
+				list-style-type: none;
+			}
 		}
+		
 
 		.button.is-primary {
 			background: #3273dc;
