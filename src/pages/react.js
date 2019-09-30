@@ -34,10 +34,10 @@ const ReactPage = () => (
                                 </div>
                             </div>
                             <div className="content">
-                                <p>
+                                <div className="card-buttons">
                                     <a className="button is-secondary is-rounded" rel="noopener noreferrer" target="_blank" href="https://github.com/mkleung/100daysofReact">Code</a>
                                     <a className="button greenButton is-rounded" rel="noopener noreferrer" target="_blank" href="https://7y5w2.csb.app/">Demo</a>
-                                </p>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -62,10 +62,10 @@ const ReactPage = () => (
                                 </div>
                             </div>
                             <div className="content">
-                                <p>
+                                <div className="card-buttons">
                                     <a className="button is-secondary is-rounded" rel="noopener noreferrer" target="_blank" href="https://github.com/mkleung/100daysofReact">Code</a>
                                     <a className="button greenButton is-rounded" rel="noopener noreferrer" target="_blank" href="https://u4xqw.csb.app/">Demo</a>
-                                </p>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -90,10 +90,10 @@ const ReactPage = () => (
                                 </div>
                             </div>
                             <div className="content">
-                                <p>
+                                <div className="card-buttons">
                                     <a className="button is-secondary is-rounded" rel="noopener noreferrer" target="_blank" href="https://github.com/mkleung/100daysofReact">Code</a>
                                     <a className="button greenButton is-rounded" rel="noopener noreferrer" target="_blank" href="https://45g3m.csb.app/">Demo</a>
-                                </p>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -112,10 +112,10 @@ const ReactPage = () => (
                                 </div>
                             </div>
                             <div className="content">
-                                <p>
+                                <div className="card-buttons">
                                     <a className="button is-secondary is-rounded" rel="noopener noreferrer" target="_blank" href="https://github.com/mkleung/100daysofReact">Code</a>
                                     <a className="button greenButton is-rounded" rel="noopener noreferrer" target="_blank" href="https://qch74.csb.app/">Demo</a>
-                                </p>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -134,10 +134,10 @@ const ReactPage = () => (
                                 </div>
                             </div>
                             <div className="content">
-                                <p>
+                                <div className="card-buttons">
                                     <a className="button is-secondary is-rounded" rel="noopener noreferrer" target="_blank" href="https://github.com/mkleung/100daysofReact">Code</a>
                                     <a className="button greenButton is-rounded" rel="noopener noreferrer" target="_blank" href="https://7s9cd.csb.app//">Demo</a>
-                                </p>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -157,10 +157,10 @@ const ReactPage = () => (
                                 </div>
                             </div>
                             <div className="content">
-                                <p>
+                                <div className="card-buttons">
                                     <a className="button is-secondary is-rounded" rel="noopener noreferrer" target="_blank" href="https://github.com/mkleung/100daysofReact">Code</a>
                                     <a className="button greenButton is-rounded" rel="noopener noreferrer" target="_blank" href="https://jyy84.csb.app/">Demo</a>
-                                </p>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -179,10 +179,10 @@ const ReactPage = () => (
                                 </div>
                             </div>
                             <div className="content">
-                                <p>
+                                <div className="card-buttons">
                                     <a className="button is-secondary is-rounded" rel="noopener noreferrer" target="_blank" href="https://github.com/mkleung/100daysofReact">Code</a>
                                     <a className="button is-rounded greenButton" rel="noopener noreferrer" target="_blank" href="https://bhm6v.csb.app/">Demo</a>
-                                </p>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -201,10 +201,10 @@ const ReactPage = () => (
                                 </div>
                             </div>
                             <div className="content">
-                                <p>
+                                <div className="card-buttons">
                                     <a className="button is-secondary is-rounded" rel="noopener noreferrer" target="_blank" href="https://github.com/mkleung/100daysofReact">Code</a>
                                     <a className="button greenButton is-rounded" rel="noopener noreferrer" target="_blank" href="https://ri74q.csb.app/">Demo</a>
-                                </p>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -223,10 +223,10 @@ const ReactPage = () => (
                                 </div>
                             </div>
                             <div className="content">
-                                <p>
+                                <div className="card-buttons">
                                     <a className="button is-secondary is-rounded" rel="noopener noreferrer" target="_blank" href="https://github.com/mkleung/100daysofReact">Code</a>
                                     <a className="button greenButton is-rounded" rel="noopener noreferrer" target="_blank" href="https://mzztr.csb.app/">Demo</a>
-                                </p>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -245,10 +245,10 @@ const ReactPage = () => (
                                 </div>
                             </div>
                             <div className="content">
-                                <p>
+                                <div className="card-buttons">
                                     <a className="button is-secondary is-rounded" rel="noopener noreferrer" target="_blank" href="https://github.com/mkleung/100daysofReact">Code</a>
                                     <a className="button greenButton is-rounded" rel="noopener noreferrer" target="_blank" href="https://193rm.codesandbox.io/">Demo</a>
-                                </p>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -267,10 +267,10 @@ const ReactPage = () => (
                                 </div>
                             </div>
                             <div className="content">
-                                <p>
+                                <div className="card-buttons">
                                     <a className="button is-secondary is-rounded" rel="noopener noreferrer" target="_blank" href="https://github.com/mkleung/100daysofReact">Code</a>
                                     <a className="button greenButton is-rounded" rel="noopener noreferrer" target="_blank" href="https://6fr6p.codesandbox.io/">Demo</a>
-                                </p>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -289,10 +289,10 @@ const ReactPage = () => (
                                 </div>
                             </div>
                             <div className="content">
-                                <p>
+                                <div className="card-buttons">
                                     <a className="button is-secondary is-rounded" rel="noopener noreferrer" target="_blank" href="https://github.com/mkleung/100daysofReact">Code</a>
                                     <a className="button greenButton is-rounded" rel="noopener noreferrer" target="_blank" href="https://t2f9h.codesandbox.io/">Demo</a>
-                                </p>
+                                </div>
                             </div>
                         </div>
                     </div>

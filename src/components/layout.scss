@@ -123,6 +123,11 @@ iframe {
 			}
 		}
 		
+		.card-buttons {
+			display:flex;
+			justify-content: space-between;
+			width: 100px;
+		}
 
 		.button.is-primary {
 			background: #3273dc;

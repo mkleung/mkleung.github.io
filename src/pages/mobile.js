@@ -33,10 +33,10 @@ const MobilePage = () => (
                                 </div>
                             </div>
                             <div className="content">
-                                <p>
+                                <div className="card-buttons">
                                     <a className="button is-secondary is-rounded" rel="noopener noreferrer" target="_blank" href="https://github.com/mkleung/100daysofReact">Code</a>
                                     <a className="button greenButton is-rounded" rel="noopener noreferrer" target="_blank" href="http://tiny.cc/qmmmdz">Demo</a>
-                                </p>
+                                </div>
                             </div>
                         </div>
                     </div>

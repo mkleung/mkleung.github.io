@@ -19,7 +19,7 @@ const ProjectPage = () => (
         <div className="column is-4">
           <div className="card">
             <div className="card-image">
-              <Image filename="snaplifts.PNG" />
+              <Image filename="snaplifts.png" />
             </div>
             <div className="card-content">
               <div className="content">
@@ -29,9 +29,10 @@ const ProjectPage = () => (
                   <li>Redux</li>
                   <li>Firebase</li>
                 </ul>
-                <p>
+                <div className="card-buttons">
                   <a className="button is-secondary is-rounded" rel="noopener noreferrer" target="_blank" href="https://github.com/mkleung/snaplifts">Code</a>
-                  <a className="button is-rounded greenButton" rel="noopener noreferrer" target="_blank" href="https://mkleung.github.io/snaplifts/">Demo</a></p>
+                  <a className="button is-rounded greenButton" rel="noopener noreferrer" target="_blank" href="https://mkleung.github.io/snaplifts/">Demo</a>
+                </div>
               </div>
             </div>
           </div>
@@ -52,9 +53,10 @@ const ProjectPage = () => (
                   <li>Laravel</li>
                   <li>Heroku</li>
                 </ul>
-                <p>
+                <div className="card-buttons">
                   <a className="button is-secondary is-rounded" rel="noopener noreferrer" target="_blank" href="https://github.com/mkleung/todolist-vue">Code</a>
-                  <a className="button is-rounded greenButton" rel="noopener noreferrer" target="_blank" href="https://todolistvuejs.herokuapp.com/">Demo</a></p>
+                  <a className="button is-rounded greenButton" rel="noopener noreferrer" target="_blank" href="https://todolistvuejs.herokuapp.com/">Demo</a>
+                </div>
               </div>
             </div>
           </div>
