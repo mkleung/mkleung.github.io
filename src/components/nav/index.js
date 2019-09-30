@@ -14,7 +14,11 @@ export default class Projectsnav extends React.Component {
       <div className="column is-12 landing-caption">
         {/* <h1 className="title is-bold is-spaced">{projectTitle}</h1> */}
         <div className="projectLinks">
+          <div className="projectLinks_title">Major Projects</div>
           <div className="projectLink"><Link className={project} to="/projects">Full-Stack</Link></div>
+        </div>
+        <div className="projectLinks">
+          <div className="projectLinks_title">Minor Projects</div>
           <div className="projectLink"><Link className={mobile} to="/mobile">Mobile</Link></div>
           <div className="projectLink"><Link className={react} to="/react">React</Link></div>
           <div className="projectLink"><Link className={frontend} to="/frontend">CSS</Link></div>

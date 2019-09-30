@@ -12,9 +12,35 @@ const ReactPage = () => (
             </div>
             <div className="columns is-vcentered is-multiline">
                 <div className="column is-12">
-                    <h2 className="is-size-3 has-text-weight-bold">Minor React Projects</h2>
+                    <h2 className="is-size-3 has-text-weight-bold">100 Days of React Challenge</h2>
                 </div>
 
+                {/* Project 13 */}
+                <div className="column is-4">
+                    <div className="card">
+                        <div className="card-image">
+                            <Image filename="project13.PNG" />
+                        </div>
+                        <div className="card-content">
+                            <div className="media">
+                                <div className="media-content">
+                                    <p className="title is-4">Project 13 - Real Estate List</p>
+                                    <ul>
+                                        <li>Transition Animation</li>
+                                        <li>React Router</li>
+                                        <li>Bootstrap</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div className="content">
+                                <div className="card-buttons">
+                                    <a className="button is-secondary is-rounded" rel="noopener noreferrer" target="_blank" href="https://github.com/mkleung/100daysofReact">Code</a>
+                                    <a className="button greenButton is-rounded" rel="noopener noreferrer" target="_blank" href="https://86ezy.csb.app/">Demo</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
                 {/* Project 12 */}
                 <div className="column is-4">
@@ -42,7 +68,6 @@ const ReactPage = () => (
                         </div>
                     </div>
                 </div>
-
 
                 {/* Project 11 */}
                 <div className="column is-4">
@@ -103,7 +128,7 @@ const ReactPage = () => (
                 <div className="column is-4">
                     <div className="card">
                         <div className="card-image">
-                          <Image filename="project9.PNG" />
+                            <Image filename="project9.PNG" />
                         </div>
                         <div className="card-content">
                             <div className="media">

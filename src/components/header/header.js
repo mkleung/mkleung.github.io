@@ -21,7 +21,7 @@ const Header = ({ siteTitle, navLocation }) => {
   const blogNav = navLocation === "blog" ? "navbar-item is-secondary active" : "navbar-item is-secondary";
 
   return (
-    <nav className="navbar" role="navigation" aria-label="main navigation">
+    <nav className="navbar " role="navigation" aria-label="main navigation">
       <div className="navbar-brand">
         <Link className="navbar-item" to="/">
           <div className="logo">

@@ -6,6 +6,11 @@ $primary-color: #00d1b2;
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    margin-bottom: 10px;
+
+    .projectLinks_title {
+        padding-right: 20px;
+    }
 
     .projectLink {
         margin-right: 15px;
