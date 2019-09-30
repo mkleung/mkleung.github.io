@@ -7,8 +7,10 @@ require("./post.scss")
 export default ({ data }) => {
   const post = data.markdownRemark
   return (
+    
     <Layout navLocation="blog">
       <div className="container">
+      
         <div className="columns is-vcentered is-multiline">
           <div className="column is-12">
             <Link className="button is-primary is-rounded greenButton" to="/blog"><i className="fas fa-chevron-left"></i>&nbsp;<span> Back</span></Link>
@@ -26,6 +28,7 @@ export default ({ data }) => {
         </div>
       </div>
     </Layout>
+    
   )
 }
 

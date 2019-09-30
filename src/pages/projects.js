@@ -3,7 +3,6 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Projectsnav from "../components/nav"
 import Image from '../components/img'
-
 const ProjectPage = () => (
   <Layout navLocation="project">
     <div className="container">
@@ -39,6 +38,7 @@ const ProjectPage = () => (
         </div>
 
         {/* Atomic To Do List */}
+       
         <div className="column is-4">
           <div className="card">
             <div className="card-image">
@@ -61,6 +61,8 @@ const ProjectPage = () => (
             </div>
           </div>
         </div>
+       
+      
 
       </div>
     </div>

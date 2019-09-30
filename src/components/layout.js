@@ -11,8 +11,10 @@ import 'bulma/css/bulma.css'
 import Header from "./header/header"
 import Footer from "./footer/footer"
 import "./layout.scss"
+import { CSSTransition } from "react-transition-group";
 const Layout = ({ navLocation, children }) => {
   return (
+    
     <div>
       <Header navLocation={navLocation} />
       <div
@@ -23,6 +25,8 @@ const Layout = ({ navLocation, children }) => {
           paddingTop: 0,
         }}
       >
+
+      
         <main>
           <section className="hero is-medium intro">
             <div className="hero-body">
@@ -30,9 +34,11 @@ const Layout = ({ navLocation, children }) => {
             </div>
           </section>
         </main>
+      
         <Footer></Footer>
       </div>
     </div>
+   
   )
 }
 

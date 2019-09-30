@@ -261,3 +261,22 @@ article:hover {
 		}
 	}
 }
+
+
+// Page load
+.fade-appear {
+	opacity: 0;
+	z-index: 1;
+  }
+  
+  .fade-appear.fade-appear-active {
+	opacity: 1;
+	transition: opacity 300ms ease;
+  }
+
+
+.test{
+	height: 100px;
+	width: 100px;
+	background: #FFF;
+}
