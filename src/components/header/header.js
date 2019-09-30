@@ -56,6 +56,7 @@ const Header = ({ siteTitle, navLocation }) => {
                   type="checkbox"
                   onChange={e => toggleTheme(e.target.checked ? 'dark' : 'light')}
                   checked={theme === 'dark'}
+                  defaultChecked='dark'
                 />{' '}
                 <span className="slider round">
                   <div className="moon"></div>
