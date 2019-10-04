@@ -35,7 +35,7 @@ const ReactPage = () => (
                             <div className="content">
                                 <div className="card-buttons">
                                     <a className="button is-secondary is-rounded" rel="noopener noreferrer" target="_blank" href="https://github.com/mkleung/100daysofReact">Code</a>
-                                    <a className="button greenButton is-rounded" rel="noopener noreferrer" target="_blank" href="https://86ezy.csb.app/">Demo</a>
+                                    <a className="button greenButton is-rounded" rel="noopener noreferrer" target="_blank" href="https://qvevt.csb.app/">Demo</a>
                                 </div>
                             </div>
                         </div>
