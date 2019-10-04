@@ -30,9 +30,19 @@
             "hash": "ZgXjOr"
         },
         {
+            "id": 7,
+            "title": "100 days of CSS - #7 Notifications",
+            "hash": "ExYzGpJ"
+        },
+        {
             "id": 8,
             "title": "100 Days of CSS - #8 Metaballs",
             "hash": "LYPjRPr"
+        },
+        {
+            "id": 11,
+            "title": "100 Days of CSS - #11 Shoes",
+            "hash": "ExxYxVV"
         },
         {
             "id": 13,
@@ -219,6 +229,11 @@
             "hash": "LYPqOEv"
         },
         {
+            "id": 59,
+            "title": "100 Days of CSS - #59 Slice Transition",
+            "hash": "BaBbzpz"
+        },
+        {
             "id": 60,
             "title": "100 Days of CSS - #60 Hover",
             "hash": "PoYLvBg"
@@ -229,6 +244,11 @@
             "hash": "WqopWx"
         },
         {
+            "id": 63,
+            "title": "100 Days of CSS - #63 Black Hole",
+            "hash": "LYPozjW"
+        },
+        {
             "id": 64,
             "title": "100 Days of CSS - #64 Hover Me",
             "hash": "YoVPZV"
@@ -237,6 +257,16 @@
             "id": 65,
             "title": "100 Days of CSS - #65 React Atom",
             "hash": "vqmeYR"
+        },
+        {
+            "id": 66,
+            "title": "100 Days of CSS - #66 Sparkle Checkbox",
+            "hash": "MWgNJWg"
+        },
+        {
+            "id": 68,
+            "title": "100 Days of CSS - #68 Microphone",
+            "hash": "LYYPmoq"
         },
         {
             "id": 69,

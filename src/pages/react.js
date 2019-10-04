@@ -15,6 +15,34 @@ const ReactPage = () => (
                     <h2 className="is-size-3 has-text-weight-bold">100 Days of ReactJs Challenge</h2>
                 </div>
 
+                {/* Project 14 */}
+                <div className="column is-4">
+                    <div className="card">
+                        <div className="card-image">
+                            <Image filename="project14.PNG" />
+                        </div>
+                        <div className="card-content">
+                            <div className="media">
+                                <div className="media-content">
+                                    <p className="title is-4">Project 14 - Simplified Tetris</p>
+                                    <ul>
+                                        <li>React Hooks</li>
+                                        <li>UseState</li>
+                                        <li>UseEffect</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div className="content">
+                                <div className="card-buttons">
+                                    <a className="button is-secondary is-rounded" rel="noopener noreferrer" target="_blank" href="https://github.com/mkleung/100daysofReact">Code</a>
+                                    <a className="button greenButton is-rounded" rel="noopener noreferrer" target="_blank" href="https://86ezy.csb.app/">Demo</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
                 {/* Project 13 */}
                 <div className="column is-4">
                     <div className="card">
