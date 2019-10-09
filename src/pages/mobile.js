@@ -12,7 +12,7 @@ const MobilePage = () => (
       </div>
       <div className="columns is-vcentered is-multiline">
         <div className="column is-12">
-          <h2 className="is-size-3 has-text-weight-bold">Mobile Projects</h2>
+          <h2 className="is-size-3 has-text-weight-bold">100 Days of React Native Challenge (Mobile Development)</h2>
         </div>
 
         {/* Project 12 */}
@@ -34,7 +34,7 @@ const MobilePage = () => (
               </div>
               <div className="content">
                 <div className="card-buttons">
-                  <a className="button is-secondary is-rounded" rel="noopener noreferrer" target="_blank" href="https://github.com/mkleung/100daysofReact">Code</a>
+                  <a className="button is-secondary is-rounded" rel="noopener noreferrer" target="_blank" href="https://github.com/mkleung/100daysReactNative">Code</a>
                   <a className="button greenButton is-rounded" rel="noopener noreferrer" target="_blank" href="http://tiny.cc/qmmmdz">Demo</a>
                 </div>
               </div>

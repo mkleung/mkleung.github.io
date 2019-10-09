@@ -19,9 +19,9 @@ export default class Projectsnav extends React.Component {
         </div>
         <div className="projectLinks">
           <div className="projectLinks_title">Minor Projects</div>
-          <div className="projectLink"><Link className={mobile} to="/mobile">Mobile</Link></div>
-          <div className="projectLink"><Link className={react} to="/react">React</Link></div>
-          <div className="projectLink"><Link className={frontend} to="/frontend">CSS</Link></div>
+          <div className="projectLink"><Link className={react} to="/react">100DaysReact</Link></div>
+          <div className="projectLink"><Link className={frontend} to="/frontend">100DaysCSS</Link></div>
+          <div className="projectLink"><Link className={mobile} to="/mobile">100DaysReactNative</Link></div>
         </div>
       </div>
     )

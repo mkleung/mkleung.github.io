@@ -12,18 +12,16 @@ const IndexPage = () => (
 
         <div className="column is-6 landing-caption content">
           <h1 className="title is-bold is-spaced">Hello I'm Mike</h1>
-          <p>
-            I am a:
-          </p>
+
           <ul>
-            <li>Software Developer</li>
-            <li>Photographer</li>
-            <li>Foodie</li>
+            <li>I am a Software Developer.</li>
+            <li>I have a Comp. Sci degree from Carleton University.</li>
+            <li>I live in Ottawa, Canada.</li>
           </ul>
           <p>I am proficient in:</p>
           <ul>
-            <li>Javascript frameworks (ReactJs, VueJs)</li>
-            <li>WordPress Theme development</li>
+            <li>Javascript frameworks (ReactJs)</li>
+            <li>WordPress Theme development.</li>
             <li>Laravel and Node.Js</li>
           </ul>
 
