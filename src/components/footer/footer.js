@@ -33,8 +33,10 @@ const Footer = () => (
                         </a>
                     </span> */}
                 </div>
-                {/* <p> Copyright © {new Date().getFullYear()} Michael Leung
-                </p> */}
+                {/* <p> Copyright © {new Date().getFullYear()} Mike Leung</p> */}
+                <p>    Built with Gatsby and Netlify
+                </p>
+                <br />
             </div>
         </footer>
     </div>

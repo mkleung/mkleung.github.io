@@ -14,7 +14,7 @@ const ProjectPage = () => (
           <h2 className="is-size-3 has-text-weight-bold">Major Full Stack Projects</h2>
         </div>
 
-        {/* Snaplift */}
+        {/* Snaplifts */}
         <div className="column is-4">
           <div className="card">
             <div className="card-image">
@@ -38,7 +38,6 @@ const ProjectPage = () => (
         </div>
 
         {/* Atomic To Do List */}
-       
         <div className="column is-4">
           <div className="card">
             <div className="card-image">
@@ -61,8 +60,30 @@ const ProjectPage = () => (
             </div>
           </div>
         </div>
-       
-      
+
+        {/* Personal Site */}
+        <div className="column is-4">
+          <div className="card">
+            <div className="card-image">
+              <Image filename="personal.PNG" />
+
+            </div>
+            <div className="card-content">
+              <div className="content">
+                <p className="title is-4">Personal Site</p>
+                <ul>
+                  <li>Gatsby React Framework</li>
+                  <li>GraphyQL</li>
+                  <li>Netlify</li>
+                </ul>
+                <div className="card-buttons">
+                  <a className="button is-secondary is-rounded" rel="noopener noreferrer" target="_blank" href="https://github.com/mkleung/mkleung.github.io">Code</a>
+                  <a className="button is-rounded greenButton" rel="noopener noreferrer" target="_blank" href="https://mikeleung.ca">Demo</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
 
       </div>
     </div>
