@@ -15,6 +15,34 @@ const ReactPage = () => (
                     <h2 className="is-size-3 has-text-weight-bold">100 Days of ReactJs Challenge</h2>
                 </div>
 
+
+                {/* Project 16 */}
+                <div className="column is-4">
+                    <div className="card">
+                        <div className="card-image">
+                            <Image filename="project16.PNG" />
+                        </div>
+                        <div className="card-content">
+                            <div className="media">
+                                <div className="media-content">
+                                    <p className="title is-4">Project 16 - Memory Game</p>
+                                    <ul>
+                                        <li>React Hooks</li>
+                                        <li>UseState</li>
+                                        <li>UseEffect</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div className="content">
+                                <div className="card-buttons">
+                                    <a className="button is-secondary is-rounded" rel="noopener noreferrer" target="_blank" href="https://codesandbox.io/s/project-16-memory-game-7w5nv">Code</a>
+                                    <a className="button greenButton is-rounded" rel="noopener noreferrer" target="_blank" href="https://7w5nv.csb.app/">Demo</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
                 {/* Project 14 */}
                 <div className="column is-4">
                     <div className="card">

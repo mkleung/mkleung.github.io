@@ -65,6 +65,11 @@
             "hash": "NWKNxaG"
         },
         {
+            "id": 19,
+            "title": "100 Days of CSS - #19 Radio Buttons",
+            "hash": "ZEEBPwb"
+        },
+        {
             "id": 20,
             "title": "100 Days of CSS - #20  Send Mail",
             "hash": "xxKOXxz"
@@ -79,6 +84,11 @@
             "id": 22,
             "title": "100 Days of CSS - #22 Progress Circle",
             "hash": "JjPRKaY"
+        },
+        {
+            "id": 23,
+            "title": "100 Days of CSS - #23 Keep Calm",
+            "hash": "wvvgWbN"
         },
         {
             "id": 24,
@@ -283,7 +293,67 @@
             "title": "100 Days of CSS - #73 Word Carousel",
             "hash": "mZxOQe"
         },
+        {
+            "id": 74,
+            "title": "100 Days of CSS - #74 Radio Buttons",
+            "hash": "oNNjvNp"
+        },
+        {
+            "id": 75,
+            "title": "100 Days of CSS - #75 Gyroscope",
+            "hash": "ExxVRmm"
+        },
+        {
+            "id": 76,
+            "title": "100 Days of CSS - #76 Password",
+            "hash": "KKKVzmK"
+        },
+        {
+            "id": 77,
+            "title": "100 Days of CSS - #77 Wheel",
+            "hash": "XWWXZNd"
+        },
 
+        {
+            "id": 78,
+            "title": "100 Days of CSS - #78 Hover Me",
+            "hash": "PooZgXO"
+        },
+        {
+            "id": 80,
+            "title": "100 Days of CSS - #80 Slider",
+            "hash": "PoozNgd"
+        },
+        {
+            "id": 81,
+            "title": "100 Days of CSS - #81 Bouncing Ball",
+            "hash": "oNNLOER"
+        },
+        {
+            "id": 82,
+            "title": "100 Days of CSS - #82 Button",
+            "hash": "ZEEpoOy"
+        },
+        {
+            "id": 83,
+            "title": "100 Days of CSS - #83 Light Speed",
+            "hash": "JjjbYBJ"
+        },
+        {
+            "id": 84,
+            "title": "100 Days of CSS - #84 - Book Cover",
+            "hash": "xxxRPGw"
+        },
+        {
+            "id": 85,
+            "title": "100 Days of CSS - #85 Wave",
+            "hash": "VwwmqyV"
+        },
+        {
+            "id": 86,
+            "title": "100 Days of CSS - #86 Pendulum",
+            "hash": "QWWdQdv"
+        },
         {
             "id": 87,
             "title": "100 Days of CSS - #87 Ruby Gem",
