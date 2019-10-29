@@ -11,19 +11,8 @@ const IndexPage = () => (
       <div className="columns is-vcentered is-multiline main-feature">
 
         <div className="column is-6 landing-caption content">
-          <h1 className="title is-bold is-spaced">Hello I'm Mike</h1>
+          <h1 className="title is-bold is-spaced">Hello I'm Mike Leung. React / WordPress Web Developer</h1>
 
-          <ul>
-            <li>I am a Software Developer.</li>
-            <li>I have a Comp. Sci degree from Carleton University.</li>
-            <li>I live in Ottawa, Canada.</li>
-          </ul>
-          <p>I am proficient in:</p>
-          <ul>
-            <li>Javascript frameworks (ReactJs)</li>
-            <li>WordPress Theme development.</li>
-            <li>Laravel and Node.Js</li>
-          </ul>
 
           <br />
           <p><Link className="button is-primary is-rounded greenButton" to="/projects">View Projects</Link></p>

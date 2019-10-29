@@ -5,8 +5,7 @@ $first: rgba(108, 99, 255, 0.4);
 $second: #00d1b2;
 
 body {
-	font-family: 'Rubik',
-		sans-serif;
+	font-family: 'Rubik', sans-serif;
 
 	a {
 		color: $second;
@@ -15,28 +14,38 @@ body {
 	.socialMediaIcons {
 		margin: 30px 0;
 	}
+}
 
+.gatsby-resp-image-wrapper {
+// .gatsby-resp-image-image, .gatsby-resp-image-background-image {
+	height: 75%;
+	width: 75%;
+	margin-left: 0!important;
 }
 
 body.dark {
 	background: #202020;
 	transition: background .3s ease-in-out;
-	color: #FFF;
+	color: #fff;
 
 	.title,
 	.label,
 	h1,
 	h2,
 	h3 {
-		color: #FFF;
+		color: #fff;
 	}
 
 	.icon {
-		fill: #FFF;
+		fill: #fff;
+	}
+
+	strong {
+		color: #fff !important;
 	}
 
 	article {
-		color: #FFF;
+		color: #fff;
 
 		.title {
 			color: $second;
@@ -72,19 +81,19 @@ body.light {
 .greenButton {
 	font-weight: 700;
 	border: none;
-	color: #FFF;
+	color: #fff;
 	background-color: #00d1b2;
 	background-image: linear-gradient(to right, $first 0%, $second 51%, $first 100%);
 	transition: background 0.5s ease;
 	background-size: 300% auto;
 
 	&:focus {
-		color: #FFF;
+		color: #fff;
 	}
 
 	&:hover {
 		background-position: right center;
-		color: #FFF;
+		color: #fff;
 	}
 }
 
@@ -95,7 +104,6 @@ iframe {
 .has-margin-right-25 {
 	margin-right: 25px;
 }
-
 
 .has-text-weight-bold {
 	margin-bottom: 10px;
@@ -181,7 +189,6 @@ article:hover {
 }
 
 .pen-container {
-
 	position: relative;
 
 	/* width */
@@ -226,14 +233,14 @@ article:hover {
 				// background: #00d1b2;
 				background-color: #00d1b2;
 
-				color: #FFF;
+				color: #fff;
 			}
 		}
 
 		.active {
 			font-weight: 700;
 			border: none;
-			color: #FFF;
+			color: #fff;
 			background-color: #00d1b2;
 			// background-image: linear-gradient(to right, $first 0%, $second 51%, $first 100%);
 			// transition: background 0.5s ease;
@@ -241,12 +248,12 @@ article:hover {
 			border-radius: 0;
 
 			&:focus {
-				color: #FFF;
+				color: #fff;
 			}
 
 			&:hover {
 				background-position: right center;
-				color: #FFF;
+				color: #fff;
 			}
 		}
 	}
@@ -267,7 +274,6 @@ article:hover {
 	}
 }
 
-
 // Page load
 .fade-appear {
 	opacity: 0;
@@ -279,9 +285,8 @@ article:hover {
 	transition: opacity 300ms ease;
 }
 
-
 .test {
 	height: 100px;
 	width: 100px;
-	background: #FFF;
+	background: #fff;
 }
