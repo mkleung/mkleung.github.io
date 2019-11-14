@@ -5,15 +5,16 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Image from '../components/img'
 
+import Intro from '../components/intro'
+
 const IndexPage = () => (
   <Layout>
     <div className="container">
       <div className="columns is-vcentered is-multiline main-feature">
 
         <div className="column is-6 landing-caption content">
-          <h1 className="title is-bold is-spaced">Hello I'm Mike Leung. React / WordPress Web Developer</h1>
-
-
+          <Intro />
+          <p className="home_title">I'm Mike Leung and I'm a Javascript Developer with experience in WordPress and React</p>
           <br />
           <p><Link className="button is-primary is-rounded greenButton" to="/projects">View Projects</Link></p>
         </div>
