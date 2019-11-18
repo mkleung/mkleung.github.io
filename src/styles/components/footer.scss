@@ -1,0 +1,17 @@
+.footer {
+  background: transparent;
+  overflow: hidden;
+  padding: 0;
+
+  .icon-wrapper {
+    margin: 0 17px;
+    .icon {
+      height: 15px;
+      width: 15px;
+      fill: #fff;
+      &:hover {
+        fill: $second;
+      }
+    }
+  }
+}

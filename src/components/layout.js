@@ -8,42 +8,28 @@
 import React from "react"
 import PropTypes from "prop-types"
 import 'bulma/css/bulma.css'
-import Header from "./header/header"
-import Footer from "./footer/footer"
-import "./layout.scss"
-import { CSSTransition } from "react-transition-group";
+import Header from "./header"
+import Footer from "./footer"
+import "../styles/main.scss"
+// import { CSSTransition } from "react-transition-group";
 const Layout = ({ navLocation, children }) => {
-  return (
-    
-    <div>
-      <Header navLocation={navLocation} />
-      <div
-        style={{
-          margin: `0 auto`,
-          maxWidth: 960,
-          padding: `0px 1.0875rem 1.45rem`,
-          paddingTop: 0,
-        }}
-      >
-
-      
-        <main>
-          <section className="hero is-medium intro">
-            <div className="hero-body">
-              {children}
+    return (
+        <div>
+            <Header navLocation={navLocation} />
+            <div style={{margin:`0 auto`, maxWidth: 960, padding: `0px 1.0875rem 1.45rem`, paddingTop: 0 }}>
+                <main>
+                    <section className="hero is-medium intro">
+                        <div className="hero-body">
+                            {children}
+                        </div>
+                    </section>
+                </main>
+                <Footer />
             </div>
-          </section>
-        </main>
-      
-        <Footer></Footer>
-      </div>
-    </div>
-   
-  )
+        </div>
+    )
 }
-
 Layout.propTypes = {
-  children: PropTypes.node.isRequired,
+    children: PropTypes.node.isRequired,
 }
-
 export default Layout

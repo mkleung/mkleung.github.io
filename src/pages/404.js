@@ -2,7 +2,7 @@ import React from "react"
 import { Link } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import Four from '../components/404/404.js'
+import Four from '../components/404'
 
 const NotFoundPage = () => (
   <Layout>

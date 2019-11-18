@@ -1,8 +1,8 @@
 import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import Projectsnav from "../components/nav"
-import Image from '../components/img'
+import Projectsnav from "../components/projectsNav"
+// import Image from '../components/img'
 
 const MobilePage = () => (
   <Layout navLocation="project">

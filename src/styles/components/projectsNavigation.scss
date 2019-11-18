@@ -1,0 +1,26 @@
+$primary-color: #00d1b2;
+
+.projectLinks {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 10px;
+  .projectLinks_title {
+    padding-right: 20px;
+  }
+  .projectLink {
+    margin-right: 15px;
+  }
+}
+.green {
+  color: $primary-color;
+  font-weight: bold;
+  border-bottom: 2px solid $primary-color;
+}
+a {
+  &:hover {
+    color: #00d1b2;
+    font-weight: bold;
+  }
+}

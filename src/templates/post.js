@@ -1,13 +1,10 @@
 import React from "react"
 import { graphql, Link } from 'gatsby'
 import Layout from "../components/layout"
-require("./prism.scss")
-require("./post.scss")
 
 export default ({ data }) => {
   const post = data.markdownRemark
   return (
-    
     <Layout navLocation="blog">
       <div className="container">
       

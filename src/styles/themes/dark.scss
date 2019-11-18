@@ -1,0 +1,41 @@
+body.dark {
+	background: #202020;
+	transition: background .3s ease-in-out;
+	color: #fff;
+
+	.title,
+	.label,
+	h1,
+	h2,
+	h3 {
+		color: #fff;
+	}
+
+	.icon {
+		fill: #fff;
+	}
+
+	strong {
+		color: #fff !important;
+	}
+
+	article {
+		color: #fff;
+
+		.title {
+			color: $second;
+			margin-bottom: 5px;
+		}
+
+		.icon {
+			fill: $second;
+		}
+	}
+
+	.card {
+		.title {
+			color: #4a4a4a;
+			margin-bottom: 5px;
+		}
+	}
+}

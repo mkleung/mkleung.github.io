@@ -1,0 +1,25 @@
+@import url("https://fonts.googleapis.com/css?family=Nunito&display=swap");
+
+@import "base/variables";
+
+// Components
+@import "components/layout";
+@import "components/header";
+@import "components/footer";
+@import "components/switch";
+@import "components/projectsNavigation";
+
+// Pages
+@import "pages/home";
+@import "pages/404";
+@import "pages/contact";
+@import "pages/blog";
+@import "pages/projects";
+
+// Posts
+@import "posts/post";
+@import "posts/prism";
+
+// Themes
+@import "themes/dark";
+@import "themes/light";

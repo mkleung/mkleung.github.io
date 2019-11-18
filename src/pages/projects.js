@@ -1,7 +1,7 @@
 import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import Projectsnav from "../components/nav"
+import Projectsnav from "../components/projectsNav"
 import Image from '../components/img'
 const ProjectPage = () => (
   <Layout navLocation="project">

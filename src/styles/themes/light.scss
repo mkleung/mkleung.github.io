@@ -1,0 +1,12 @@
+body.light {
+	transition: background .3s ease-in-out;
+
+	article {
+		color: black;
+
+		.title {
+			color: black;
+			margin-bottom: 5px;
+		}
+	}
+}

@@ -2,7 +2,7 @@ import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Codepen from "react-codepen-embed";
-import Projectsnav from "../components/nav"
+import Projectsnav from "../components/projectsNav"
 import * as frontendData from "../assets/data/frontend.json";
 
 class FrontEndPage extends React.Component {
