@@ -1,9 +1,9 @@
 ---
-
 title: "Getting Started with Gatsby"
-
 date: "2019-08-10"
-
+featuredImage: "./gatsby.png"
+categories:
+  - Gatsby
 ---
 
 ![Gatsby](./gatsby.png)
