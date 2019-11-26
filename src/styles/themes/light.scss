@@ -1,12 +1,30 @@
 body.light {
 	transition: background .3s ease-in-out;
 
+	.hello {
+		// color: black;
+		background-color:darken(#4A4A45, 10%);
+		background-image: none;
+	}
+
 	article {
-		color: black;
+		color: #202020;
 
 		.title {
-			color: black;
+			color: #202020;
+
 			margin-bottom: 5px;
 		}
 	}
+
+	.socialMediaIcons {
+		.icon-wrapper {
+			.icon {
+				fill: #202020;
+			}
+		}
+	}
+
 }
+
+

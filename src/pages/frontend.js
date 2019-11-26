@@ -21,14 +21,12 @@ class FrontEndPage extends React.Component {
             return (
                   <Layout navLocation="project">
                         <div className="container">
-                              <div className="columns is-vcentered is-multiline main-feature">
-                                    <Projectsnav project="CSS" />
-
-                              </div>
+       
                               <div className="columns is-vcentered is-multiline">
                                     <div className="column is-12">
                                           <h2 className="is-size-3 has-text-weight-bold">100 Days of CSS Challenge</h2>
                                     </div>
+                                    <Projectsnav project="CSS" />
                                     <div className="column is-6 pen-container">
                                           <div className="pen-titles">
                                                 {frontendData.projects.map((item, index) => {

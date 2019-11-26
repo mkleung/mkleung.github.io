@@ -44,14 +44,9 @@ class ContactPage extends React.Component {
                   <p className="control">
                     <button className="button greenButton is-rounded" type="submit">Send Email</button>
                   </p>
-
                 </div>
               </form>
             </div>
-            <div className="column is-6">
-              <Image filename="contact.png" />
-            </div>
-
           </div>
         </div>
         <SEO title="Contact" />

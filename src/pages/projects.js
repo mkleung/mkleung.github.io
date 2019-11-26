@@ -6,14 +6,12 @@ import Image from '../components/img'
 const ProjectPage = () => (
   <Layout navLocation="project">
     <div className="container">
-      <div className="columns is-vcentered is-multiline main-feature">
-        <Projectsnav project="Projects" />
-      </div>
       <div className="columns is-vcentered is-multiline">
         <div className="column is-12">
           <h2 className="is-size-3 has-text-weight-bold">Major Full Stack Projects</h2>
         </div>
-
+        <Projectsnav project="Projects" />
+        
         {/* Snaplifts */}
         <div className="column is-4">
           <div className="card">

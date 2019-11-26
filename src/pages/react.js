@@ -7,14 +7,11 @@ import Image from '../components/img'
 const ReactPage = () => (
     <Layout navLocation="project">
         <div className="container">
-            <div className="columns is-vcentered is-multiline main-feature">
-                <Projectsnav project="React" />
-            </div>
             <div className="columns is-vcentered is-multiline">
                 <div className="column is-12">
                     <h2 className="is-size-3 has-text-weight-bold">100 Days of ReactJs Challenge</h2>
                 </div>
-
+                <Projectsnav project="React" />
 
                 {/* Project 16 */}
                 <div className="column is-4">
