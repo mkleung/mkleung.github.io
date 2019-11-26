@@ -7,7 +7,7 @@ import Img from "gatsby-image"
 const BlogPage = () => {
     const data = useStaticQuery(graphql`
     query {
-        allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }, limit: 2) {
+        allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }, limit: 100) {
             edges {
                 node {
                     frontmatter {
@@ -42,7 +42,7 @@ const BlogPage = () => {
                                     <article class="media">
                                         <div class="media-left">
                                             <figure className="image blog-image is-64x64">
-                                                <Img fluid={edge.node.frontmatter.featuredImage.childImageSharp.fluid} />
+                                            <Img fluid={edge.node.frontmatter.featuredImage.childImageSharp.fluid} />
                                             </figure>
                                         </div>
                                         <div class="media-content">

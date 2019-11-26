@@ -1,7 +1,7 @@
 ---
 title: "Getting Started with Gatsby"
 date: "2019-08-10"
-featuredImage: "./gatsby.png"
+featuredImage: "../../assets/blog/gatsby.png"
 categories:
   - Gatsby
 ---
