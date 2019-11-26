@@ -2,8 +2,11 @@
 
 title: "Setup Firebase with React"
 
-date: "2019-11-29"
+date: "2019-10-29"
 featuredImage: "../../assets/blog/firebase.png"
+categories:
+  - Firebase
+  - All
 ---
 
 For non programmers, firebase is a database on the cloud. While normal databases use http, firebase uses websockets which are much faster than http. Websockets are mostly used in chat apps where querying the database occurs at a higher frequency.

@@ -4,6 +4,7 @@ date: "2019-08-10"
 featuredImage: "../../assets/blog/gatsby.png"
 categories:
   - Gatsby
+  - All
 ---
 
 ![Gatsby](./gatsby.png)

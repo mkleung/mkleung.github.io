@@ -4,6 +4,9 @@ title: "React Native Series Part 1/5 - Add Navigation"
 
 date: "2019-11-26"
 featuredImage: "../../assets/blog/react.png"
+categories:
+  - ReactNative
+  - All
 ---
 
 ### Step 1: Installation
@@ -11,9 +14,13 @@ featuredImage: "../../assets/blog/react.png"
 Install the following packages
 
 ```npm install --save react-navigation```
+
 ```expo install react-native-gesture-handler```
+
 ```expo install react-native-reanimated```
+
 ```npm install --save react-navigation-stack```
+
 
 ### Step 2: Create Navigation Header
 
@@ -88,6 +95,7 @@ export default HomeScreen;
 ### Step 4: Add a button in the header
 
 ```npm install --save react-navigation-header-buttons```
+
 ```npm install --save @expo/vector-icons```
 
 Inside **components/HeaderButton.js**
@@ -137,3 +145,8 @@ HomeScreen.navigationOptions = navData => {
     }
 };
 ```
+
+Final Screen
+
+
+<img src="./phone.png" alt="" /><br/>
