@@ -9,7 +9,7 @@ const ReactPage = () => (
         <div className="container">
             <div className="columns is-vcentered is-multiline">
                 <div className="column is-12">
-                    <h2 className="is-size-3 has-text-weight-bold">100 Days of ReactJs Challenge</h2>
+                    <h2 className="is-size-3 has-text-weight-bold">100 Days of React Challenge</h2>
                 </div>
                 <Projectsnav project="React" />
 
