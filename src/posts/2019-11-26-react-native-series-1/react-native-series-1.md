@@ -1,6 +1,6 @@
 ---
 
-title: "React Native Series Part 1/5 - Add Navigation"
+title: "React Native Series Part 1/5 - Project Setup"
 
 date: "2019-11-26"
 featuredImage: "../../assets/blog/react.png"
@@ -9,7 +9,29 @@ categories:
   - All
 ---
 
-### Step 1: Installation
+In this tutorial series, we are going to create an app that takes pictures of public artwork and store the location inside a database which can also be accessed by users around the world. They will be able to view public artworks in your city and rate them.
+
+We will develop the app using react native as it allows quick development in IOS and Android while retaining native features.
+
+
+### Step 0: Install React Native
+
+
+We are going to create the app using expo which is easier to install and learn.
+
+Install the react expo CLI
+
+```npm install expo-cli --global```
+
+Create the app using the following command
+
+```expo init my-new-project```
+
+
+### Step 1: Installation of Navigation
+
+
+We will first install the navigation
 
 Install the following packages
 
