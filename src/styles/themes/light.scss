@@ -3,15 +3,15 @@ body.light {
 
 	.hello {
 		// color: black;
-		background-color:darken(#4A4A45, 10%);
+		background-color: darken($black, 10%);
 		background-image: none;
 	}
 
 	article {
-		color: #202020;
+		color: $black;
 
 		.title {
-			color: #202020;
+			color: $black;
 
 			margin-bottom: 5px;
 		}
@@ -20,11 +20,13 @@ body.light {
 	.socialMediaIcons {
 		.icon-wrapper {
 			.icon {
-				fill: #202020;
+				fill: $black;
 			}
 		}
 	}
 
+	hr {
+		background-color: #202020;
+	}
+
 }
-
-

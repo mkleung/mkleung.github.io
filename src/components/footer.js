@@ -21,7 +21,7 @@ const Footer = () => (
 							</svg>
 						</a>
 					</span>
-                    <span className='icon-wrapper'>
+					<span className='icon-wrapper'>
 						<a target='_blank' rel='noopener noreferrer' href='https://www.instagram.com/morningmike/'>
 							<svg
 								className='icon'
@@ -57,7 +57,7 @@ const Footer = () => (
                         </a>
                     </span> */}
 				</div>
-				<p> Built with <a target="_blank" href="https://www.gatsbyjs.org/">Gatsby</a> and <a target="_blank" href="https://www.netlify.com/">Netlify</a></p>
+				<p> Built with <a rel="noopener noreferrer" target="_blank" href="https://www.gatsbyjs.org/">Gatsby</a> and <a target="_blank" rel="noopener noreferrer" href="https://www.netlify.com/">Netlify</a></p>
 				<br />
 			</div>
 		</footer>

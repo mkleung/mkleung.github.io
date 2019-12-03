@@ -7,16 +7,16 @@ export default ({ data }) => {
   return (
     <Layout navLocation="blog">
       <div className="container">
-      
         <div className="columns is-vcentered is-multiline">
           <div className="column is-12">
             <Link className="button is-primary is-rounded greenButton" to="/blog"><i className="fas fa-chevron-left"></i>&nbsp;<span> Back</span></Link>
           </div>
           <div className="column is-12">
-            <h1 className="title is-1 is-bold is-spaced">{post.frontmatter.title}</h1>
+            <h1 className="title is-size-3">{post.frontmatter.title}</h1>
+            <p>{post.frontmatter.date}</p>
+            <hr style={{ height: ".4px" }} />
           </div>
           <div className="column is-10 landing-caption content">
-            <p>{post.frontmatter.date}</p>
             <div dangerouslySetInnerHTML={{ __html: post.html }} />
           </div>
           <div className="column is-12">
@@ -25,7 +25,7 @@ export default ({ data }) => {
         </div>
       </div>
     </Layout>
-    
+
   )
 }
 

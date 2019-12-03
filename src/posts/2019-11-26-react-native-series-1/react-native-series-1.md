@@ -167,8 +167,3 @@ HomeScreen.navigationOptions = navData => {
     }
 };
 ```
-
-Final Screen
-
-
-<img src="./phone.png" alt="" /><br/>

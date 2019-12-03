@@ -9,9 +9,36 @@ categories:
   - All
 ---
 
-### Step 1: Add React Redux for Global State Management
+Expected Result:
 
-We need redux to manage the state globally. Redux is the solution for when you need to pass props between child and parent components which can get complex once the app scales.
+<img src="../posts/2019-11-27-react-native-series-2/1.gif" alt="2019-11-27-react-native-series-2" width="300"  /><br/>
+
+
+
+Redux
+================
+
+Redux helps apps to scale by providing a sensical way to manage state through a unidirectional data flow model.
+
+An app without redux will each have their own state and and passing data between components becomes extrememly confusing once the app scales.
+
+An app with redux has a master state that lives in one place and components send requests that update the master state and vice versa.
+
+Definitions
+===========
+
+**Store**
+The store is where the entire state of your application lives. It is one big object. An analogy would be a bank vault that contains all the money for the bank.
+
+**Action** 
+Redux actions are like instructions to modify the store. It also contains the payload (data) from the components. For example, withdrawing money or depositing a cheque to the bank vault.
+
+**Reducer**
+A reducer contains a list of **Actions** that get called whenever a component needs it. Reducer reads the payload from the actions and update the store.
+
+In the bank analogy, the reducer is a bank employee who handle transactions (dispatches) and the component is the client who needs to withdraw/deposit cash.
+
+### Step 1: Add React Redux for Global State Management
 
 Install the redux package
 
@@ -23,17 +50,14 @@ Install the redux package
 
 ### Step 2: Create a blueprint for Place object inside models folder
 
-inside models/Place.js
+inside **models/Place.js**
 
 ```
 class Place {
-    constructor(id, title, imageUri, address, lat, lng) {
-        this.id = id;
-        this.title = title;
-        this.imageUri = imageUri;
-        this.address = address;
-        this.lat = lat;
-        this.lng = lng;
+    constructor(id, title, location) {
+      this.id = id;
+      this.title = title; 
+      this.location = location;
     }
 }
 export default Place;
@@ -41,79 +65,230 @@ export default Place;
 
 ### Step 3: Create the Actions file
 
-Inside store/places-actions.js
+Recall: Actions are like instructions to modify the store. 
+
+In the code below, we create an action for adding a place and add the data that it will contain.
+
+Inside **store/places-actions.js**
 
 ```
 export const ADD_PLACE = 'ADD_PLACE';
-export const addPlace = (title, image, location) => {
-    return { type: ADD_PLACE, placeData: { title: title } }
+let previousId = 0;
+
+export const addPlace = (title, location) => {
+    let id = previousId + 1;
+    previousId = id;
+    return {
+        type: ADD_PLACE,
+        placeData: { 
+          id: id, 
+          title: title, 
+          location: location 
+        }
+    }
 };
+
 ```
 
 ### Step 4: Create the Reducer File
 
-Inside store/places-reducer.js
+Recall: A reducer contains a list of **Actions** that get called whenever a component needs it. 
 
-```
-const initialState = {
-    places: []
-};
-export default (state = initialState, action) => {
-    return state
-};
-```
+In the code below, we first initialize an empty state which will contain an array of places. We then add a case for ADD_ACTION which adds an item into the array.
 
-### Step 3: Import the Redux Store into App.js
-
-Inside App.js
+Inside **store/places-reducer.js**
 
 ```
 import { ADD_PLACE } from './places-actions';
 import Place from '../models/Place';
+const initialState = { places: [] };
 
-const initialState = {
-    places: []
-};
 export default (state = initialState, action) => {
     switch (action.type) {
         case ADD_PLACE:
             const newPlace = new Place(
-                action.placeData.id.toString(),
-                action.placeData.title,
-                action.placeData.image,
-                action.placeData.address,
-                action.placeData.coords.lat,
-                action.placeData.coords.lng
+              action.placeData.id, 
+              action.placeData.title, 
+              action.placeData.location
             );
-            return {
-                places: state.places.concat(newPlace)
+            return { 
+              places: state.places.concat(newPlace) 
             };
-        default:
-            return state;
+        default: return state;
     }
 };
 ```
 
 ### Step 4: Import Redux Store into App.js
 
-inside App.js
+inside **App.js**
 
 ```
+import React from 'react';
+import { 
+  StyleSheet, 
+  Text, 
+  View 
+} from 'react-native';
+import AppNavigator from './navigation/AppNavigator'
+
 // Redux
-import { createStore, combineReducers, applyMiddleware } from 'redux'
+import { 
+  createStore, 
+  combineReducers, 
+  applyMiddleware 
+} from 'redux'
+
 import { Provider } from 'react-redux'
 import ReduxThunk from 'redux-thunk'
 import placesReducer from './store/places-reducer'
 
-const rootReducer = combineReducers({
-  places: placesReducer
-})
+const rootReducer = combineReducers({ places: placesReducer })
 
 export default function App() {
   return (
-    <Provider store={createStore(rootReducer, applyMiddleware(ReduxThunk))}>
+    <Provider 
+    store={
+      createStore(rootReducer, applyMiddleware(ReduxThunk))
+    }>
       <AppNavigator />
     </Provider>
   );
 }
 ```
+
+### Step 5: Create a Add New Place component
+
+This component has two inputs and a button. When the user saves, it will dispatch the data entered to the actions.
+
+Inside **screens/NewPlaceScreen.js**
+
+```
+import React from 'react';
+import {
+  ScrollView, 
+  View, 
+  Button, 
+  Text, 
+  TextInput,
+   StyleSheet
+} from 'react-native';
+import { useDispatch, useSelector } from 'react-redux';
+import Colors from '../constants/Colors';
+import * as placesActions from '../store/places-actions';
+
+export default const NewPlaceScreen = props => {
+
+    const [titleValue, setTitleValue] = useState('');
+    const [locationValue, setLocationValue] = useState('');
+    const dispatch = useDispatch();
+
+    const savePlaceHandler = () => {
+        dispatch(placesActions.addPlace(titleValue, locationValue));
+        props.navigation.goBack();
+    };
+    return (
+        <ScrollView>
+            <View style={styles.form}>
+                <TextInput
+                    style={styles.textInput}
+                    onChangeText={(text) => setTitleValue(text)}
+                    value={titleValue}
+                    placeholder="Title"
+                />
+                <TextInput
+                    style={styles.textInput}
+                    onChangeText={(text) => { setLocationValue(text); }}
+                    value={locationValue}
+                    placeholder="Location"
+                />
+                <Button title="Save Place" color={Colors.primary} onPress={savePlaceHandler}
+                />
+            </View>
+        </ScrollView>
+    );
+};
+NewPlaceScreen.navigationOptions = { headerTitle: 'Add Place' };
+```
+
+### Step 6: Create the List All Places Component
+
+This component will list all the places in a flatlist. When the user taps on an item, it will go to the Details component on step 7 and pass the palce title parameter.
+
+Inside **screens/PlacesListScreen.js**
+
+```
+import React from 'react';
+import { 
+  View, 
+  Text, 
+  StyleSheet, 
+  Platform, 
+  FlatList, 
+  TouchableOpacity 
+} from 'react-native';
+import { useSelector } from 'react-redux';
+import Colors from '../constants/Colors';
+
+const PlacesListScreen = props => {
+
+    const places = useSelector(state => state.places.places);
+    const onSelect = (title) => { 
+      props.navigation.navigate('PlaceDetail', { placeTitle: title}); 
+    }
+
+    return (
+        <View>
+            <FlatList
+                data={places}
+                keyExtractor={(item, index) => index.toString()}
+                renderItem={itemData => (
+                    <TouchableOpacity
+                        onPress={() => onSelect(itemData.item.title)}
+                        style={styles.placeItem}>
+                        <View style={styles.infoContainer}>
+                            <Text style={styles.title}>{itemData.item.id} - {itemData.item.title}, {itemData.item.location}</Text>
+                        </View>
+                    </TouchableOpacity>
+                )}
+            />
+        </View>
+    );
+};
+PlacesListScreen.navigationOptions = navData => { return { headerTitle: 'All Places' }; };
+```
+
+### Step 7: Create a Place Detail Component
+
+The component will get the place title parameter from the navigator and display it on screen.
+
+Inside **screens/DetailScreen.js**
+
+```
+import React from 'react';
+import { 
+  ScrollView, 
+  Image, 
+  View, 
+  Text, 
+  StyleSheet 
+} from 'react-native';
+import Colors from '../constants/Colors';
+
+const DetailScreen = props => {
+    const placeTitle = props.navigation.getParam('placeTitle');
+    return (
+        <ScrollView contentContainerStyle={{ alignItems: 'center' }}>
+            <View style={styles.locationContainer}>
+                <View style={styles.addressContainer}>
+                  <Text style={styles.address}>{placeTitle}</Text>
+                </View>
+            </View>
+        </ScrollView>
+    );
+};
+DetailScreen.navigationOptions = navData => { return { headerTitle: navData.navigation.getParam('placeTitle') }; };
+```
+
+
+<!-- <img src="http://localhost:8000/posts/2019-11-27-react-native-series-2/1.gif" alt="2019-11-27-react-native-series-2" width="400"  /><br/> -->
