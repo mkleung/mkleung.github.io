@@ -9,12 +9,6 @@ categories:
   - All
 ---
 
-Expected Result:
-
-<img src="../posts/2019-11-27-react-native-series-2/1.gif" alt="2019-11-27-react-native-series-2" width="300"  /><br/>
-
-
-
 Redux
 ================
 
@@ -23,6 +17,20 @@ Redux helps apps to scale by providing a sensical way to manage state through a 
 An app without redux will each have their own state and and passing data between components becomes extrememly confusing once the app scales.
 
 An app with redux has a master state that lives in one place and components send requests that update the master state and vice versa.
+
+### What we will learn:
+- Install React Redux
+- Create Places Model
+- Create a Redux Action
+- Create a Redux Reducer
+- Import Redux Store into App.js
+- Create a Add New Place component
+- Create the List All Places Component
+- Create a Place Detail Component
+
+### Result:
+<img src="../posts/2019-11-27-react-native-series-2.gif" alt="2019-11-27-react-native-series-2" width="300"  /><br/>
+
 
 Definitions
 ===========
@@ -38,9 +46,9 @@ A reducer contains a list of **Actions** that get called whenever a component ne
 
 In the bank analogy, the reducer is a bank employee who handle transactions (dispatches) and the component is the client who needs to withdraw/deposit cash.
 
-### Step 1: Add React Redux for Global State Management
+### Step 1: Install React Redux
 
-Install the redux package
+Install the redux packages
 
 ```npm install --save redux```
 
@@ -48,7 +56,8 @@ Install the redux package
 
 ```npm install --save redux-thunk```
 
-### Step 2: Create a blueprint for Place object inside models folder
+
+### Step 2: Create Places Model
 
 inside **models/Place.js**
 
@@ -63,7 +72,7 @@ class Place {
 export default Place;
 ```
 
-### Step 3: Create the Actions file
+### Step 3: Create a Redux Action
 
 Recall: Actions are like instructions to modify the store. 
 
@@ -90,7 +99,7 @@ export const addPlace = (title, location) => {
 
 ```
 
-### Step 4: Create the Reducer File
+### Step 4: Create a Redux Reducer
 
 Recall: A reducer contains a list of **Actions** that get called whenever a component needs it. 
 
@@ -289,6 +298,3 @@ const DetailScreen = props => {
 };
 DetailScreen.navigationOptions = navData => { return { headerTitle: navData.navigation.getParam('placeTitle') }; };
 ```
-
-
-<!-- <img src="http://localhost:8000/posts/2019-11-27-react-native-series-2/1.gif" alt="2019-11-27-react-native-series-2" width="400"  /><br/> -->

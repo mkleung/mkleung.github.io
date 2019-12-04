@@ -14,7 +14,17 @@ In this tutorial series, we are going to create an app that takes pictures of pu
 We will develop the app using react native as it allows quick development in IOS and Android while retaining native features.
 
 
-### Step 0: Install React Native
+### What we will learn:
+- Install react native using expo
+- Install React Native Navigation
+- Create the Navigation Header
+- Create React Native screens
+- Add a button in the header
+
+### Result:
+<img src="../posts/2019-11-26-react-native-series-1.gif" alt="2019-11-26-react-native-series-1" width="300"  /><br/>
+
+### Step 0: Install React Native using expo
 
 
 We are going to create the app using expo which is easier to install and learn.
@@ -28,10 +38,8 @@ Create the app using the following command
 ```expo init my-new-project```
 
 
-### Step 1: Installation of Navigation
+### Step 1: Install React Native Navigation
 
-
-We will first install the navigation
 
 Install the following packages
 
@@ -44,7 +52,7 @@ Install the following packages
 ```npm install --save react-navigation-stack```
 
 
-### Step 2: Create Navigation Header
+### Step 2: Create the Navigation Header
 
 Inside **navigation/AppNavigator.js**
 
@@ -82,7 +90,7 @@ export default function App() {
 }
 ```
 
-### Step 3: Create the screen components
+### Step 3: Create React Native screens
 
 All screens should be inside the screen folder.
 
