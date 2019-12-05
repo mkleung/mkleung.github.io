@@ -8,27 +8,24 @@ const BlogPage = () => {
     const [category, setCategory] = useState("All")
     const data = useStaticQuery(graphql`
         query {
-            allMarkdownRemark(
-                sort: { fields: [frontmatter___date], order: DESC },
-            )     
-                {
-                    edges {
-                        node {
-                            frontmatter {
-                                title
-                                date(formatString: "MMMM Do, YYYY")
-                                categories
-                                featuredImage {
-                                    childImageSharp {
-                                    fluid(maxWidth: 100) {
-                                        ...GatsbyImageSharpFluid
-                                    }
-                                    }
+            allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
+                edges {
+                    node {
+                        frontmatter {
+                            title
+                            date(formatString: "MMMM Do, YYYY")
+                            categories
+                            featuredImage {
+                                childImageSharp {
+                                fluid(maxWidth: 100) {
+                                    ...GatsbyImageSharpFluid
+                                }
                                 }
                             }
-                            fields {
-                                slug
-                            }
+                        }
+                        fields {
+                            slug
+                        }
                     }
                 }
             }
@@ -66,7 +63,10 @@ const BlogPage = () => {
                                             </div>
                                         </div>
                                         <div className="media-right">
-                                            {edge.node.frontmatter.title === 'React Native Series Part 3/5 - Access the Camera' ? <div className="newPostNotication notification is-warning is-size-7">New</div> : ''}
+                                            {edge.node.frontmatter.title === "React Native Series Part 3/5 - Access the Camera" ?
+                                                <div className="newPostNotication notification is-warning is-size-7">
+                                                    <p>{edge.node.frontmatter.categories.includes("New") ? "New" : ""}</p>
+                                                </div> : ''}
                                         </div>
                                     </article>
                                 </Link>

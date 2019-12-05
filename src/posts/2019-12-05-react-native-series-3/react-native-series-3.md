@@ -6,6 +6,7 @@ featuredImage: "../../assets/blog/react.png"
 categories:
   - ReactNative
   - All
+  - New
 ---
 
 In this post, we are going to add the camera feature where the user can take a photo/selfie and save the image.
