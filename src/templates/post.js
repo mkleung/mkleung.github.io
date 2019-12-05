@@ -13,8 +13,7 @@ export default ({ data }) => {
           </div>
           <div className="column is-12">
             <h1 className="title is-size-3">{post.frontmatter.title}</h1>
-            <p>{post.frontmatter.date}</p>
-            <hr style={{ height: ".4px" }} />
+            <p className="is-size-6"><i>Published: {post.frontmatter.date}</i></p>
           </div>
           <div className="column is-10 landing-caption content">
             <div dangerouslySetInnerHTML={{ __html: post.html }} />

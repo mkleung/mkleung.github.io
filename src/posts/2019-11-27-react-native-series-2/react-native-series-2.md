@@ -9,8 +9,6 @@ categories:
   - All
 ---
 
-Redux
-================
 
 Redux helps apps to scale by providing a sensical way to manage state through a unidirectional data flow model.
 
@@ -21,12 +19,12 @@ An app with redux has a master state that lives in one place and components send
 ### What we will learn:
 - Install React Redux
 - Create Places Model
-- Create a Redux Action
-- Create a Redux Reducer
+- Create an ADD_ITEM Action
+- Create the reducer that handles the action
 - Import Redux Store into App.js
-- Create a Add New Place component
-- Create the List All Places Component
-- Create a Place Detail Component
+- Create the screen that dispatches action (AddNewPlaceScreen)
+- Create the screen that displays all the elements inside store (ListAllPlacesScreen)
+- Create the screen that display single element (PlaceDetailScreen)
 
 ### Result:
 <img src="../posts/2019-11-27-react-native-series-2.gif" alt="2019-11-27-react-native-series-2" width="300"  /><br/>
@@ -166,7 +164,7 @@ export default function App() {
 }
 ```
 
-### Step 5: Create a Add New Place component
+### Step 5: Create a AddNewPlace component
 
 This component has two inputs and a button. When the user saves, it will dispatch the data entered to the actions.
 
@@ -220,7 +218,7 @@ export default const NewPlaceScreen = props => {
 NewPlaceScreen.navigationOptions = { headerTitle: 'Add Place' };
 ```
 
-### Step 6: Create the List All Places Component
+### Step 6: Create the ListAllPlaces Component
 
 This component will list all the places in a flatlist. When the user taps on an item, it will go to the Details component on step 7 and pass the palce title parameter.
 
@@ -267,9 +265,9 @@ const PlacesListScreen = props => {
 PlacesListScreen.navigationOptions = navData => { return { headerTitle: 'All Places' }; };
 ```
 
-### Step 7: Create a Place Detail Component
+### Step 7: Create a PlaceDetailScreen Component
 
-The component will get the place title parameter from the navigator and display it on screen.
+This screen component will get the place title parameter from the navigator and display it on screen.
 
 Inside **screens/DetailScreen.js**
 

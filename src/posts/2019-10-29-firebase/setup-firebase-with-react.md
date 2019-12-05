@@ -5,7 +5,7 @@ title: "Setup Firebase with React"
 date: "2019-10-29"
 featuredImage: "../../assets/blog/firebase.png"
 categories:
-  - Firebase
+  - React
   - All
 ---
 

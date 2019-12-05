@@ -6,14 +6,27 @@ article {
   -ms-transition: 0.3s ease;
   -o-transition: 0.3s ease;
   transition: 0.3s ease;
+  align-items: center !important;
+
   .blog-image {
     .gatsby-image-wrapper {
-      position: initial!important;
+      position: initial !important;
     }
   }
-  .media-content {
-    margin-left: 20px;
+
+  .media {
+    align-items: center !important;
+
+    .media-content {
+      margin-left: 20px;
+      margin-top: 10px !important;
+    }
   }
+
+  .newPostNotication {
+    padding: 5px 10px;
+  }
+
 }
 
 article:hover {
