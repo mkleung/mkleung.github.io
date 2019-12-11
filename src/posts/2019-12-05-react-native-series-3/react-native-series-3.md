@@ -6,7 +6,6 @@ featuredImage: "../../assets/blog/react.png"
 categories:
   - ReactNative
   - All
-  - New
 ---
 
 In this post, we are going to add the camera feature where the user can take a photo/selfie and save the image.
@@ -19,7 +18,7 @@ In this post, we are going to add the camera feature where the user can take a p
 
 
 ### Result:
-<img src="../posts/2019-12-05-react-native-series-3.gif" alt="2019-12-05-react-native-series-3" width="300"  /><br/>
+<img src="../posts/2019-12-05-react-native-series-3.gif" alt="react-native-series-3" width="300"  /><br/>
 
 
 ### Step 1 – Install Image Picker
@@ -190,3 +189,10 @@ Inside **screen/PlacesListScreen.js**
    ...
 </TouchableOpacity>
 ```
+
+### Related Posts
+
+- [React Native Series Part 1/5 - Project Setup](http://localhost:8000/blog/react-native-series-1)
+- [React Native Series Part 2/5 - Add Redux](http://localhost:8000/blog/react-native-series-2)
+- [React Native Series Part 3/5 - Access the Camera](http://localhost:8000/blog/react-native-series-3)
+- [React Native Series Part 4/5 - Setup File Management and Database](http://localhost:8000/blog/react-native-series-4)

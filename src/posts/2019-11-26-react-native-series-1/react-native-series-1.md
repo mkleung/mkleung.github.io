@@ -22,7 +22,7 @@ We will develop the app using react native as it allows quick development in IOS
 - Add a button in the header
 
 ### Result:
-<img src="../posts/2019-11-26-react-native-series-1.gif" alt="2019-11-26-react-native-series-1" width="300"  /><br/>
+<img src="../posts/2019-11-26-react-native-series-1.gif" alt="react-native-series-1" width="300"  /><br/>
 
 ### Step 0: Install React Native using expo
 
@@ -175,3 +175,10 @@ HomeScreen.navigationOptions = navData => {
     }
 };
 ```
+
+### Related Posts
+
+- [React Native Series Part 1/5 - Project Setup](http://localhost:8000/blog/react-native-series-1)
+- [React Native Series Part 2/5 - Add Redux](http://localhost:8000/blog/react-native-series-2)
+- [React Native Series Part 3/5 - Access the Camera](http://localhost:8000/blog/react-native-series-3)
+- [React Native Series Part 4/5 - Setup File Management and Database](http://localhost:8000/blog/react-native-series-4)

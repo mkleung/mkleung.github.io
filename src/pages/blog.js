@@ -63,10 +63,10 @@ const BlogPage = () => {
                                             </div>
                                         </div>
                                         <div className="media-right">
-                                            {edge.node.frontmatter.title === "React Native Series Part 3/5 - Access the Camera" ?
+                                            {edge.node.frontmatter.categories.includes("New") ?
                                                 <div className="newPostNotication notification is-warning is-size-7">
-                                                    <p>{edge.node.frontmatter.categories.includes("New") ? "New" : ""}</p>
-                                                </div> : ''}
+                                                    <p>New</p>
+                                                </div> : ""}
                                         </div>
                                     </article>
                                 </Link>
