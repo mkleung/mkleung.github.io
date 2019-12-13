@@ -171,8 +171,8 @@ useEffect(() => {
 
 ### Related Posts
 
-- [React Native Series Part 1 - Project Setup](http://localhost:8000/blog/react-native-series-1)
-- [React Native Series Part 2 - Add Redux](http://localhost:8000/blog/react-native-series-2)
-- [React Native Series Part 3 - Access the Camera](http://localhost:8000/blog/react-native-series-3)
-- [React Native Series Part 4 - Setup SQLite and File Management](http://localhost:8000/blog/react-native-series-4)
-- [React Native Series Part 5 - Add SQLite Operations (CRUD)](http://localhost:8000/blog/react-native-series-5)
+- [React Native Series Part 1 - Project Setup](/blog/react-native-series-1)
+- [React Native Series Part 2 - Add Redux](/blog/react-native-series-2)
+- [React Native Series Part 3 - Access the Camera](/blog/react-native-series-3)
+- [React Native Series Part 4 - Setup SQLite and File Management](/blog/react-native-series-4)
+- [React Native Series Part 5 - Add SQLite Operations (CRUD)](/blog/react-native-series-5)
