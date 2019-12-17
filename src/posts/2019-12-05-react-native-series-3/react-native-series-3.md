@@ -196,4 +196,6 @@ Inside **screen/PlacesListScreen.js**
 - [React Native Series Part 2 - Add Redux](/blog/react-native-series-2)
 - [React Native Series Part 3 - Access the Camera](/blog/react-native-series-3)
 - [React Native Series Part 4 - Setup SQLite and File Management](/blog/react-native-series-4)
-- [React Native Series Part 5 - Add SQLite Operations (CRUD)](/blog/react-native-series-5)
+- [React Native Series Part 5 - Add Insert SQLite Operation](/blog/react-native-series-5)
+- [React Native Series Part 6 - Add Fetch SQLite Operation](/blog/react-native-series-6)
+- [React Native Series Part 7 - Add Delete SQLite Operation](/blog/react-native-series-7)

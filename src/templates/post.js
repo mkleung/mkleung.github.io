@@ -11,7 +11,7 @@ export default ({ data }) => {
           <div className="column is-12">
             <Link className="button is-primary is-rounded greenButton" to="/blog"><i className="fas fa-chevron-left"></i>&nbsp;<span> Back</span></Link>
           </div>
-          <div className="column is-12">
+          <div className="column is-10">
             <h1 className="title is-size-3">{post.frontmatter.title}</h1>
             <p className="is-size-6"><i>Published: {post.frontmatter.date}</i></p>
           </div>
