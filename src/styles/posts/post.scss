@@ -13,7 +13,7 @@
     padding: 0 !important;
     border-radius: 5px;
     margin: 30px 0 !important;
-    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.5);
+    // box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.5);
   }
 
   .task-list-item {
@@ -29,7 +29,41 @@
 }
 
 .gatsby-highlight {
+  margin-bottom: 50px;
+
   .language-text {
     font-size: .8em;
   }
+
+  .language-jsx {
+    font-size: .8em;
+  }
+
+  .number {
+    margin-right: 0;
+  }
+
+  .language-jsx {
+    // box-shadow: 2px 4px 25px rgba(0, 0, 0, .15);
+    box-shadow: none;
+  }
+
+  pre[class*="language-"]:before,
+  pre[class*="language-"]:after {
+    box-shadow: none;
+  }
+
+}
+
+.filename {
+  background: #111;
+  padding: .5rem 1rem .75rem;
+  font-size: 1rem;
+  color: #fff;
+  font-weight: 700;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  margin-bottom: -2.2rem;
+  border-left: 10px solid #00d1b2;
+  background-color: darken(#34495e, 3%);
 }

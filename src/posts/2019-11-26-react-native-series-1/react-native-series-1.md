@@ -11,7 +11,7 @@ categories:
 
 In this tutorial series, we are going to create an app that takes pictures of public artwork and store the location inside a database which can also be accessed by users around the world. They will be able to view public artworks in your city and rate them.
 
-We will develop the app using react native as it allows quick development in IOS and Android while retaining native features.
+We will develop the app using expo as it allows quick development in both IOS and Android.
 
 
 ### What we will learn:
@@ -21,19 +21,17 @@ We will develop the app using react native as it allows quick development in IOS
 - Create React Native screens
 - Add a button in the header
 
-### Result:
-<img src="../posts/2019-11-26-react-native-series-1.gif" alt="react-native-series-1" width="300"  /><br/>
 
 ### Step 0: Install React Native using expo
 
 
 We are going to create the app using expo which is easier to install and learn.
 
-Install the react expo CLI
+- Install the react expo CLI which is a developer tool for creating projects
 
 ```npm install expo-cli --global```
 
-Create the app using the following command
+- Create the app using the following command
 
 ```expo init my-new-project```
 
@@ -41,7 +39,7 @@ Create the app using the following command
 ### Step 1: Install React Native Navigation
 
 
-Install the following packages
+- Install the following packages
 
 ```npm install --save react-navigation```
 
@@ -54,9 +52,15 @@ Install the following packages
 
 ### Step 2: Create the Navigation Header
 
-Inside **navigation/AppNavigator.js**
+- The AppNavigator file contains a list of routes to different screens
+- Create the routes Home (which links to the HomeScreen component), etc...
+- The default navigation options will contain styling options
+- Then import the AppNavigator file into App.js
 
-```
+
+<div class="filename">navigation/AppNavigator.js</div>
+
+```jsx
 import { Platform } from 'react-native'
 import { createAppContainer } from 'react-navigation'
 import { createStackNavigator } from 'react-navigation-stack'
@@ -66,7 +70,9 @@ import Colors from '../constants/Colors'
 
 const AppNavigator = createStackNavigator({
     Home: HomeScreen,
-    About: AboutScreen
+    NewPlace: NewPlaceScreen,
+    ListPlaces: PlacesListScreen,
+    PlaceDetail: DetailScreen,
 }, {
     defaultNavigationOptions: {
         headerStyle: {
@@ -77,9 +83,9 @@ const AppNavigator = createStackNavigator({
 })
 export default createAppContainer(AppNavigator)
 ```
+<div class="filename">App.js</div>
 
-Inside **App.js**
-```
+```jsx
 import AppNavigator from './navigation/AppNavigator'
 export default function App() {
   return (
@@ -90,13 +96,23 @@ export default function App() {
 }
 ```
 
-### Step 3: Create React Native screens
+- Additionally, create a color variable
 
-All screens should be inside the screen folder.
+<div class="filename">constants/Colors.js</div>
 
-Inside **screens/HomeScreen.js**
-
+```jsx
+export default {
+    primaryColor: '#3498db'
+}
 ```
+
+### Step 3: Create Home Screen
+
+- All screens should be inside the screen folder.
+
+<div class="filename">screens/HomeScreen.js</div>
+
+```jsx
 import React from 'react';
 import { ScrollView, Image, View, Text, StyleSheet } from 'react-native';
 const HomeScreen = props => {
@@ -124,13 +140,16 @@ export default HomeScreen;
 
 ### Step 4: Add a button in the header
 
+- We need to install packages that add buttons inside the AppNavigator
+
 ```npm install --save react-navigation-header-buttons```
 
 ```npm install --save @expo/vector-icons```
 
-Inside **components/HeaderButton.js**
 
-```
+<div class="filename">components/HeaderButton.js</div>
+
+```jsx
 import React from 'react';
 import {Platform} from 'react-native';
 import {HeaderButton} from 'react-navigation-header-buttons';
@@ -150,10 +169,11 @@ const CustomHeaderButton = (props) => {
 export default CustomHeaderButton;
 ```
 
-Inside **screens/HomeScreen.js**
-Add the navigation code after the return function
+- Add the navigation code after the return function
 
-```
+<div class="filename">screens/HomeScreen.js</div>
+
+```jsx
 import HeaderButton from '../components/HeaderButton';
 import { HeaderButtons, Item } from 'react-navigation-header-buttons'
 
@@ -175,6 +195,9 @@ HomeScreen.navigationOptions = navData => {
     }
 };
 ```
+
+### Result:
+<img src="../posts/2019-11-26-react-native-series-1.gif" alt="react-native-series-1" width="300"  />
 
 ### Related Posts
 

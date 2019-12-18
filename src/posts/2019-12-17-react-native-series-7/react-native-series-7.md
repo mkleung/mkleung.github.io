@@ -113,7 +113,7 @@ const DetailScreen = props => {
 
 ### Result:
 
-<img src="../posts/2019-12-12-react-native-series-5.gif" alt="react-native-series-5" width="300"  /><br/>
+<img src="../posts/2019-12-12-react-native-series-7.gif" alt="react-native-series-7" width="300"  /><br/>
 
 ### Related Posts
 
