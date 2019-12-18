@@ -11,7 +11,7 @@ const IndexPage = () => (
       <div className="columns is-vcentered is-multiline main-feature">
         <div className="column is-6">
           <Home />
-          <p className="home_title">I'm Mike Leung, a developer living in Ottawa, Canada with experience in WordPress and React.</p>
+          <p className="home_title">I'm Mike Leung, a web developer living in Ottawa, Canada with experience in WordPress and React.</p>
           <br />
           <p><Link className="button is-primary is-rounded greenButton" to="/projects">View Projects</Link></p>
         </div>

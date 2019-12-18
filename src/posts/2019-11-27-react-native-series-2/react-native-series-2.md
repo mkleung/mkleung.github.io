@@ -19,34 +19,27 @@ An app with redux has a master state that lives in one place and components send
 ### What we will learn:
 - Install React Redux
 - Create Places Model
-- Create an ADD_ITEM Action
-- Create the reducer that handles the action
+- Create Redux Actions
+- Create Redux reducer
 - Import Redux Store into App.js
-- Create the screen that dispatches action (AddNewPlaceScreen)
-- Create the screen that displays all the elements inside store (ListAllPlacesScreen)
-- Create the screen that display single element (PlaceDetailScreen)
-
-### Result:
-<img src="../posts/2019-11-27-react-native-series-2.gif" alt="react-native-series-2" width="300"  /><br/>
 
 
 Definitions
 ===========
 
 **Store**
-The store is where the entire state of your application lives. It is one big object. An analogy would be a bank vault that contains all the money for the bank.
+The store is where the entire state of your application lives. It is one big object.
 
 **Action** 
-Redux actions are like instructions to modify the store. It also contains the payload (data) from the components. For example, withdrawing money or depositing a cheque to the bank vault.
+Redux actions are like instructions to modify the store. It also contains the payload (data) from the components.
 
 **Reducer**
 A reducer contains a list of **Actions** that get called whenever a component needs it. Reducer reads the payload from the actions and update the store.
 
-In the bank analogy, the reducer is a bank employee who handle transactions (dispatches) and the component is the client who needs to withdraw/deposit cash.
-
 ### Step 1: Install React Redux
 
-Install the redux packages
+- Install the redux packages
+- Redux Thunk middleware allows you to write action creators that return a function instead of an action
 
 ```npm install --save redux```
 
@@ -55,42 +48,40 @@ Install the redux packages
 ```npm install --save redux-thunk```
 
 
-### Step 2: Create Places Model
+### Step 2: Create the Place Class
 
-inside **models/Place.js**
+- The Place class/object can be used to hold information about a place like place title, image, etc
 
-```
-class Place {
-    constructor(id, title, location) {
-      this.id = id;
-      this.title = title; 
-      this.location = location;
+<div class="filename">models/Place.js</div>
+
+```jsx
+export default class Place {
+    constructor(id, title, imageUri) {
+        this.id = id;
+        this.title = title;
+        this.imageUri = imageUri;
     }
 }
-export default Place;
 ```
 
 ### Step 3: Create a Redux Action
 
-Recall: Actions are like instructions to modify the store. 
+- Recall: Actions are like instructions to modify the store.
+- We create an action for adding a place and add the data that it will contain.
 
-In the code below, we create an action for adding a place and add the data that it will contain.
+<div class="filename">store/places-actions.js</div>
 
-Inside **store/places-actions.js**
-
-```
-export const ADD_PLACE = 'ADD_PLACE';
+```jsx
+export const INSERT_PLACE  = 'INSERT_PLACE ';
 let previousId = 0;
-
-export const addPlace = (title, location) => {
+export const insertPlaceAction  = (title) => {
     let id = previousId + 1;
     previousId = id;
     return {
-        type: ADD_PLACE,
+        type: INSERT_PLACE,
         placeData: { 
           id: id, 
-          title: title, 
-          location: location 
+          title: title
         }
     }
 };
@@ -99,28 +90,30 @@ export const addPlace = (title, location) => {
 
 ### Step 4: Create a Redux Reducer
 
-Recall: A reducer contains a list of **Actions** that get called whenever a component needs it. 
+- Recall: A reducer contains a list of **Actions** that get called whenever a component needs it. 
+- We first initialize an empty array (initialState) which will contain an array of places. 
+- We then add a case for INSERT_ACTION which adds an item into the array.
+- We create an object called newPlace which will contain data passed from the action
+- Finally we push the newly created place into the initial array.
 
-In the code below, we first initialize an empty state which will contain an array of places. We then add a case for ADD_ACTION which adds an item into the array.
+<div class="filename">store/places-reducer.js</div>
 
-Inside **store/places-reducer.js**
-
-```
+```jsx
 import { ADD_PLACE } from './places-actions';
 import Place from '../models/Place';
 const initialState = { places: [] };
 
 export default (state = initialState, action) => {
     switch (action.type) {
-        case ADD_PLACE:
-            const newPlace = new Place(
-              action.placeData.id, 
-              action.placeData.title, 
-              action.placeData.location
-            );
-            return { 
-              places: state.places.concat(newPlace) 
-            };
+        case INSERT_PLACE:
+          const newPlace = new Place(
+              action.placeData.id.toString(),
+              action.placeData.title,
+              action.placeData.imageUri,
+          );
+          return {
+              places: state.places.concat(newPlace)
+          };
         default: return state;
     }
 };
@@ -128,35 +121,32 @@ export default (state = initialState, action) => {
 
 ### Step 4: Import Redux Store into App.js
 
-inside **App.js**
+- First we import the redux packages
+- Then we create a provider which will wrap the navigator
+- The provider makes redux available to any nested components inside AppNavigator.
 
-```
-import React from 'react';
-import { 
-  StyleSheet, 
-  Text, 
-  View 
-} from 'react-native';
-import AppNavigator from './navigation/AppNavigator'
+<div class="filename">App.js</div>
 
-// Redux
+```jsx
+...
+
+// Redux Imports
 import { 
   createStore, 
   combineReducers, 
   applyMiddleware 
 } from 'redux'
-
 import { Provider } from 'react-redux'
 import ReduxThunk from 'redux-thunk'
 import placesReducer from './store/places-reducer'
-
-const rootReducer = combineReducers({ places: placesReducer })
 
 export default function App() {
   return (
     <Provider 
     store={
-      createStore(rootReducer, applyMiddleware(ReduxThunk))
+      createStore(
+        combineReducers({ places: placesReducer }), 
+        applyMiddleware(ReduxThunk))
     }>
       <AppNavigator />
     </Provider>
@@ -164,13 +154,15 @@ export default function App() {
 }
 ```
 
-### Step 5: Create a AddNewPlace component
+### Step 5: Create a AddNewPlace component Screen
 
-This component has two inputs and a button. When the user saves, it will dispatch the data entered to the actions.
+- This component has an input and a button. 
+- When the user enters a value into the input and presses save, an action called INSERT_PLACE gets dispatched which adds the value to the store.
 
-Inside **screens/NewPlaceScreen.js**
 
-```
+<div class="filename">screens/NewPlaceScreen.js</div>
+
+```jsx
 import React from 'react';
 import {
   ScrollView, 
@@ -187,29 +179,25 @@ import * as placesActions from '../store/places-actions';
 export default const NewPlaceScreen = props => {
 
     const [titleValue, setTitleValue] = useState('');
-    const [locationValue, setLocationValue] = useState('');
     const dispatch = useDispatch();
 
     const savePlaceHandler = () => {
-        dispatch(placesActions.addPlace(titleValue, locationValue));
+        dispatch(placesActions.insertPlaceAction(titleValue, selectedImage));
         props.navigation.goBack();
     };
     return (
         <ScrollView>
             <View style={styles.form}>
-                <TextInput
-                    style={styles.textInput}
-                    onChangeText={(text) => setTitleValue(text)}
-                    value={titleValue}
-                    placeholder="Title"
+                <TextInput 
+                style={styles.textInput} 
+                onChangeText={(text) => setTitleValue(text)} 
+                value={titleValue} 
+                placeholder="Title"
                 />
-                <TextInput
-                    style={styles.textInput}
-                    onChangeText={(text) => { setLocationValue(text); }}
-                    value={locationValue}
-                    placeholder="Location"
-                />
-                <Button title="Save Place" color={Colors.primary} onPress={savePlaceHandler}
+                <Button 
+                  title="Save Place" 
+                  color={Colors.primary} 
+                  onPress={savePlaceHandler}
                 />
             </View>
         </ScrollView>
@@ -220,11 +208,14 @@ NewPlaceScreen.navigationOptions = { headerTitle: 'Add Place' };
 
 ### Step 6: Create the ListAllPlaces Component
 
-This component will list all the places in a flatlist. When the user taps on an item, it will go to the Details component on step 7 and pass the palce title parameter.
+- This component will list all the places in a flatlist.
+- The **useSelector** is being used to retrieve the existing array of places from the redux store.
+- The flatlist then displays the items in the places array.
+- We add TouchableOpacity so that when the user taps on an item, it will go to the Details component on step 7 and pass the place Id parameter.
 
-Inside **screens/PlacesListScreen.js**
+<div class="filename">screens/PlacesListScreen.js</div>
 
-```
+```jsx
 import React from 'react';
 import { 
   View, 
@@ -239,19 +230,21 @@ import Colors from '../constants/Colors';
 
 const PlacesListScreen = props => {
 
+    // Retrieve all places from redux
     const places = useSelector(state => state.places.places);
+
+    // Navigate to PlaceDetail screen on tap and pass the id parameter
     const onSelect = (title) => { 
-      props.navigation.navigate('PlaceDetail', { placeTitle: title}); 
+      props.navigation.navigate('PlaceDetail', { placeId: id}); 
     }
 
     return (
         <View>
             <FlatList
-                data={places}
-                keyExtractor={(item, index) => index.toString()}
+                data={places} keyExtractor={(item, index) => index.toString()}
                 renderItem={itemData => (
                     <TouchableOpacity
-                        onPress={() => onSelect(itemData.item.title)}
+                        onPress={() => onSelect(itemData.item.id)}
                         style={styles.placeItem}>
                         <View style={styles.infoContainer}>
                             <Text style={styles.title}>{itemData.item.id} - {itemData.item.title}, {itemData.item.location}</Text>
@@ -265,37 +258,66 @@ const PlacesListScreen = props => {
 PlacesListScreen.navigationOptions = navData => { return { headerTitle: 'All Places' }; };
 ```
 
-### Step 7: Create a PlaceDetailScreen Component
+### Step 7: Create a PlaceDetailScreen Component 
 
-This screen component will get the place title parameter from the navigator and display it on screen.
+- This screen component will get the place title parameter from the navigator and display it on screen.
+- Firstly, get the id from PlacesListScreen (getParam)
+- Secondly, use (useSelector ... find) to get the corresponding place id that matches with the place id from the PlacesListScreen and then display the place details on the screen.
 
-Inside **screens/DetailScreen.js**
+<div class="filename">screens/DetailScreen.js</div>
 
-```
-import React from 'react';
-import { 
-  ScrollView, 
-  Image, 
-  View, 
-  Text, 
-  StyleSheet 
-} from 'react-native';
+```jsx
+mport React from 'react';
+import { ScrollView, TouchableOpacity, Image, View, Text, StyleSheet } from 'react-native';
 import Colors from '../constants/Colors';
+import { useSelector, useDispatch } from 'react-redux';
+
+import * as placesActions from "../store/places-actions"
 
 const DetailScreen = props => {
-    const placeTitle = props.navigation.getParam('placeTitle');
+
+    // Get the id from PlacesListScreen
+    const placeId = props.navigation.getParam('placeId');
+    
+    // get all places and get the place that matches with the id from PlacesListScreen
+    const selectedPlace = useSelector(state =>
+        state.places.places.find(place => place.id === placeId)
+    );
+
     return (
         <ScrollView contentContainerStyle={{ alignItems: 'center' }}>
             <View style={styles.locationContainer}>
                 <View style={styles.addressContainer}>
-                  <Text style={styles.address}>{placeTitle}</Text>
+                    <Text style={styles.title}>{selectedPlace.title}</Text>
                 </View>
             </View>
         </ScrollView>
     );
 };
-DetailScreen.navigationOptions = navData => { return { headerTitle: navData.navigation.getParam('placeTitle') }; };
+
+DetailScreen.navigationOptions = navData => {
+    return {
+        headerTitle: navData.navigation.getParam('placeTitle')
+    };
+};
+
+const styles = StyleSheet.create({
+   
+    addressContainer: {
+        padding: 20
+    },
+    title: {
+        fontSize: 20,
+        fontWeight: 'bold',
+    }
+});
+
+export default DetailScreen;
 ```
+
+### Result:
+<img src="../posts/2019-11-27-react-native-series-2.gif" alt="react-native-series-2" width="300"  />
+
 
 ### Related Posts
 
