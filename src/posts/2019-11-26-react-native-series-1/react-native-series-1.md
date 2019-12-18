@@ -65,14 +65,10 @@ import { Platform } from 'react-native'
 import { createAppContainer } from 'react-navigation'
 import { createStackNavigator } from 'react-navigation-stack'
 import HomeScreen from '../screens/HomeScreen'
-import AboutScreen from '../screens/AboutScreen'
 import Colors from '../constants/Colors'
 
 const AppNavigator = createStackNavigator({
-    Home: HomeScreen,
-    NewPlace: NewPlaceScreen,
-    ListPlaces: PlacesListScreen,
-    PlaceDetail: DetailScreen,
+    Home: HomeScreen
 }, {
     defaultNavigationOptions: {
         headerStyle: {
@@ -83,9 +79,11 @@ const AppNavigator = createStackNavigator({
 })
 export default createAppContainer(AppNavigator)
 ```
+
 <div class="filename">App.js</div>
 
 ```jsx
+import React from 'react';
 import AppNavigator from './navigation/AppNavigator'
 export default function App() {
   return (
@@ -94,6 +92,7 @@ export default function App() {
     </>
   )
 }
+
 ```
 
 - Additionally, create a color variable
@@ -114,7 +113,7 @@ export default {
 
 ```jsx
 import React from 'react';
-import { ScrollView, Image, View, Text, StyleSheet } from 'react-native';
+import { View, Text, StyleSheet } from 'react-native';
 const HomeScreen = props => {
     return (
         <View style={styles.container}>
@@ -137,6 +136,11 @@ const styles = StyleSheet.create({
 });
 export default HomeScreen;
 ```
+
+### Result
+
+<img src="./first.PNG" alt="react-native-series-1" height="150"  />
+
 
 ### Step 4: Add a button in the header
 
@@ -169,32 +173,111 @@ const CustomHeaderButton = (props) => {
 export default CustomHeaderButton;
 ```
 
+### Step 5: Add navigation to Homescreen
+
 - Add the navigation code after the return function
 
 <div class="filename">screens/HomeScreen.js</div>
 
 ```jsx
+import React from 'react';
 import HeaderButton from '../components/HeaderButton';
-import { HeaderButtons, Item } from 'react-navigation-header-buttons'
+import { HeaderButtons, Item } from 'react-navigation-header-buttons';
+import { View, StyleSheet, Button, Platform } from 'react-native';
+const HomeScreen = props => {
+    const { navigate } = props.navigation;
+    return (
+        <View style={styles.container}>
+            <Button
+                title="View All Places"
+                onPress={() => navigate('ListPlaces')}
+            />
+        </View>
+    );
+};
 
 // NAVIGATION
 HomeScreen.navigationOptions = navData => {
-    return {
-        headerTitle: 'HomeScreen ',
-        headerRight: 
-            (<HeaderButtons HeaderButtonComponent={HeaderButton}>
-                <Item
-                    title="About"
-                    iconName={Platform.OS === 'android' ? 'md-add' : 'ios-add'}
-                    onPress={() => {
-                        navData.navigation.navigate("About")
-                    }}
-                />
-                </HeaderButtons>
+    return {
+        headerTitle: 'HomeScreen',
+        headerRight:
+            (<HeaderButtons HeaderButtonComponent={HeaderButton}>
+                <Item
+                    title="NewPlace"
+                    iconName={Platform.OS === 'android' ? 'md-add' : 'ios-add'}
+                    onPress={() => {
+                        navData.navigation.navigate("NewPlace")
+                    }}
+                />
+            </HeaderButtons>
             )
     }
 };
+
+const styles = StyleSheet.create({
+    container: {
+        flex: 1,
+        backgroundColor: '#FFF',
+        alignItems: 'center',
+        justifyContent: 'center',
+    },
+});
+
+export default HomeScreen;
 ```
+
+### Step 6: Create NewPlaceScreen
+
+<div class="filename">screens/NewPlaceScreen.js</div>
+
+```
+import React, { useState } from 'react';
+import {
+    ScrollView,
+    View,
+    Button,
+    Text,
+    TextInput,
+    StyleSheet
+} from 'react-native';
+import Colors from '../constants/Colors';
+
+export default NewPlaceScreen = props => {
+    const [titleValue, setTitleValue] = useState('');
+    const savePlaceHandler = () => {
+        props.navigation.goBack();
+    };
+    return (
+        <ScrollView>
+            <View style={styles.form}>
+                <TextInput style={styles.textInput} onChangeText={(text) => setTitleValue(text)} value={titleValue} placeholder="Title" />
+                <Button title="Save Place" color={Colors.primary} onPress={savePlaceHandler} />
+            </View>
+        </ScrollView>
+    );
+};
+NewPlaceScreen.navigationOptions = { headerTitle: 'Add Place' };
+
+const styles = StyleSheet.create({
+    form: {
+        margin: 30
+    },
+    label: {
+        fontSize: 18,
+        marginBottom: 15
+    },
+    textInput: {
+        borderBottomColor: '#ccc',
+        borderBottomWidth: 1,
+        marginBottom: 15,
+        paddingVertical: 4,
+        paddingHorizontal: 2
+    }
+});
+
+```
+
+
 
 ### Result:
 <img src="../posts/2019-11-26-react-native-series-1.gif" alt="react-native-series-1" width="300"  />
