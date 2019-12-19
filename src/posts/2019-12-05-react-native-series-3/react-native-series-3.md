@@ -8,11 +8,10 @@ categories:
   - All
 ---
 
-In this post, we are going to add the camera feature where the user can take a photo/selfie and save the image.
-
+**Expo-image-picker** allows the user to take pictures with their phones and save it into the computer.
 
 ### What we will learn:
-- Install Image Picker to access camera
+- Install the Image Picker package to access camera
 - Save the image inside the app (but not on phone)
 - Display the image saved on the screen
 
@@ -26,6 +25,10 @@ In this post, we are going to add the camera feature where the user can take a p
 
 ### Step 2 - Access The Camera
 
+- Create the image picker component
+- First ask for permissions (IOS only)
+- Then take the image using **launchCameraAsync** and save it into the state
+
 <div class="filename">components/ImagePicker.js</div>
 
 ```jsx
@@ -36,7 +39,9 @@ import * as ImagePicker from 'expo-image-picker'
 import * as Permissions from 'expo-permissions'
 
 const ImgPicker = props => {
+
     const [pickedImage, setPickedImage] = useState()
+
     const takeImageHandler = async () => {
         // ASK FOR CAMERA PERMISSIONS
         const result = await Permissions.askAsync(Permissions.CAMERA, Permissions.CAMERA_ROLL)
@@ -56,6 +61,7 @@ const ImgPicker = props => {
                 quality: 0.5,
             });
             setPickedImage(image.uri)
+            props.onImageTaken(image.uri)
         }
     }
 
@@ -75,6 +81,7 @@ const ImgPicker = props => {
         </View>
     )
 }
+
 const styles = StyleSheet.create({
     imagePicker: {
         alignItems: 'center',
@@ -94,23 +101,39 @@ const styles = StyleSheet.create({
         height: '100%'
     }
 })
+
 export default ImgPicker;
 ```
 
 ### Step 3 - Add Image Picker into the NewPlaceScreen
 
-Put the image picker components somewhere on the screen
+- Put the **image picker** component inside the **NewPlaceScreen**
+- Then save the image from imagepicker into state (imageTakenHandler function)
+- Finally dispatch INSERT_PLACE action and add the selectedImage
 
 <div class="filename">screens/NewPlaceScreen.js</div>
 
 ```jsx
 import ImagePicker from '../components/ImagePicker'
-   
+.
+.
+.
+// ADD PLACE
+const [titleValue, setTitleValue] = useState('');
+const dispatch = useDispatch();
 const savePlaceHandler = () => {
-    dispatch(placesActions.addPlace(titleValue, locationValue, selectedImage));
+    dispatch(placesActions.insertPlaceAction(titleValue, selectedImage));
     props.navigation.goBack();
 };
 
+// SET IMAGE
+const [selectedImage, setSelectedImage] = useState()
+const imageTakenHandler = imagePath => {
+    setSelectedImage(imagePath)
+}
+.
+.
+.
 // SET IMAGE
 const [selectedImage, setSelectedImage] = useState()
 
@@ -120,73 +143,72 @@ const imageTakenHandler = imagePath => {
 ...
  return (
     <ScrollView>
-        ...
+        .
+        .
+        .
         <ImagePicker onImageTaken={imageTakenHandler} />
-        ...
+        .
+        .
+        .
     </ScrollView>
 )
 ```
 
-### Step 4 - Add image uri to place model
 
-<div class="filename">models/Place.js</div>
-
-```jsx
-class Place {
-    constructor(id, title, location, imageUri) {
-        ...
-        this.imageUri = imageUri;
-    }
-}
-```
-
-### Step 5 - Add image uri to place Reducers and Actions
+### Step 4 - Add image uri to place Reducers and Actions
 
 <div class="filename">store/places-actions.js</div>
 
 ```jsx
-...
-return {
-    type: ADD_PLACE,
-    placeData: {
-        id: id,
-        title: title,
-        location: location,
-        image: image
+export const INSERT_PLACE = 'INSERT_PLACE ';
+let previousId = 0;
+export const insertPlaceAction = (title, imageUri) => {
+    let id = previousId + 1;
+    previousId = id;
+    return {
+        type: INSERT_PLACE,
+        placeData: {
+            id: id,
+            title: title,
+            imageUri: imageUri
+        }
     }
-}
-...
+};
 ```
 
 <div class="filename">store/places-reducer.js</div>
 
 ```jsx
-...
-switch (action.type) {
-    case ADD_PLACE:
-        const newPlace = new Place(
-            action.placeData.id,
-            action.placeData.title,
-            action.placeData.location,
-            action.placeData.image,
-        );
-        ...
-}
+.
+.
+.
+const newPlace = new Place(
+    action.placeData.id.toString(),
+    action.placeData.title,
+    action.placeData.imageUri,
+);
+.
+.
+.
 ```
 
-### Step 6 - Display the image next to item
+### Step 5 - Display the image next to item
+
+- After saving the image, we can display it inside the placesListScreen
 
 <div class="filename">screen/PlacesListScreen.js</div>
 
 ```jsx
  <TouchableOpacity onPress={() => onSelect(itemData.item.title)} style={styles.placeItem}>
     <Image style={styles.image} source={{ uri: itemData.item.imageUri }} />
-   ...
+   .
+   .
+   .
 </TouchableOpacity>
 ```
 
 ### Result:
-<img src="../posts/2019-12-05-react-native-series-3.gif" alt="react-native-series-3" width="300"  />
+<img src="../posts/react-native-series-3.gif" alt="react-native-series-3" width="300"  />
 
 ### Related Posts
 

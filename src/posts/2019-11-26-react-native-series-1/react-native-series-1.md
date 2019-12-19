@@ -280,7 +280,7 @@ const styles = StyleSheet.create({
 
 
 ### Result:
-<img src="../posts/2019-11-26-react-native-series-1.gif" alt="react-native-series-1" width="300"  />
+<img src="../posts/react-native-series-1.gif" alt="react-native-series-1" width="300"  />
 
 ### Related Posts
 
