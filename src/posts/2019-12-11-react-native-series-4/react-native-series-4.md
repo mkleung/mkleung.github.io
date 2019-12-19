@@ -8,27 +8,25 @@ categories:
   - All
 ---
 
-In the previous post, the images are stored inside a temporary path. When the app is closed, the images will be destroyed. 
+- In the previous post, the images are stored inside a temporary path. When the app is closed, the images will be destroyed. 
 
-Therefore, we need a way to store the file in a permanent directory which can be achieved using the Native File System
+- Therefore, we need a way to store the file in a permanent directory which can be achieved using the Native File System
 
 ### Step 1 Install the native File System
 
-Install the file system package
+- Install the file system package
 
 ```expo install expo-file-system```
 
 ### Step 2: Implement filesystem
 
-Inside **store/places-actions.js**
+- Get the filename (e.g. myfile.jpg) of the image
+- Create a new path to permamnent directory using **FileSystem.documentDirectory**
+- Then use **FileSystem.moveAsync** to save the image
 
-Instructions
-1. Get the filename (e.g. myfile.jpg) of the image
-2. Create a new path to permamnent directory using **FileSystem.documentDirectory**
-3. Then use **FileSystem.moveAsync** to save the image
+<div class="filename">store/places-actions.js</div>
 
-
-```
+```jsx
 import * as FileSystem from 'expo-file-system'
 export const ADD_PLACE = 'ADD_PLACE';
 let previousId = 0;
@@ -65,30 +63,31 @@ export const addPlace = (title, location, image) => {
 SQLite
 ======
 
-We need SQLite to store data (e.g. title, imageurl) from our app. Otherwise the data will be lost if the user closes it.
+- We need SQLite to store data (e.g. title, imageurl) from our app. Otherwise the data will be lost if the user closes it.
 
-SQLite is available in both ios and android.
+- SQLite is available in both ios and android.
 
 ### Step 3: Install SQLite
 
-Install the following package
+- Install the following package
 
 ```expo install expo-sqlite```
 
 ### Step 4: Initialize the Database
 
-Instructions
-1. Connect to database or create the database if it does not exist with **SQLite.openDatabase**
-2. Initialise database structure along with tables and fields inside **db.transtion**
+- Connect to database or create the database if it does not exist with **SQLite.openDatabase**
+- Initialise database structure along with tables and fields inside **db.transtion**
 
-```
+<div class="filename">database/db.js</div>
+
+```jsx
 import * as SQLite from "expo-sqlite";
 
 // Connect to database or create the database if it does not exist
 const db = SQLite.openDatabase('places.db');
 
 // Initialise database structure along with tables and fields
-export const init = () => {
+export const initDB = () => {
     const promise = new Promise((resolve, reject) => {
         db.transaction(tx => {
             tx.executeSql(
@@ -109,17 +108,29 @@ export const init = () => {
 
 ### Step 5: Import the Database configuration in App.js
 
-Inside **App.js** right before the reducer code
+- We put the init function reight before the main function.
 
-```
+
+<div class="filename">App.js</div>
+
+```jsx
 import { init } from './database/db'
+.
+.
+.
 init()
   .then(() => { console.log("Initialize Database") })
   .catch(err => { console.log("Initialize Failed") });
-
+.
+.
+.
+export default function App() {
+.
+.
+.
 ```
 
-Run the application and you should see the following result:
+- Run the application and you should see the following result:
 
 <img src="./result.png" alt="react-native-series-4" width="300"  /><br/>
 

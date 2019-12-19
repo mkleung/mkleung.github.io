@@ -21,8 +21,6 @@ categories:
 
 ```expo install expo-permissions```
 
-```expo install expo-file-system```
-
 ### Step 2 - Access The Camera
 
 - Create the image picker component
