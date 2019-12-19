@@ -53,6 +53,8 @@
     box-shadow: none;
   }
 
+
+
 }
 
 .filename {
@@ -66,4 +68,10 @@
   margin-bottom: -2.2rem;
   border-left: 10px solid #00d1b2;
   background-color: darken(#34495e, 3%);
+}
+
+:not(pre)>code[class*="language-"] {
+  color: #00d1b2 !important;
+  background: transparent !important;
+  border: 1px solid #00d1b2 !important;
 }

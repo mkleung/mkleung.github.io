@@ -16,11 +16,6 @@ In this post, we are going to add the camera feature where the user can take a p
 - Save the image inside the app (but not on phone)
 - Display the image saved on the screen
 
-
-### Result:
-<img src="../posts/2019-12-05-react-native-series-3.gif" alt="react-native-series-3" width="300"  /><br/>
-
-
 ### Step 1 – Install Image Picker
 
 ```expo install expo-image-picker```
@@ -31,9 +26,9 @@ In this post, we are going to add the camera feature where the user can take a p
 
 ### Step 2 - Access The Camera
 
-Inside **components/ImagePicker.js**
+<div class="filename">components/ImagePicker.js</div>
 
-```
+```jsx
 import React, { useState } from 'react'
 import { View, Button, Image, Text, StyleSheet, Alert } from 'react-native'
 import Colors from '../constants/Colors'
@@ -106,9 +101,9 @@ export default ImgPicker;
 
 Put the image picker components somewhere on the screen
 
-Inside **screens/NewPlaceScreen.js**
+<div class="filename">screens/NewPlaceScreen.js</div>
 
-```
+```jsx
 import ImagePicker from '../components/ImagePicker'
    
 const savePlaceHandler = () => {
@@ -134,9 +129,9 @@ const imageTakenHandler = imagePath => {
 
 ### Step 4 - Add image uri to place model
 
-Inside **models/Place.js**
+<div class="filename">models/Place.js</div>
 
-```
+```jsx
 class Place {
     constructor(id, title, location, imageUri) {
         ...
@@ -147,9 +142,9 @@ class Place {
 
 ### Step 5 - Add image uri to place Reducers and Actions
 
-Inside **store/places-actions.js**
+<div class="filename">store/places-actions.js</div>
 
-```
+```jsx
 ...
 return {
     type: ADD_PLACE,
@@ -163,9 +158,9 @@ return {
 ...
 ```
 
-store/places-reducer.js
+<div class="filename">store/places-reducer.js</div>
 
-```
+```jsx
 ...
 switch (action.type) {
     case ADD_PLACE:
@@ -181,14 +176,17 @@ switch (action.type) {
 
 ### Step 6 - Display the image next to item
 
-Inside **screen/PlacesListScreen.js**
+<div class="filename">screen/PlacesListScreen.js</div>
 
-```
+```jsx
  <TouchableOpacity onPress={() => onSelect(itemData.item.title)} style={styles.placeItem}>
     <Image style={styles.image} source={{ uri: itemData.item.imageUri }} />
    ...
 </TouchableOpacity>
 ```
+
+### Result:
+<img src="../posts/2019-12-05-react-native-series-3.gif" alt="react-native-series-3" width="300"  />
 
 ### Related Posts
 

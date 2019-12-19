@@ -99,7 +99,7 @@ export const insertPlaceAction  = (title) => {
 <div class="filename">store/places-reducer.js</div>
 
 ```jsx
-import { ADD_PLACE } from './places-actions';
+import { INSERT_PLACE } from './places-actions';
 import Place from '../models/Place';
 const initialState = { places: [] };
 
@@ -131,10 +131,11 @@ export default (state = initialState, action) => {
 ...
 
 // Redux Imports
-import { 
-  createStore, 
-  combineReducers, 
-  applyMiddleware 
+
+import {
+  createStore,
+  combineReducers,
+  applyMiddleware
 } from 'redux'
 import { Provider } from 'react-redux'
 import ReduxThunk from 'redux-thunk'
@@ -142,12 +143,9 @@ import placesReducer from './store/places-reducer'
 
 export default function App() {
   return (
-    <Provider 
-    store={
-      createStore(
-        combineReducers({ places: placesReducer }), 
-        applyMiddleware(ReduxThunk))
-    }>
+    <Provider store={
+      createStore(combineReducers({ places: placesReducer }),
+        applyMiddleware(ReduxThunk))}>
       <AppNavigator />
     </Provider>
   );
@@ -165,18 +163,18 @@ export default function App() {
 ```jsx
 import React from 'react';
 import {
-  ScrollView, 
-  View, 
-  Button, 
-  Text, 
-  TextInput,
-   StyleSheet
+    ScrollView,
+    View,
+    Button,
+    Text,
+    TextInput,
+    StyleSheet
 } from 'react-native';
 import { useDispatch, useSelector } from 'react-redux';
 import Colors from '../constants/Colors';
 import * as placesActions from '../store/places-actions';
 
-export default const NewPlaceScreen = props => {
+export default NewPlaceScreen = props => {
 
     const [titleValue, setTitleValue] = useState('');
     const dispatch = useDispatch();
@@ -188,17 +186,8 @@ export default const NewPlaceScreen = props => {
     return (
         <ScrollView>
             <View style={styles.form}>
-                <TextInput 
-                style={styles.textInput} 
-                onChangeText={(text) => setTitleValue(text)} 
-                value={titleValue} 
-                placeholder="Title"
-                />
-                <Button 
-                  title="Save Place" 
-                  color={Colors.primary} 
-                  onPress={savePlaceHandler}
-                />
+                <TextInput style={styles.textInput} onChangeText={(text) => setTitleValue(text)} value={titleValue} placeholder="Title" />
+                <Button title="Save Place" color={Colors.primary} onPress={savePlaceHandler} />
             </View>
         </ScrollView>
     );
@@ -217,25 +206,25 @@ NewPlaceScreen.navigationOptions = { headerTitle: 'Add Place' };
 
 ```jsx
 import React from 'react';
-import { 
-  View, 
-  Text, 
-  StyleSheet, 
-  Platform, 
-  FlatList, 
-  TouchableOpacity 
+import {
+    View,
+    Text,
+    StyleSheet,
+    Platform,
+    FlatList,
+    TouchableOpacity
 } from 'react-native';
 import { useSelector } from 'react-redux';
 import Colors from '../constants/Colors';
 
-const PlacesListScreen = props => {
+export default PlacesListScreen = props => {
 
     // Retrieve all places from redux
     const places = useSelector(state => state.places.places);
 
     // Navigate to PlaceDetail screen on tap and pass the id parameter
-    const onSelect = (title) => { 
-      props.navigation.navigate('PlaceDetail', { placeId: id}); 
+    const onSelect = (id) => {
+        props.navigation.navigate('PlaceDetail', { placeId: id });
     }
 
     return (
@@ -247,7 +236,7 @@ const PlacesListScreen = props => {
                         onPress={() => onSelect(itemData.item.id)}
                         style={styles.placeItem}>
                         <View style={styles.infoContainer}>
-                            <Text style={styles.title}>{itemData.item.id} - {itemData.item.title}, {itemData.item.location}</Text>
+                            <Text style={styles.title}>{itemData.item.id} - {itemData.item.title}</Text>
                         </View>
                     </TouchableOpacity>
                 )}
@@ -255,7 +244,43 @@ const PlacesListScreen = props => {
         </View>
     );
 };
+
 PlacesListScreen.navigationOptions = navData => { return { headerTitle: 'All Places' }; };
+
+const styles = StyleSheet.create({
+    placeItem: {
+        borderBottomColor: '#ccc',
+        borderBottomWidth: 1,
+        paddingVertical: 15,
+        paddingHorizontal: 30,
+        flexDirection: 'row',
+        alignItems: 'center'
+    },
+    image: {
+        width: 70,
+        height: 70,
+        borderRadius: 35,
+        backgroundColor: '#ccc',
+        borderColor: Colors.primary,
+        borderWidth: 1
+    },
+    infoContainer: {
+        marginLeft: 25,
+        width: 250,
+        justifyContent: 'center',
+        alignItems: 'flex-start'
+    },
+    title: {
+        color: 'black',
+        fontSize: 18,
+        marginBottom: 5
+    },
+    address: {
+        color: '#666',
+        fontSize: 16
+    }
+});
+
 ```
 
 ### Step 7: Create a PlaceDetailScreen Component 
@@ -267,18 +292,16 @@ PlacesListScreen.navigationOptions = navData => { return { headerTitle: 'All Pla
 <div class="filename">screens/DetailScreen.js</div>
 
 ```jsx
-mport React from 'react';
+import React from 'react';
 import { ScrollView, TouchableOpacity, Image, View, Text, StyleSheet } from 'react-native';
 import Colors from '../constants/Colors';
 import { useSelector, useDispatch } from 'react-redux';
-
-import * as placesActions from "../store/places-actions"
 
 const DetailScreen = props => {
 
     // Get the id from PlacesListScreen
     const placeId = props.navigation.getParam('placeId');
-    
+
     // get all places and get the place that matches with the id from PlacesListScreen
     const selectedPlace = useSelector(state =>
         state.places.places.find(place => place.id === placeId)
@@ -302,7 +325,6 @@ DetailScreen.navigationOptions = navData => {
 };
 
 const styles = StyleSheet.create({
-   
     addressContainer: {
         padding: 20
     },
@@ -315,8 +337,28 @@ const styles = StyleSheet.create({
 export default DetailScreen;
 ```
 
+### Step 8: Add the new routes to AppNavigator
+
+<div class="filename">navigation/AppNavigator.js</div>
+
+```jsx
+.
+.
+.
+const AppNavigator = createStackNavigator({
+    Home: HomeScreen,
+    NewPlace: NewPlaceScreen,
+    ListPlaces: PlacesListScreen,
+    PlaceDetail: DetailScreen,
+}
+.
+.
+.
+```
+
+
 ### Result:
-<img src="../posts/2019-11-27-react-native-series-2.gif" alt="react-native-series-2" width="300"  />
+<img src="../posts/react-native-series-2.gif" alt="react-native-series-2" width="300"  />
 
 
 ### Related Posts
