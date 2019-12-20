@@ -10,16 +10,14 @@ categories:
 
 In this post, we are going to add the database Create/Read/Update/Delete functions to the application.
 
-### Insert Data  (C in CRUD)
-
-**Step 1 - Add insert function in database**
-
-Inside **database/db.js**
+### Step 1 - Add insert function in database
 
 - Use the INSERT INTO command to add a record to a table (places)
 - Inside the parenthesis, add the fields that you want to target except the id
 
-```
+<div class="filename">database/db.js</div>
+
+```jsx
 // Insert Data into database
 export const insertPlace = (title, imageUri, address, lat, lng) => {
     const promise = new Promise((resolve, reject) => {
@@ -41,11 +39,11 @@ export const insertPlace = (title, imageUri, address, lat, lng) => {
 
 ```
 
-**Step 2 - Add insert Action**
+### Step 2 - Add insert Action
 
-Inside **places-actions.js**
+<div class="filename">store/places-actions.js</div>
 
-```
+```jsx
 try {
     await FileSystem.moveAsync({
         from: image,
@@ -71,11 +69,11 @@ try {
 } catch (err) { console.log(err) }
 ```
 
-**Step 3 - Add insert reducer case**
+### Step 3 - Add insert reducer case
 
-Inside **store/places-reducer.js**
+<div class="filename">store/places-reducer.js</div>
 
-```
+```jsx
   case INSERT_PLACE:
     const newPlace = new Place(
         action.placeData.id.toString(),
@@ -89,9 +87,8 @@ Inside **store/places-reducer.js**
 
 ### Result
 
-Now start the app and add a new place. You should see the result below.
-
-The rows affected: 1 means that one row has been added to the database table.
+- Now start the app and add a new place. You should see the result below.
+- The rows affected: 1 means that one row has been added to the database table.
 
 <img src="./insert.png" alt="react-native-series-5" width="300"  /><br/>
 

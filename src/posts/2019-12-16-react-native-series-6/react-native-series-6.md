@@ -8,13 +8,11 @@ categories:
   - All
 ---
 
-### Fetching Data (R in CRUD)
+### Step 1 - Add the fetch function into database
 
-**Step 1 - Add the fetch function into database**
+<div class="filename">database/db.js</div>
 
-Inside **database/db.js**
-
-```
+```jsx
 // Fetch Data from database
 export const fetchPlacesDB = () => {
     const promise = new Promise((resolve, reject) => {
@@ -35,11 +33,11 @@ export const fetchPlacesDB = () => {
 };
 ```
 
-**Step 2 - Add the fetch function inside Actions**
+### Step 2 - Add the fetch function inside Actions
 
-Inside **store/places-actions.js**
+<div class="filename">store/places-actions.js</div>
 
-```
+```jsx
 // FETCH PLACES ACTION
 export const FETCH_PLACES = 'FETCH_PLACES';
 export const fetchPlacesAction = () => {
@@ -54,11 +52,11 @@ export const fetchPlacesAction = () => {
 };
 ```
 
-**Step 3 - Add the fetch function** 
+### Step 3 - Add the fetch function
 
-Inside **store/places/reducer.js**
+<div class="filename">store/places-reducer.js</div>
 
-```
+```jsx
 case FETCH_PLACES:
     return {
         places: action.places.map(
@@ -75,13 +73,15 @@ case FETCH_PLACES:
     };
 ```
 
-**Step 4 - List the fetched data inside component** 
+### Step 4 - List the fetched data inside component
 
-Inside screen **screens/placesListScreen.js**
+<div class="filename">screens/placesListScreen.js</div>
 
-```
+```jsx
 import { useSelector, useDispatch } from 'react-redux';
-...
+.
+.
+.
 const dispatch = useDispatch();
 useEffect(() => {
     dispatch(placesActions.loadPlaces());

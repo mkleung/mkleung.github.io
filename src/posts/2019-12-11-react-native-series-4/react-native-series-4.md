@@ -114,20 +114,11 @@ export const initDB = () => {
 <div class="filename">App.js</div>
 
 ```jsx
-import { init } from './database/db'
-.
-.
-.
-init()
+import { initDB } from './database/db'
+
+initDB()
   .then(() => { console.log("Initialize Database") })
   .catch(err => { console.log("Initialize Failed") });
-.
-.
-.
-export default function App() {
-.
-.
-.
 ```
 
 - Run the application and you should see the following result:

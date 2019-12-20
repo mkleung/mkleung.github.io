@@ -9,13 +9,11 @@ categories:
   - New
 ---
 
+###Step 1 - Add the delete database function
 
-### DELETE A PlACE (D in CRUD)
+<div class="filename">database/db.js</div>
 
-**Step 1 - Add the delete database function**
-
-Inside **database/db.js**
-```
+```jsx
 // Delete Data from database
 export const deletePlaceDB = (id) => {
     const promise = new Promise((resolve, reject) => {
@@ -36,10 +34,11 @@ export const deletePlaceDB = (id) => {
 };
 ```
 
-**Step 2 - Add the delete action**
+###Step 2 - Add the delete action
 
-Inside **store/places-actions.js**
-```
+<div class="filename">store/places-actions.js</div>
+
+```jsx
 // DELETE PLACE ACTION
 export const DELETE_PLACE = 'DELETE_PLACE';
 export const deletePlaceAction = (id) => {
@@ -59,11 +58,11 @@ export const deletePlaceAction = (id) => {
 };
 ```
 
-**Step 3 - add delete place reducer case**
+### Step 3 - add delete place reducer case
 
-Inside **store/places-reducer.js**
+<div class="filename">store/places-reducer.js</div>
 
-```
+```jsx
 case DELETE_PLACE:
     return {
         places: state.places.filter(place =>
@@ -71,11 +70,12 @@ case DELETE_PLACE:
         )
 };
 ```
-**Step 4 - Add delete button inside Detail component**
 
-Inside **screens/DetailScreen.js**
+### Step 4 - Add delete button inside Detail component
 
-```
+<div class="filename">screens/DetailScreen.js</div>
+
+```jsx
 import { useSelector, useDispatch } from 'react-redux';
 import * as placesActions from "../store/places-actions"
 const DetailScreen = props => {
@@ -113,7 +113,7 @@ const DetailScreen = props => {
 
 ### Result:
 
-<img src="../posts/2019-12-12-react-native-series-7.gif" alt="react-native-series-7" width="300"  /><br/>
+<img src="../posts/2019-12-12-react-native-series-7.gif" alt="react-native-series-7" width="300"  />
 
 ### Related Posts
 
