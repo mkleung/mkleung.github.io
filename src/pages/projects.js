@@ -3,7 +3,7 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Projectsnav from "../components/projectsNav"
 import Image from '../components/img'
-import Githubicon from "../components/githubicon"
+import Github from "../components/github"
 const ProjectPage = () => (
   <Layout navLocation="project">
     <div className="container">
@@ -22,7 +22,7 @@ const ProjectPage = () => (
             <div className="card-content">
               <div className="content">
                 <p className="title is-4">Snaplifts - Gym Tracker
-                <Githubicon url="https://github.com/mkleung/snaplifts" />
+                <Github url="https://github.com/mkleung/snaplifts" />
                 </p>
                 <ul>
                   <li>React</li>
@@ -47,7 +47,7 @@ const ProjectPage = () => (
             <div className="card-content">
               <div className="content">
                 <p className="title is-4">To Do List
-                  <Githubicon url="https://github.com/mkleung/todolist-vue" />
+                  <Github url="https://github.com/mkleung/todolist-vue" />
                 </p>
                 
                 <ul>
@@ -73,7 +73,7 @@ const ProjectPage = () => (
             <div className="card-content">
               <div className="content">
                 <p className="title is-4">Personal Site
-                  <Githubicon url="https://github.com/mkleung/mkleung.github.io" />
+                  <Github url="https://github.com/mkleung/mkleung.github.io" />
                 </p>
                 <ul>
                   <li>Gatsby React Framework</li>

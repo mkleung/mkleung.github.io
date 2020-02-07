@@ -3,7 +3,7 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Projectsnav from "../components/projectsNav"
 import Image from '../components/img'
-import Githubicon from "../components/githubicon"
+import Github from "../components/github"
 const ReactPage = () => (
     <Layout navLocation="project">
         <div className="container">
@@ -23,7 +23,7 @@ const ReactPage = () => (
                             <div className="media">
                                 <div className="media-content">
                                     <p className="title is-4">Project 16 - Memory
-                                    <Githubicon url="https://github.com/mkleung/100daysofReact" /></p>
+                                    <Github url="https://github.com/mkleung/100daysofReact" /></p>
                                     <ul>
                                         <li>React Hooks</li>
                                         <li>UseState</li>
@@ -50,7 +50,7 @@ const ReactPage = () => (
                             <div className="media">
                                 <div className="media-content">
                                     <p className="title is-4">Project 14 - Tetris
-                                    <Githubicon url="https://github.com/mkleung/100daysofReact" /></p>
+                                    <Github url="https://github.com/mkleung/100daysofReact" /></p>
                                     <ul>
                                         <li>React Hooks</li>
                                         <li>UseState</li>
@@ -78,7 +78,7 @@ const ReactPage = () => (
                             <div className="media">
                                 <div className="media-content">
                                     <p className="title is-4">Project 13 - Real Estate
-                                    <Githubicon url="https://github.com/mkleung/100daysofReact" /></p>
+                                    <Github url="https://github.com/mkleung/100daysofReact" /></p>
                                     <ul>
                                         <li>Transition Animation</li>
                                         <li>React Router</li>
@@ -105,7 +105,7 @@ const ReactPage = () => (
                             <div className="media">
                                 <div className="media-content">
                                     <p className="title is-4">Project 12 - Movies
-                                    <Githubicon url="https://github.com/mkleung/100daysofReact" /></p>
+                                    <Github url="https://github.com/mkleung/100daysofReact" /></p>
                                     <ul>
                                         <li>Context API</li>
                                         <li>React Router</li>
@@ -132,7 +132,7 @@ const ReactPage = () => (
                             <div className="media">
                                 <div className="media-content">
                                     <p className="title is-4">Project 11 - StarWars API 
-                                    <Githubicon url="https://github.com/mkleung/100daysofReact" /></p>
+                                    <Github url="https://github.com/mkleung/100daysofReact" /></p>
                                     <ul>
                                         <li>React Hooks</li>
                                         <li>React Router Animations</li>
@@ -160,7 +160,7 @@ const ReactPage = () => (
                             <div className="media">
                                 <div className="media-content">
                                     <p className="title is-4">Project 10 - Signup Router
-                                    <Githubicon url="https://github.com/mkleung/100daysofReact" /></p>
+                                    <Github url="https://github.com/mkleung/100daysofReact" /></p>
                                     <ul>
                                         <li>React Router</li>
                                         <li>Local Storage</li>
@@ -187,7 +187,7 @@ const ReactPage = () => (
                             <div className="media">
                                 <div className="media-content">
                                     <p className="title is-4">Project 9 - Snake Game
-                                    <Githubicon url="https://github.com/mkleung/100daysofReact" /></p>
+                                    <Github url="https://github.com/mkleung/100daysofReact" /></p>
                                 </div>
                             </div>
                             <div className="content">
@@ -210,7 +210,7 @@ const ReactPage = () => (
                             <div className="media">
                                 <div className="media-content">
                                     <p className="title is-4">Project 8 - Map App
-                                    <Githubicon url="https://github.com/mkleung/100daysofReact" /></p>
+                                    <Github url="https://github.com/mkleung/100daysofReact" /></p>
                                 </div>
                             </div>
                             <div className="content">
@@ -233,7 +233,7 @@ const ReactPage = () => (
                             <div className="media">
                                 <div className="media-content">
                                     <p className="title is-4">Project 7 - Tic Tac Toe
-                                    <Githubicon url="https://github.com/mkleung/100daysofReact" /></p>
+                                    <Github url="https://github.com/mkleung/100daysofReact" /></p>
                                 </div>
                             </div>
                             <div className="content">
@@ -255,7 +255,7 @@ const ReactPage = () => (
                             <div className="media">
                                 <div className="media-content">
                                     <p className="title is-4">Project 6 - Quiz
-                                    <Githubicon url="https://github.com/mkleung/100daysofReact" /></p>
+                                    <Github url="https://github.com/mkleung/100daysofReact" /></p>
                                 </div>
                             </div>
                             <div className="content">
@@ -277,7 +277,7 @@ const ReactPage = () => (
                             <div className="media">
                                 <div className="media-content">
                                     <p className="title is-4">5 - To Do List
-                                    <Githubicon url="https://github.com/mkleung/100daysofReact" /></p>
+                                    <Github url="https://github.com/mkleung/100daysofReact" /></p>
                                 </div>
                             </div>
                             <div className="content">
@@ -299,7 +299,7 @@ const ReactPage = () => (
                             <div className="media">
                                 <div className="media-content">
                                     <p className="title is-4">Project 4 - Calculator
-                                    <Githubicon url="https://github.com/mkleung/100daysofReact" /></p>
+                                    <Github url="https://github.com/mkleung/100daysofReact" /></p>
                                 </div>
                             </div>
                             <div className="content">
@@ -321,7 +321,7 @@ const ReactPage = () => (
                             <div className="media">
                                 <div className="media-content">
                                     <p className="title is-4">Project 3- Calendar
-                                    <Githubicon url="https://github.com/mkleung/100daysofReact" /></p>
+                                    <Github url="https://github.com/mkleung/100daysofReact" /></p>
                                 </div>
                             </div>
                             <div className="content">
@@ -342,7 +342,8 @@ const ReactPage = () => (
                         <div className="card-content">
                             <div className="media">
                                 <div className="media-content">
-                                    <p className="title is-4">Project 2 - Stopwatch <Githubicon url="https://github.com/mkleung/100daysofReact" /></p>
+                                    <p className="title is-4">Project 2 - Stopwatch 
+                                    <Github url="https://github.com/mkleung/100daysofReact" /></p>
                                 </div>
                             </div>
                             <div className="content">
@@ -364,7 +365,7 @@ const ReactPage = () => (
                             <div className="media">
                                 <div className="media-content">
                                     <p className="title is-4">Project 1 - Button Counter
-                                    <Githubicon url="https://github.com/mkleung/100daysofReact" /></p>
+                                    <Github url="https://github.com/mkleung/100daysofReact" /></p>
                                 </div>
                             </div>
                             <div className="content">
