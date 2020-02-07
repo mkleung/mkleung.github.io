@@ -3,7 +3,7 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Projectsnav from "../components/projectsNav"
 import Image from '../components/img'
-
+import Githubicon from "../components/githubicon"
 const ReactPage = () => (
     <Layout navLocation="project">
         <div className="container">
@@ -22,7 +22,8 @@ const ReactPage = () => (
                         <div className="card-content">
                             <div className="media">
                                 <div className="media-content">
-                                    <p className="title is-4">Project 16 - Memory Game</p>
+                                    <p className="title is-4">Project 16 - Memory
+                                    <Githubicon url="https://github.com/mkleung/100daysofReact" /></p>
                                     <ul>
                                         <li>React Hooks</li>
                                         <li>UseState</li>
@@ -32,7 +33,6 @@ const ReactPage = () => (
                             </div>
                             <div className="content">
                                 <div className="card-buttons">
-                                    <a className="button is-secondary is-rounded" rel="noopener noreferrer" target="_blank" href="https://codesandbox.io/s/project-16-memory-game-7w5nv">Code</a>
                                     <a className="button greenButton is-rounded" rel="noopener noreferrer" target="_blank" href="https://7w5nv.csb.app/">Demo</a>
                                 </div>
                             </div>
@@ -49,7 +49,8 @@ const ReactPage = () => (
                         <div className="card-content">
                             <div className="media">
                                 <div className="media-content">
-                                    <p className="title is-4">Project 14 - Simplified Tetris</p>
+                                    <p className="title is-4">Project 14 - Tetris
+                                    <Githubicon url="https://github.com/mkleung/100daysofReact" /></p>
                                     <ul>
                                         <li>React Hooks</li>
                                         <li>UseState</li>
@@ -59,7 +60,6 @@ const ReactPage = () => (
                             </div>
                             <div className="content">
                                 <div className="card-buttons">
-                                    <a className="button is-secondary is-rounded" rel="noopener noreferrer" target="_blank" href="https://github.com/mkleung/100daysofReact">Code</a>
                                     <a className="button greenButton is-rounded" rel="noopener noreferrer" target="_blank" href="https://qvevt.csb.app/">Demo</a>
                                 </div>
                             </div>
@@ -77,7 +77,8 @@ const ReactPage = () => (
                         <div className="card-content">
                             <div className="media">
                                 <div className="media-content">
-                                    <p className="title is-4">Project 13 - Real Estate List</p>
+                                    <p className="title is-4">Project 13 - Real Estate
+                                    <Githubicon url="https://github.com/mkleung/100daysofReact" /></p>
                                     <ul>
                                         <li>Transition Animation</li>
                                         <li>React Router</li>
@@ -87,8 +88,7 @@ const ReactPage = () => (
                             </div>
                             <div className="content">
                                 <div className="card-buttons">
-                                    <a className="button is-secondary is-rounded" rel="noopener noreferrer" target="_blank" href="https://github.com/mkleung/100daysofReact">Code</a>
-                                    <a className="button greenButton is-rounded" rel="noopener noreferrer" target="_blank" href="https://86ezy.csb.app/">Demo</a>
+                                  <a className="button greenButton is-rounded" rel="noopener noreferrer" target="_blank" href="https://86ezy.csb.app/">Demo</a>
                                 </div>
                             </div>
                         </div>
@@ -104,7 +104,8 @@ const ReactPage = () => (
                         <div className="card-content">
                             <div className="media">
                                 <div className="media-content">
-                                    <p className="title is-4">Project 12 - Rotten Potatoes</p>
+                                    <p className="title is-4">Project 12 - Movies
+                                    <Githubicon url="https://github.com/mkleung/100daysofReact" /></p>
                                     <ul>
                                         <li>Context API</li>
                                         <li>React Router</li>
@@ -114,7 +115,6 @@ const ReactPage = () => (
                             </div>
                             <div className="content">
                                 <div className="card-buttons">
-                                    <a className="button is-secondary is-rounded" rel="noopener noreferrer" target="_blank" href="https://github.com/mkleung/100daysofReact">Code</a>
                                     <a className="button greenButton is-rounded" rel="noopener noreferrer" target="_blank" href="https://7y5w2.csb.app/">Demo</a>
                                 </div>
                             </div>
@@ -131,7 +131,8 @@ const ReactPage = () => (
                         <div className="card-content">
                             <div className="media">
                                 <div className="media-content">
-                                    <p className="title is-4">Project 11 - StarWars API </p>
+                                    <p className="title is-4">Project 11 - StarWars API 
+                                    <Githubicon url="https://github.com/mkleung/100daysofReact" /></p>
                                     <ul>
                                         <li>React Hooks</li>
                                         <li>React Router Animations</li>
@@ -141,7 +142,6 @@ const ReactPage = () => (
                             </div>
                             <div className="content">
                                 <div className="card-buttons">
-                                    <a className="button is-secondary is-rounded" rel="noopener noreferrer" target="_blank" href="https://github.com/mkleung/100daysofReact">Code</a>
                                     <a className="button greenButton is-rounded" rel="noopener noreferrer" target="_blank" href="https://u4xqw.csb.app/">Demo</a>
                                 </div>
                             </div>
@@ -159,7 +159,8 @@ const ReactPage = () => (
                         <div className="card-content">
                             <div className="media">
                                 <div className="media-content">
-                                    <p className="title is-4">Project 10 - Signup Router</p>
+                                    <p className="title is-4">Project 10 - Signup Router
+                                    <Githubicon url="https://github.com/mkleung/100daysofReact" /></p>
                                     <ul>
                                         <li>React Router</li>
                                         <li>Local Storage</li>
@@ -169,7 +170,6 @@ const ReactPage = () => (
                             </div>
                             <div className="content">
                                 <div className="card-buttons">
-                                    <a className="button is-secondary is-rounded" rel="noopener noreferrer" target="_blank" href="https://github.com/mkleung/100daysofReact">Code</a>
                                     <a className="button greenButton is-rounded" rel="noopener noreferrer" target="_blank" href="https://45g3m.csb.app/">Demo</a>
                                 </div>
                             </div>
@@ -186,7 +186,8 @@ const ReactPage = () => (
                         <div className="card-content">
                             <div className="media">
                                 <div className="media-content">
-                                    <p className="title is-4">Project 9 - Snake Game</p>
+                                    <p className="title is-4">Project 9 - Snake Game
+                                    <Githubicon url="https://github.com/mkleung/100daysofReact" /></p>
                                 </div>
                             </div>
                             <div className="content">
@@ -208,12 +209,12 @@ const ReactPage = () => (
                         <div className="card-content">
                             <div className="media">
                                 <div className="media-content">
-                                    <p className="title is-4">Project 8 - Map App</p>
+                                    <p className="title is-4">Project 8 - Map App
+                                    <Githubicon url="https://github.com/mkleung/100daysofReact" /></p>
                                 </div>
                             </div>
                             <div className="content">
                                 <div className="card-buttons">
-                                    <a className="button is-secondary is-rounded" rel="noopener noreferrer" target="_blank" href="https://github.com/mkleung/100daysofReact">Code</a>
                                     <a className="button greenButton is-rounded" rel="noopener noreferrer" target="_blank" href="https://7s9cd.csb.app//">Demo</a>
                                 </div>
                             </div>
@@ -231,12 +232,12 @@ const ReactPage = () => (
                         <div className="card-content">
                             <div className="media">
                                 <div className="media-content">
-                                    <p className="title is-4">Project 7 - Tic Tac Toe</p>
+                                    <p className="title is-4">Project 7 - Tic Tac Toe
+                                    <Githubicon url="https://github.com/mkleung/100daysofReact" /></p>
                                 </div>
                             </div>
                             <div className="content">
                                 <div className="card-buttons">
-                                    <a className="button is-secondary is-rounded" rel="noopener noreferrer" target="_blank" href="https://github.com/mkleung/100daysofReact">Code</a>
                                     <a className="button greenButton is-rounded" rel="noopener noreferrer" target="_blank" href="https://jyy84.csb.app/">Demo</a>
                                 </div>
                             </div>
@@ -253,12 +254,12 @@ const ReactPage = () => (
                         <div className="card-content">
                             <div className="media">
                                 <div className="media-content">
-                                    <p className="title is-4">Project 6 - Quiz</p>
+                                    <p className="title is-4">Project 6 - Quiz
+                                    <Githubicon url="https://github.com/mkleung/100daysofReact" /></p>
                                 </div>
                             </div>
                             <div className="content">
                                 <div className="card-buttons">
-                                    <a className="button is-secondary is-rounded" rel="noopener noreferrer" target="_blank" href="https://github.com/mkleung/100daysofReact">Code</a>
                                     <a className="button is-rounded greenButton" rel="noopener noreferrer" target="_blank" href="https://bhm6v.csb.app/">Demo</a>
                                 </div>
                             </div>
@@ -275,12 +276,12 @@ const ReactPage = () => (
                         <div className="card-content">
                             <div className="media">
                                 <div className="media-content">
-                                    <p className="title is-4">5 - To Do List</p>
+                                    <p className="title is-4">5 - To Do List
+                                    <Githubicon url="https://github.com/mkleung/100daysofReact" /></p>
                                 </div>
                             </div>
                             <div className="content">
                                 <div className="card-buttons">
-                                    <a className="button is-secondary is-rounded" rel="noopener noreferrer" target="_blank" href="https://github.com/mkleung/100daysofReact">Code</a>
                                     <a className="button greenButton is-rounded" rel="noopener noreferrer" target="_blank" href="https://ri74q.csb.app/">Demo</a>
                                 </div>
                             </div>
@@ -297,12 +298,12 @@ const ReactPage = () => (
                         <div className="card-content">
                             <div className="media">
                                 <div className="media-content">
-                                    <p className="title is-4">Project 4 - Calculator</p>
+                                    <p className="title is-4">Project 4 - Calculator
+                                    <Githubicon url="https://github.com/mkleung/100daysofReact" /></p>
                                 </div>
                             </div>
                             <div className="content">
                                 <div className="card-buttons">
-                                    <a className="button is-secondary is-rounded" rel="noopener noreferrer" target="_blank" href="https://github.com/mkleung/100daysofReact">Code</a>
                                     <a className="button greenButton is-rounded" rel="noopener noreferrer" target="_blank" href="https://mzztr.csb.app/">Demo</a>
                                 </div>
                             </div>
@@ -319,12 +320,12 @@ const ReactPage = () => (
                         <div className="card-content">
                             <div className="media">
                                 <div className="media-content">
-                                    <p className="title is-4">Project 3- Calendar</p>
+                                    <p className="title is-4">Project 3- Calendar
+                                    <Githubicon url="https://github.com/mkleung/100daysofReact" /></p>
                                 </div>
                             </div>
                             <div className="content">
                                 <div className="card-buttons">
-                                    <a className="button is-secondary is-rounded" rel="noopener noreferrer" target="_blank" href="https://github.com/mkleung/100daysofReact">Code</a>
                                     <a className="button greenButton is-rounded" rel="noopener noreferrer" target="_blank" href="https://193rm.codesandbox.io/">Demo</a>
                                 </div>
                             </div>
@@ -341,12 +342,11 @@ const ReactPage = () => (
                         <div className="card-content">
                             <div className="media">
                                 <div className="media-content">
-                                    <p className="title is-4">Project 2 - Stopwatch</p>
+                                    <p className="title is-4">Project 2 - Stopwatch <Githubicon url="https://github.com/mkleung/100daysofReact" /></p>
                                 </div>
                             </div>
                             <div className="content">
                                 <div className="card-buttons">
-                                    <a className="button is-secondary is-rounded" rel="noopener noreferrer" target="_blank" href="https://github.com/mkleung/100daysofReact">Code</a>
                                     <a className="button greenButton is-rounded" rel="noopener noreferrer" target="_blank" href="https://6fr6p.codesandbox.io/">Demo</a>
                                 </div>
                             </div>
@@ -363,12 +363,12 @@ const ReactPage = () => (
                         <div className="card-content">
                             <div className="media">
                                 <div className="media-content">
-                                    <p className="title is-4">Project 1 - Button Counter</p>
+                                    <p className="title is-4">Project 1 - Button Counter
+                                    <Githubicon url="https://github.com/mkleung/100daysofReact" /></p>
                                 </div>
                             </div>
                             <div className="content">
                                 <div className="card-buttons">
-                                    <a className="button is-secondary is-rounded" rel="noopener noreferrer" target="_blank" href="https://github.com/mkleung/100daysofReact">Code</a>
                                     <a className="button greenButton is-rounded" rel="noopener noreferrer" target="_blank" href="https://t2f9h.codesandbox.io/">Demo</a>
                                 </div>
                             </div>

@@ -10,7 +10,7 @@ export default class Projectsnav extends React.Component {
                     <Link className={projectTitle === "Projects" ? "button is-primary is-outlined has-background-primary has-text-white" : "button is-primary is-outlined"} to="/projects">Projects</Link>
                     <Link className={projectTitle === "React" ? "button is-primary is-outlined has-background-primary has-text-white" : "button is-primary is-outlined"} to="/react">100DaysReact</Link>
                     <Link className={projectTitle === "CSS" ? "button is-primary is-outlined has-background-primary has-text-white" : "button is-primary is-outlined"} to="/frontend">100DaysCSS</Link>
-                    <Link className={projectTitle === "Mobile" ? "button is-primary is-outlined has-background-primary has-text-white" : "button is-primary is-outlined"} to="/mobile">100DaysReactNative</Link>
+                    {/* <Link className={projectTitle === "Mobile" ? "button is-primary is-outlined has-background-primary has-text-white" : "button is-primary is-outlined"} to="/mobile">100DaysReactNative</Link> */}
                 </div>
             </div>
         )

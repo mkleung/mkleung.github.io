@@ -3,6 +3,7 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Projectsnav from "../components/projectsNav"
 import Image from '../components/img'
+import Githubicon from "../components/githubicon"
 const ProjectPage = () => (
   <Layout navLocation="project">
     <div className="container">
@@ -20,14 +21,15 @@ const ProjectPage = () => (
             </div>
             <div className="card-content">
               <div className="content">
-                <p className="title is-4">Snaplifts - Gym Tracker</p>
+                <p className="title is-4">Snaplifts - Gym Tracker
+                <Githubicon url="https://github.com/mkleung/snaplifts" />
+                </p>
                 <ul>
                   <li>React</li>
                   <li>Redux</li>
                   <li>Firebase</li>
                 </ul>
                 <div className="card-buttons">
-                  <a className="button is-secondary is-rounded" rel="noopener noreferrer" target="_blank" href="https://github.com/mkleung/snaplifts">Code</a>
                   <a className="button is-rounded greenButton" rel="noopener noreferrer" target="_blank" href="https://mkleung.github.io/snaplifts/">Demo</a>
                 </div>
               </div>
@@ -44,14 +46,16 @@ const ProjectPage = () => (
             </div>
             <div className="card-content">
               <div className="content">
-                <p className="title is-4">Atomic To Do</p>
+                <p className="title is-4">To Do List
+                  <Githubicon url="https://github.com/mkleung/todolist-vue" />
+                </p>
+                
                 <ul>
                   <li>Vue</li>
                   <li>Laravel</li>
                   <li>Heroku</li>
                 </ul>
                 <div className="card-buttons">
-                  <a className="button is-secondary is-rounded" rel="noopener noreferrer" target="_blank" href="https://github.com/mkleung/todolist-vue">Code</a>
                   <a className="button is-rounded greenButton" rel="noopener noreferrer" target="_blank" href="https://todolistvuejs.herokuapp.com/">Demo</a>
                 </div>
               </div>
@@ -68,14 +72,15 @@ const ProjectPage = () => (
             </div>
             <div className="card-content">
               <div className="content">
-                <p className="title is-4">Personal Site</p>
+                <p className="title is-4">Personal Site
+                  <Githubicon url="https://github.com/mkleung/mkleung.github.io" />
+                </p>
                 <ul>
                   <li>Gatsby React Framework</li>
                   <li>GraphyQL</li>
                   <li>Netlify</li>
                 </ul>
                 <div className="card-buttons">
-                  <a className="button is-secondary is-rounded" rel="noopener noreferrer" target="_blank" href="https://github.com/mkleung/mkleung.github.io">Code</a>
                   <a className="button is-rounded greenButton" rel="noopener noreferrer" target="_blank" href="https://mikeleung.ca">Demo</a>
                 </div>
               </div>
