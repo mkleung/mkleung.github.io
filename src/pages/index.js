@@ -23,7 +23,7 @@ const IndexPage = () => (
     <div className="container">
       <div className="columns is-vcentered is-multiline main-feature">
         <div className="column is-6">
-          <h1 className="is-size-3 has-text-weight-bold">Recent Projects</h1>
+          {/* <h1 className="is-size-3 has-text-weight-bold">Recent Projects</h1> */}
         </div>
       </div>
     </div>
