@@ -1,17 +1,17 @@
 import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import Projectsnav from "../components/projectsNav"
+import Nav from "../components/nav"
 // import Image from '../components/img'
 
-const MobilePage = () => (
+const ReactNative = () => (
   <Layout navLocation="project">
     <div className="container">
       <div className="columns is-vcentered is-multiline">
         <div className="column is-12">
           <h2 className="is-size-3 has-text-weight-bold">100 Days of React Native Challenge</h2>
         </div>
-        <Projectsnav project="Mobile" />
+        <Nav title="React Native" />
 
         {/* Project 5 - Number Guess Game */}
         <div className="column is-4">
@@ -101,4 +101,4 @@ const MobilePage = () => (
     <SEO title="Mobile" />
   </Layout>
 )
-export default MobilePage
+export default ReactNative

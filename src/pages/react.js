@@ -1,7 +1,7 @@
 import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import Projectsnav from "../components/projectsNav"
+import Nav from "../components/nav"
 import Image from '../components/img'
 import Github from "../components/github"
 const ReactPage = () => (
@@ -11,7 +11,7 @@ const ReactPage = () => (
                 <div className="column is-12">
                     <h2 className="is-size-3 has-text-weight-bold">100 Days of React Challenge</h2>
                 </div>
-                <Projectsnav project="React" />
+                <Nav title="React" />
 
                 {/* Project 16 */}
                 <div className="column is-4">
@@ -88,7 +88,7 @@ const ReactPage = () => (
                             </div>
                             <div className="content">
                                 <div className="card-buttons">
-                                  <a className="button greenButton is-rounded" rel="noopener noreferrer" target="_blank" href="https://86ezy.csb.app/">Demo</a>
+                                    <a className="button greenButton is-rounded" rel="noopener noreferrer" target="_blank" href="https://86ezy.csb.app/">Demo</a>
                                 </div>
                             </div>
                         </div>
@@ -131,7 +131,7 @@ const ReactPage = () => (
                         <div className="card-content">
                             <div className="media">
                                 <div className="media-content">
-                                    <p className="title is-4">Project 11 - StarWars API 
+                                    <p className="title is-4">Project 11 - StarWars API
                                     <Github url="https://github.com/mkleung/100daysofReact" /></p>
                                     <ul>
                                         <li>React Hooks</li>
@@ -342,7 +342,7 @@ const ReactPage = () => (
                         <div className="card-content">
                             <div className="media">
                                 <div className="media-content">
-                                    <p className="title is-4">Project 2 - Stopwatch 
+                                    <p className="title is-4">Project 2 - Stopwatch
                                     <Github url="https://github.com/mkleung/100daysofReact" /></p>
                                 </div>
                             </div>

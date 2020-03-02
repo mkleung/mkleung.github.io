@@ -39,11 +39,9 @@ class ContactPage extends React.Component {
                   </div>
                 </div>
                 <br />
-                <div className="field is-grouped">
-                  <p className="control">
-                    <button className="button greenButton is-rounded" type="submit">Send Email</button>
-                  </p>
-                </div>
+
+                <button className="button is-rounded greenButton" type="submit">Send Email</button>
+
               </form>
             </div>
           </div>

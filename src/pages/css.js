@@ -2,10 +2,10 @@ import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Codepen from "react-codepen-embed";
-import Projectsnav from "../components/projectsNav"
+import Nav from "../components/nav"
 import * as frontendData from "../assets/data/frontend.json";
 
-class FrontEndPage extends React.Component {
+class Css extends React.Component {
       constructor(props) {
             super(props);
             this.state = {
@@ -21,12 +21,12 @@ class FrontEndPage extends React.Component {
             return (
                   <Layout navLocation="project">
                         <div className="container">
-       
+
                               <div className="columns is-vcentered is-multiline">
                                     <div className="column is-12">
                                           <h2 className="is-size-3 has-text-weight-bold">100 Days of CSS Challenge</h2>
                                     </div>
-                                    <Projectsnav project="CSS" />
+                                    <Nav title="CSS" />
                                     <div className="column is-6 pen-container">
                                           <div className="pen-titles">
                                                 {frontendData.projects.map((item, index) => {
@@ -61,4 +61,4 @@ class FrontEndPage extends React.Component {
             )
       }
 }
-export default FrontEndPage;
+export default Css;

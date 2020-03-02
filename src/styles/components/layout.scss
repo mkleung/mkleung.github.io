@@ -5,7 +5,8 @@ body {
 	a {
 		color: $second;
 
-		&:hover, &:active {
+		&:hover,
+		&:active {
 			font-weight: 500;
 		}
 	}
@@ -31,8 +32,9 @@ body {
 	background-image: linear-gradient(to right, $first 0%, $second 51%, $first 100%);
 	transition: background 0.5s ease;
 	background-size: 300% auto;
-	padding: 25px 35px;
+	// padding: 25px 35px;
 	border-radius: 32px;
+
 	&:focus {
 		color: #fff;
 	}
@@ -45,7 +47,7 @@ body {
 }
 
 .githubButton {
-	position:absolute;
+	position: absolute;
 	right: 15px;
 
 	.icon {
