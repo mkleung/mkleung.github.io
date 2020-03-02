@@ -1,14 +1,32 @@
 .card {
   box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.3);
 
-  .card-image {
-    clip-path: polygon(0 0, 100% 0, 100% 90%, 0% 100%);
-  }
+
 
   .gatsby-image-wrapper {
     min-height: 150px;
     max-height: 400px;
   }
+
+
+  .card-img {
+    position: relative;
+    height: 490px;
+
+    .card-gif {
+      position: absolute;
+    }
+
+    .card-png {
+      position: absolute;
+
+      &:hover {
+        opacity: 0;
+      }
+    }
+
+  }
+
 
   .card-content {
     .title {
@@ -124,5 +142,5 @@
 }
 
 iframe {
-	height: 475px;
+  height: 475px;
 }

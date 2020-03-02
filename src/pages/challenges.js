@@ -9,12 +9,9 @@ const ProjectPage = () => (
     <div className="container">
       <div className="columns is-vcentered is-multiline">
         <div className="column is-12">
-          <h2 className="is-size-3 has-text-weight-bold">100 Days Challenges</h2>
+          <h2 className="is-size-3 has-text-weight-bold">100 Days Code Challenges</h2>
         </div>
         <Nav title="Projects" />
-
-
-
       </div>
     </div>
     <SEO title="Projects" />

@@ -9,7 +9,7 @@ export default class Nav extends React.Component {
                 <div class="buttons">
                     <Link className={title === "React" ? "button is-primary is-outlined has-background-primary has-text-white" : "button is-primary is-outlined"} to="/react">100DaysReact</Link>
                     <Link className={title === "CSS" ? "button is-primary is-outlined has-background-primary has-text-white" : "button is-primary is-outlined"} to="/css">100DaysCSS</Link>
-                    {/* <Link className={projectTitle === "Mobile" ? "button is-primary is-outlined has-background-primary has-text-white" : "button is-primary is-outlined"} to="/mobile">100DaysReactNative</Link> */}
+                    <Link className={title === "Android" ? "button is-primary is-outlined has-background-primary has-text-white" : "button is-primary is-outlined"} to="/android">100DaysAndroid</Link>
                 </div>
             </div>
         )
