@@ -1,14 +1,21 @@
-import React, { useState } from "react"
+import React, { useState, useEffect } from "react"
 import { graphql, useStaticQuery, Link } from 'gatsby'
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Img from "gatsby-image"
 
-const BlogPage = () => {
-    const [category, setCategory] = useState("All")
+const ArticlesPage = ({ location }) => {
+    const [category, setCategory] = useState()
+
+    useEffect(() => {
+        if (location.state.category) {
+            setCategory(location.state.category)
+        }
+    }, []);
+
     const data = useStaticQuery(graphql`
         query {
-            allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
+            allMarkdownRemark(sort: { fields: [frontmatter___date], order: ASC }) {
                 edges {
                     node {
                         frontmatter {
@@ -39,11 +46,11 @@ const BlogPage = () => {
             <div className="container">
                 <div className="columns is-vcentered is-multiline main-feature">
                     <div className="column is-10 landing-caption">
-                        <h1 className="title is-bold is-spaced">Blog</h1>
+                        <h1 className="title is-bold is-spaced">Articles</h1>
                         <div className="buttons">
-                            <button onClick={() => setCategory("All")} className={category === "All" ? "button is-primary is-outlined has-background-primary has-text-white" : "button is-primary is-outlined"}>All</button>
+                            {/* <button onClick={() => setCategory("All")} className={category === "All" ? "button is-primary is-outlined has-background-primary has-text-white" : "button is-primary is-outlined"}>All</button> */}
+                            <button onClick={() => setCategory("ReactNative")} className={category === "ReactNative" ? "button is-primary is-outlined has-background-primary has-text-white" : "button is-primary is-outlined"}>React Native</button>
                             <button onClick={() => setCategory("React")} className={category === "React" ? "button is-primary is-outlined has-background-primary has-text-white" : "button is-primary is-outlined"}>React</button>
-                            <button onClick={() => setCategory("ReactNative")} className={category === "ReactNative" ? "button is-primary is-outlined has-background-primary has-text-white" : "button is-primary is-outlined"}>React-Native</button>
                             <button onClick={() => setCategory("Gatsby")} className={category === "Gatsby" ? "button is-primary is-outlined has-background-primary has-text-white" : "button is-primary is-outlined"}>Gatsby</button>
                         </div>
 
@@ -76,9 +83,9 @@ const BlogPage = () => {
                 </div>
 
             </div>
-            <SEO title="Blog" />
+            <SEO title="Tutorials" />
         </Layout>
     )
 }
 
-export default BlogPage
+export default ArticlesPage

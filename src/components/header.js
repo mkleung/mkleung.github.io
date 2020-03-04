@@ -29,7 +29,7 @@ const Header = ({ siteTitle, navLocation }) => {
                     <div className="mobileMenu">
                         <Link activeClassName="active" className="mobileMenu__item " to="/">Home</Link>
                         <Link activeClassName="active" className="mobileMenu__item " to="/challenges">Challenges</Link>
-                        <Link activeClassName="active" className="mobileMenu__item " to="/blog">Blog</Link>
+                        <Link activeClassName="active" className="mobileMenu__item " to="/articles">Articles</Link>
                         <Link activeClassName="active" className="mobileMenu__item " to="/contact">Contact</Link>
                     </div>
                 </div>
@@ -37,7 +37,7 @@ const Header = ({ siteTitle, navLocation }) => {
             <div className="navbar-end">
                 <div className="buttons">
                     <Link className={projectNav} to="/challenges">Challenges</Link>
-                    <Link className={blogNav} to="/blog">Blog</Link>
+                    <Link className={blogNav} to="/articles">Articles</Link>
                     <Link activeClassName="active" className="navbar-item is-secondary" to="/contact">Contact</Link>
                     <ThemeToggler>
                         {({ theme, toggleTheme }) => (
