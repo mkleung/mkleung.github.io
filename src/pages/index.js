@@ -12,7 +12,7 @@ const IndexPage = () => (
       <div className="columns is-vcentered is-multiline main-feature">
         <div className="column is-6">
           <Home />
-          <p className="home_title">I'm Mike Leung, a web developer living in Ottawa, Canada with experience in WordPress and React.</p>
+          <p className="home_title">I'm Mike Leung, a full stack developer who loves to craft and maintain code that improves the life of people.</p>
           <br />
           <p><Link className="button is-primary greenButton" to="/contact">Contact Me</Link></p>
         </div>
