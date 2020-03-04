@@ -16,6 +16,9 @@ import Android3PNG from '../assets/images/android/android3.png'
 import Android4GIF from '../assets/images/android/android4.gif'
 import Android4PNG from '../assets/images/android/android4.png'
 
+import Android5GIF from '../assets/images/android/android5.gif'
+import Android5PNG from '../assets/images/android/android5.png'
+
 
 const Android = () => (
     <Layout navLocation="project">
@@ -27,6 +30,23 @@ const Android = () => (
                 <Nav title="Android" />
             </div>
             <div className="columns is-vcentered is-multiline">
+
+                {/* Project 5 */}
+                <div className="column is-4">
+                    <div className="card">
+                        <a href="https://github.com/mkleung/100daysAndroid" target="_blank">
+                            <div class="card-img">
+                                <div className="card-image card-gif">
+                                    <img src={Android5GIF} alt="Camera Intent" />
+                                </div>
+                                <div className="card-image card-png">
+                                    <img src={Android5PNG} alt="Camera Intent" />
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
 
                 {/* Project 4 */}
                 <div className="column is-4">
@@ -44,8 +64,6 @@ const Android = () => (
                     </div>
                 </div>
 
-
-
                 {/* Project 3 */}
                 <div className="column is-4">
                     <div className="card">
@@ -62,7 +80,6 @@ const Android = () => (
                     </div>
                 </div>
 
-
                 {/* Project 2 */}
                 <div className="column is-4">
                     <div className="card">
@@ -78,7 +95,6 @@ const Android = () => (
                         </a>
                     </div>
                 </div>
-
 
                 {/* Project 1 */}
                 <div className="column is-4">
