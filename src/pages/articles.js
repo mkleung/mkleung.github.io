@@ -11,7 +11,9 @@ const ArticlesPage = ({ location }) => {
         if (location.state.category) {
             setCategory(location.state.category)
         }
-        setCategory("All")
+        else {
+            setCategory("All")
+        }
     }, []);
 
     const data = useStaticQuery(graphql`

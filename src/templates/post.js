@@ -4,6 +4,9 @@ import Layout from "../components/layout"
 
 export default ({ data }) => {
   const post = data.markdownRemark
+  const categories = post.frontmatter.categories.filter((item) => {
+    return item !== "All"
+  })
   return (
     <Layout navLocation="blog">
       <div className="container">
@@ -12,6 +15,18 @@ export default ({ data }) => {
           <div className="column is-10">
             <h1 className="title is-size-3">{post.frontmatter.title}</h1>
             <p className="is-size-6"><i>Published: {post.frontmatter.date}</i></p>
+          </div>
+          <div className="column is-10">
+            <div class="buttons">
+              {
+                categories.map((item) => {
+                  return (
+                    <Link className="button is-primary is-outlined" to="articles" state={{ category: item }}>{item}</Link>
+                  )
+                }
+                )
+              }
+            </div>
           </div>
           <div className="column is-10 landing-caption content">
             <div dangerouslySetInnerHTML={{ __html: post.html }} />
@@ -33,6 +48,7 @@ export const query = graphql`
       frontmatter {
         title
         date(formatString: "MMMM Do, YYYY")
+        categories
       }
     }
   }
