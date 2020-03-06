@@ -16,6 +16,19 @@ body.dark {
 		color: #fff !important;
 	}
 
+	.card-transparent {
+		background: transparent;
+		color: #FFF;
+		box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+		text-align: center;
+
+		.content {
+			.title {
+				color: #FFF !important;
+			}
+		}
+	}
+
 	article {
 		color: #fff;
 

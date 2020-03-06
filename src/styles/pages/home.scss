@@ -11,6 +11,10 @@
   animation: rainbow 4s ease infinite alternate;
 }
 
+.secondary-feature {
+  padding-top: 120px;
+}
+
 @keyframes rainbow {
   0% {
     background-position: 0% 50%;
