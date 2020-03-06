@@ -5,7 +5,7 @@ title: "React Native Series Part 2 - Add Redux"
 date: "2019-11-27"
 featuredImage: "../../assets/blog/react.png"
 categories:
-  - ReactNative
+  - React Native
   - All
 ---
 

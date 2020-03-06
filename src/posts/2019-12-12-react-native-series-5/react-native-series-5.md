@@ -4,7 +4,7 @@ title: "React Native Series Part 5 - Add Insert SQLite Operation"
 date: "2019-12-12"
 featuredImage: "../../assets/blog/react.png"
 categories:
-  - ReactNative
+  - React Native
   - All
 ---
 

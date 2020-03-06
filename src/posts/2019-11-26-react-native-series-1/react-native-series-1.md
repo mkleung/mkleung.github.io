@@ -5,7 +5,7 @@ title: "React Native Series Part 1 - Project Setup"
 date: "2019-11-26"
 featuredImage: "../../assets/blog/react.png"
 categories:
-  - ReactNative
+  - React Native
   - All
 ---
 

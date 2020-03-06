@@ -4,7 +4,7 @@ title: "React Native Series Part 6 - Add Fetch SQLite Operation"
 date: "2019-12-16"
 featuredImage: "../../assets/blog/react.png"
 categories:
-  - ReactNative
+  - React Native
   - All
 ---
 

@@ -4,7 +4,7 @@ title: "React Native Series Part 4 - Setup SQLite and File Management"
 date: "2019-12-11"
 featuredImage: "../../assets/blog/react.png"
 categories:
-  - ReactNative
+  - React Native
   - All
 ---
 

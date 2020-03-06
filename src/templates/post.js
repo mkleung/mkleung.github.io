@@ -9,14 +9,6 @@ export default ({ data }) => {
       <div className="container">
         <div className="columns is-vcentered is-multiline">
 
-          <div className="column is-12 landing-caption">
-            <h1 className="title is-bold is-spaced">Articles</h1>
-            <div className="buttons">
-              <Link className="button is-primary is-outlined" to="/articles" state={{ category: "ReactNative" }}>React Native</Link>
-              <Link className="button is-primary is-outlined" to="/articles" state={{ category: "React" }}>React</Link>
-              <Link className="button is-primary is-outlined" to="/articles" state={{ category: "Gatsby" }}>Gatsby</Link>
-            </div>
-          </div>
           <div className="column is-10">
             <h1 className="title is-size-3">{post.frontmatter.title}</h1>
             <p className="is-size-6"><i>Published: {post.frontmatter.date}</i></p>

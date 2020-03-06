@@ -4,7 +4,7 @@ title: "React Native Series Part 7 - Add Delete SQLite Operation"
 date: "2019-12-17"
 featuredImage: "../../assets/blog/react.png"
 categories:
-  - ReactNative
+  - React Native
   - All
   - New
 ---

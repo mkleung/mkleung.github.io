@@ -4,7 +4,7 @@ title: "React Native Series Part 3 - Access the Camera"
 date: "2019-12-05"
 featuredImage: "../../assets/blog/react.png"
 categories:
-  - ReactNative
+  - React Native
   - All
 ---
 
